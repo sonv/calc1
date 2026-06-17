@@ -1,8 +1,7 @@
 +++
 title = "Project Groups: DTQ1"
-description = "Draft project group assignments for class DTQ1."
+description = "Project group assignments for class DTQ1."
 weight = 10
-draft = true
 +++
 
 {% lang(code="en") %}
@@ -10,7 +9,6 @@ These are the DTQ1 project groups.
 
 - 109 students are listed in G1-G20.
 - Student IDs are shown before names to avoid ambiguity.
-- The page remains a draft and is not published.
 
 | Group | Members |
 |---|---|
@@ -41,7 +39,6 @@ These are the DTQ1 project groups.
 
 - Có 109 sinh viên trong G1-G20.
 - Mã số sinh viên được ghi trước họ tên để tránh nhầm lẫn.
-- Trang này vẫn là bản nháp và chưa được công bố.
 
 | Nhóm | Thành viên |
 |---|---|

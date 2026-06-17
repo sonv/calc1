@@ -15,7 +15,7 @@
     "build:zola": "zola build --output-dir _site",
     "build:pages": "npm run build:slides:all && zola build --output-dir _site --base-url https://www.tsvan.xyz/calc1",
     "build": "npm run build:slides:all && npm run build:zola",
-    "clean": "rm -rf _site static/slides",
+    "clean": "rm -rf _site static/slides slidev/*/node_modules",
     "preview": "npm run build:slides:all && zola serve"
   },
   "devDependencies": {

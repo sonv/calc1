@@ -8,12 +8,9 @@ draft = true
 {% lang(code="en") %}
 These are the DTQ1 project groups.
 
-- 67 students who showed up are listed in G1-G12.
-- 42 students who did not show up are listed in G13-G20.
+- 109 students are listed in G1-G20.
 - Student IDs are shown before names to avoid ambiguity.
 - The page remains a draft and is not published.
-
-## Students Who Showed Up
 
 | Group | Members |
 |---|---|
@@ -29,11 +26,6 @@ These are the DTQ1 project groups.
 | G10 | 2252850 - Nguyễn Lê Khải Trọng<br>2452357 - Nguyễn Hồng Huy Hoàng<br>2052886 - Nguyễn Đức Cảnh<br>2551435 - Thái Khánh Linh<br>2551116 - Vũ Thúy Vy |
 | G11 | 2252762 - Võ Minh Thăng<br>2551524 - Phạm Phú Hùng<br>2551330 - Lý Khải Hoàn<br>2152468 - Nguyễn Minh Duy<br>2452503 - Nguyễn Phương Khánh |
 | G12 | 2550578 - Nguyễn Ngọc Anh Khoa<br>2452930 - Đặng Võ Minh Nhựt<br>2553033 - Lê Hoàng Minh<br>2550061 - Nguyễn Thái Hoàng |
-
-## Students Who Did Not Show Up
-
-| Group | Members |
-|---|---|
 | G13 | 2550588 - Lê Khánh Nguyên<br>2353024 - Hồ Minh Quốc<br>2551669 - Lương Minh Dũng<br>2550088 - Nguyễn Tấn Khang<br>2453360 - Phạm Anh Tuấn<br>2453308 - Lê Hữu Trí |
 | G14 | 2551575 - Đoàn Tấn Phương Việt<br>2551574 - Cao Thiên Tường<br>2551868 - Lê Khánh Tùng<br>2453328 - Lâm Khánh Trình<br>2452368 - Cao Nhật Trường Huy<br>2252349 - Lê Nguyễn Đăng Khoa |
 | G15 | 2551376 - Hoàng Kim Ngân<br>2453196 - Nguyễn Ngọc Thiện<br>2252931 - Phạm Phương Vy<br>2053332 - Cao Võ Hoài Phúc<br>2551148 - Nguyễn Phúc Nhật Thanh |
@@ -47,12 +39,9 @@ These are the DTQ1 project groups.
 {% lang(code="vi") %}
 Đây là danh sách nhóm bài tập lớn DTQ1.
 
-- Có 67 sinh viên đã có mặt trong G1-G12.
-- Có 42 sinh viên chưa có mặt trong G13-G20.
+- Có 109 sinh viên trong G1-G20.
 - Mã số sinh viên được ghi trước họ tên để tránh nhầm lẫn.
 - Trang này vẫn là bản nháp và chưa được công bố.
-
-## Sinh viên đã có mặt
 
 | Nhóm | Thành viên |
 |---|---|
@@ -68,11 +57,6 @@ These are the DTQ1 project groups.
 | G10 | 2252850 - Nguyễn Lê Khải Trọng<br>2452357 - Nguyễn Hồng Huy Hoàng<br>2052886 - Nguyễn Đức Cảnh<br>2551435 - Thái Khánh Linh<br>2551116 - Vũ Thúy Vy |
 | G11 | 2252762 - Võ Minh Thăng<br>2551524 - Phạm Phú Hùng<br>2551330 - Lý Khải Hoàn<br>2152468 - Nguyễn Minh Duy<br>2452503 - Nguyễn Phương Khánh |
 | G12 | 2550578 - Nguyễn Ngọc Anh Khoa<br>2452930 - Đặng Võ Minh Nhựt<br>2553033 - Lê Hoàng Minh<br>2550061 - Nguyễn Thái Hoàng |
-
-## Sinh viên chưa có mặt
-
-| Nhóm | Thành viên |
-|---|---|
 | G13 | 2550588 - Lê Khánh Nguyên<br>2353024 - Hồ Minh Quốc<br>2551669 - Lương Minh Dũng<br>2550088 - Nguyễn Tấn Khang<br>2453360 - Phạm Anh Tuấn<br>2453308 - Lê Hữu Trí |
 | G14 | 2551575 - Đoàn Tấn Phương Việt<br>2551574 - Cao Thiên Tường<br>2551868 - Lê Khánh Tùng<br>2453328 - Lâm Khánh Trình<br>2452368 - Cao Nhật Trường Huy<br>2252349 - Lê Nguyễn Đăng Khoa |
 | G15 | 2551376 - Hoàng Kim Ngân<br>2453196 - Nguyễn Ngọc Thiện<br>2252931 - Phạm Phương Vy<br>2053332 - Cao Võ Hoài Phúc<br>2551148 - Nguyễn Phúc Nhật Thanh |

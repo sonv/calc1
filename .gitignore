@@ -1,0 +1,21 @@
+/.quarto/
+/_site/
+/docs/
+/public/
+
+**/*.quarto_ipynb
+.DS_Store
+**/.DS_Store
+
+node_modules/
+slidev/**/dist/
+slidev/**/.slidev/
+slidev/**/static/
+static/slides/
+
+# Legacy Quarto layout paths. The current site source is Zola content/ plus
+# Slidev decks under slidev/.
+/_quarto.yml
+/.quartoignore
+/sessions/
+/slides/

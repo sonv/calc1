@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Abstract fluid flow background">
+  <defs>
+    <linearGradient id="fluid-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#041414"/>
+      <stop offset="0.45" stop-color="#07313a"/>
+      <stop offset="1" stop-color="#0c182f"/>
+    </linearGradient>
+    <radialGradient id="fluid-glow" cx="42%" cy="48%" r="62%">
+      <stop offset="0" stop-color="#68e3c1" stop-opacity="0.55"/>
+      <stop offset="0.48" stop-color="#168e9d" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#020608" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="fluid-warp">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.028" numOctaves="3" seed="8"/>
+      <feDisplacementMap in="SourceGraphic" scale="20"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#fluid-bg)"/>
+  <rect width="1280" height="720" fill="url(#fluid-glow)"/>
+  <g filter="url(#fluid-warp)" fill="none" stroke-linecap="round">
+    <path d="M-80 160 C140 60 260 260 450 150 C630 50 750 86 940 160 C1110 230 1210 130 1370 88" stroke="#8ff0d7" stroke-width="16" stroke-opacity="0.26"/>
+    <path d="M-70 260 C120 170 310 345 495 245 C685 143 760 230 930 310 C1100 390 1210 250 1360 222" stroke="#48cdd3" stroke-width="10" stroke-opacity="0.36"/>
+    <path d="M-75 370 C125 330 245 445 445 410 C650 375 710 465 918 505 C1100 540 1220 420 1370 392" stroke="#d8f6e8" stroke-width="5" stroke-opacity="0.42"/>
+    <path d="M-60 515 C160 505 268 586 468 560 C660 535 760 612 955 598 C1118 586 1228 510 1360 530" stroke="#70e6b3" stroke-width="12" stroke-opacity="0.22"/>
+  </g>
+  <g fill="none" stroke="#e7fff5" stroke-opacity="0.16">
+    <circle cx="388" cy="312" r="86" stroke-width="8"/>
+    <circle cx="388" cy="312" r="132" stroke-width="3"/>
+    <circle cx="878" cy="416" r="74" stroke-width="6"/>
+    <circle cx="878" cy="416" r="122" stroke-width="3"/>
+  </g>
+  <g fill="#c9fff1" fill-opacity="0.38">
+    <circle cx="164" cy="214" r="5"/>
+    <circle cx="272" cy="498" r="4"/>
+    <circle cx="536" cy="188" r="6"/>
+    <circle cx="735" cy="552" r="4"/>
+    <circle cx="1015" cy="270" r="6"/>
+    <circle cx="1148" cy="506" r="5"/>
+  </g>
+</svg>

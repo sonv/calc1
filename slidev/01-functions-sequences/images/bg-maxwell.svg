@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Abstract electromagnetic waves background">
+  <defs>
+    <linearGradient id="max-bg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#050915"/>
+      <stop offset="0.48" stop-color="#0b2340"/>
+      <stop offset="1" stop-color="#11192f"/>
+    </linearGradient>
+    <radialGradient id="max-glow-a" cx="30%" cy="38%" r="46%">
+      <stop offset="0" stop-color="#77d9ff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#77d9ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="max-glow-b" cx="78%" cy="58%" r="48%">
+      <stop offset="0" stop-color="#f2bf64" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#f2bf64" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="arrow-cyan" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto">
+      <path d="M1 1 L10 6 L1 11 Z" fill="#8be8ff" fill-opacity="0.62"/>
+    </marker>
+    <marker id="arrow-gold" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto">
+      <path d="M1 1 L10 6 L1 11 Z" fill="#ffd48a" fill-opacity="0.56"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="720" fill="url(#max-bg)"/>
+  <rect width="1280" height="720" fill="url(#max-glow-a)"/>
+  <rect width="1280" height="720" fill="url(#max-glow-b)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M-60 160 C80 70 180 250 320 160 S560 70 700 160 S940 250 1080 160 S1280 70 1400 160" stroke="#8be8ff" stroke-width="9" stroke-opacity="0.35"/>
+    <path d="M-60 330 C80 240 180 420 320 330 S560 240 700 330 S940 420 1080 330 S1280 240 1400 330" stroke="#ffd48a" stroke-width="8" stroke-opacity="0.28"/>
+    <path d="M-60 500 C80 410 180 590 320 500 S560 410 700 500 S940 590 1080 500 S1280 410 1400 500" stroke="#8be8ff" stroke-width="7" stroke-opacity="0.26"/>
+  </g>
+  <g fill="none" stroke-width="3" stroke-opacity="0.42" stroke-linecap="round">
+    <path d="M168 92 C236 168 236 238 168 314" stroke="#8be8ff" marker-end="url(#arrow-cyan)"/>
+    <path d="M330 626 C262 550 262 480 330 404" stroke="#8be8ff" marker-end="url(#arrow-cyan)"/>
+    <path d="M520 92 C588 168 588 238 520 314" stroke="#ffd48a" marker-end="url(#arrow-gold)"/>
+    <path d="M712 628 C644 552 644 482 712 406" stroke="#ffd48a" marker-end="url(#arrow-gold)"/>
+    <path d="M920 92 C988 168 988 238 920 314" stroke="#8be8ff" marker-end="url(#arrow-cyan)"/>
+    <path d="M1110 628 C1042 552 1042 482 1110 406" stroke="#8be8ff" marker-end="url(#arrow-cyan)"/>
+  </g>
+  <g fill="#f9fbff" fill-opacity="0.38">
+    <circle cx="210" cy="190" r="4"/>
+    <circle cx="406" cy="444" r="3"/>
+    <circle cx="664" cy="248" r="5"/>
+    <circle cx="820" cy="542" r="3"/>
+    <circle cx="1044" cy="184" r="5"/>
+    <circle cx="1186" cy="422" r="4"/>
+  </g>
+</svg>

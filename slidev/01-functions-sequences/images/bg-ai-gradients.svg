@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Abstract gradient descent and network background">
+  <defs>
+    <linearGradient id="ai-bg" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#06120f"/>
+      <stop offset="0.46" stop-color="#102038"/>
+      <stop offset="1" stop-color="#22142a"/>
+    </linearGradient>
+    <radialGradient id="ai-glow" cx="72%" cy="34%" r="58%">
+      <stop offset="0" stop-color="#ffc66e" stop-opacity="0.42"/>
+      <stop offset="0.45" stop-color="#5dd8c5" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#5dd8c5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#d6f9ee" stroke-width="1" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="720" fill="url(#ai-bg)"/>
+  <rect width="1280" height="720" fill="url(#ai-glow)"/>
+  <rect width="1280" height="720" fill="url(#grid)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M160 545 C255 420 360 615 455 492 C545 378 635 548 720 430 C812 304 925 392 1040 255" stroke="#ffe1a6" stroke-width="7" stroke-opacity="0.46"/>
+    <path d="M172 552 C276 462 386 592 500 512 C612 432 700 500 806 410 C912 320 1006 345 1116 282" stroke="#8ef5d0" stroke-width="4" stroke-opacity="0.34"/>
+    <path d="M196 588 C310 535 420 625 534 574 C656 520 744 560 868 502 C998 440 1100 458 1210 390" stroke="#9cc8ff" stroke-width="3" stroke-opacity="0.24"/>
+  </g>
+  <g fill="none" stroke="#f8fff9" stroke-opacity="0.16">
+    <path d="M266 194 C386 118 502 120 626 194 C506 270 386 270 266 194Z"/>
+    <path d="M246 194 C386 78 510 80 646 194 C510 312 386 312 246 194Z"/>
+    <path d="M225 194 C386 42 536 44 668 194 C536 350 386 350 225 194Z"/>
+    <path d="M204 194 C386 6 560 8 690 194 C560 386 386 386 204 194Z"/>
+  </g>
+  <g stroke="#d9fff1" stroke-opacity="0.32" stroke-width="2">
+    <path d="M816 152 L952 248 L870 370 L1024 460 L1150 345"/>
+    <path d="M816 152 L870 370 L1150 345"/>
+    <path d="M952 248 L1024 460"/>
+  </g>
+  <g fill="#e9fff6">
+    <circle cx="816" cy="152" r="8" fill-opacity="0.56"/>
+    <circle cx="952" cy="248" r="10" fill-opacity="0.48"/>
+    <circle cx="870" cy="370" r="9" fill-opacity="0.54"/>
+    <circle cx="1024" cy="460" r="8" fill-opacity="0.44"/>
+    <circle cx="1150" cy="345" r="11" fill-opacity="0.52"/>
+  </g>
+</svg>

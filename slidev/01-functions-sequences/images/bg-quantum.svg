@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Abstract quantum wave background">
+  <defs>
+    <linearGradient id="q-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070712"/>
+      <stop offset="0.5" stop-color="#161b3a"/>
+      <stop offset="1" stop-color="#071b1d"/>
+    </linearGradient>
+    <radialGradient id="q-core" cx="50%" cy="52%" r="46%">
+      <stop offset="0" stop-color="#e9f6ff" stop-opacity="0.5"/>
+      <stop offset="0.35" stop-color="#60d7ff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#60d7ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="1.8"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="url(#q-bg)"/>
+  <rect width="1280" height="720" fill="url(#q-core)"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M-40 378 C92 235 212 520 344 378 S596 235 728 378 S980 520 1112 378 S1352 235 1440 378" stroke="#8cecff" stroke-width="12" stroke-opacity="0.32"/>
+    <path d="M-40 316 C92 460 212 174 344 316 S596 460 728 316 S980 174 1112 316 S1352 460 1440 316" stroke="#f5a6d7" stroke-width="8" stroke-opacity="0.22"/>
+    <path d="M-40 430 C112 342 204 500 356 430 S600 342 752 430 S996 500 1148 430 S1360 342 1440 430" stroke="#d5fff0" stroke-width="5" stroke-opacity="0.3"/>
+  </g>
+  <g fill="none" stroke="#dffcff" stroke-opacity="0.14">
+    <circle cx="640" cy="360" r="72" stroke-width="4"/>
+    <circle cx="640" cy="360" r="126" stroke-width="3"/>
+    <circle cx="640" cy="360" r="188" stroke-width="2"/>
+    <circle cx="640" cy="360" r="258" stroke-width="2"/>
+    <circle cx="640" cy="360" r="334" stroke-width="2"/>
+  </g>
+  <g filter="url(#soft)" fill="#ffffff">
+    <circle cx="300" cy="194" r="8" fill-opacity="0.42"/>
+    <circle cx="488" cy="506" r="6" fill-opacity="0.38"/>
+    <circle cx="641" cy="359" r="11" fill-opacity="0.62"/>
+    <circle cx="817" cy="230" r="5" fill-opacity="0.42"/>
+    <circle cx="1008" cy="492" r="8" fill-opacity="0.38"/>
+  </g>
+  <g fill="none" stroke="#76ffdd" stroke-width="2" stroke-opacity="0.24">
+    <path d="M298 194 L641 359 L1008 492"/>
+    <path d="M488 506 L641 359 L817 230"/>
+  </g>
+</svg>

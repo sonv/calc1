@@ -1,0 +1,23 @@
+base_url = "/"
+title = "MT1003 Calculus 1"
+description = "Short notes, readings, and Slidev lecture decks for MT1003 Calculus 1."
+theme = "tanuki"
+compile_sass = true
+build_search_index = true
+generate_feeds = false
+
+[markdown]
+insert_anchor_links = "left"
+
+[markdown.highlighting]
+light_theme = "github-light"
+dark_theme = "github-dark"
+
+[extra]
+mode = "docs"
+show_theme_toggle = true
+fixed_header = true
+keywords = "calculus, MT1003, engineering mathematics, HCMUT"
+
+[extra.author]
+name = "Truong-Son Van"

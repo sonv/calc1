@@ -11,7 +11,7 @@ Short notes are intentionally compact. Each page should give students just enoug
 ## Available Notes
 
 - [01. Functions](01-functions-sequences/)
-- [02. Sequences](02-sequences/)
+- [02. Sequences and Limits](02-sequences/)
 
 ## Note Template
 
@@ -30,7 +30,7 @@ Các ghi chú ngắn được cố ý giữ súc tích. Mỗi trang chỉ cung c
 ## Ghi chú hiện có
 
 - [01. Hàm số](01-functions-sequences/)
-- [02. Dãy số](02-sequences/)
+- [02. Dãy số và giới hạn](02-sequences/)
 
 ## Mẫu ghi chú
 

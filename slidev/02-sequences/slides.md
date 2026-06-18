@@ -375,35 +375,44 @@ $$
 
 ---
 
-# <span class="lang-en">Standard Limits To Memorize</span><span class="lang-vi">Các giới hạn cơ bản cần nhớ</span>
+# <span class="lang-en">Your Turn: Standard Limit Problems</span><span class="lang-vi">Đến lượt bạn: các bài giới hạn chuẩn</span>
 
-<div class="box">
-<div class="cols-2">
+<div class="your-turn">
+<span class="timechip"><span class="lang-en">~5 min, in pairs</span><span class="lang-vi">~5 phút, theo cặp</span></span>
+<div class="label"><span class="lang-en">Find or justify each standard limit</span><span class="lang-vi">Tìm hoặc giải thích từng giới hạn chuẩn</span></div>
+<span class="lang-en">These come up constantly. Work out which earlier theorem or comparison proves each one.</span>
+<span class="lang-vi">Các giới hạn này xuất hiện rất thường xuyên. Hãy xác định định lý hoặc so sánh nào chứng minh từng giới hạn.</span>
+<ol class="cols-2">
 
-$$\lim_{n\to\infty} q^n=0\ \ (|q|<1)$$
+<li>$\displaystyle\lim_{n\to\infty} q^n\ \ (|q|<1)$</li>
 
-$$\lim_{n\to\infty}\frac{1}{n^\alpha}=0\ \ (\alpha>0)$$
+<li>$\displaystyle\lim_{n\to\infty}\frac{1}{n^\alpha}\ \ (\alpha>0)$</li>
 
-$$\lim_{n\to\infty}\sqrt[n]{a}=1\ \ (a>0)$$
+<li>$\displaystyle\lim_{n\to\infty}\sqrt[n]{a}\ \ (a>0)$</li>
 
-$$\lim_{n\to\infty}\sqrt[n]{n}=1$$
+<li>$\displaystyle\lim_{n\to\infty}\sqrt[n]{n}$</li>
 
-$$\lim_{n\to\infty}\frac{n^p}{e^n}=0\ \ (\forall p)$$
+<li>$\displaystyle\lim_{n\to\infty}\frac{n^p}{e^n}\ \ (p>0)$</li>
 
-$$\lim_{n\to\infty}\Big(1+\tfrac1n\Big)^n=e$$
+<li>$\displaystyle\lim_{n\to\infty}\Big(1+\tfrac1n\Big)^n$</li>
 
+</ol>
 </div>
-</div>
 
-<div class="box gold mt-3">
-<div class="label"><span class="lang-en">Growth hierarchy (as $n\to\infty$)</span><span class="lang-vi">Thứ bậc tăng (khi $n\to\infty$)</span></div>
+---
 
-$$
-\ln^p n \ \ll\ n^\alpha \ \ll\ a^n \ \ll\ n!\qquad (p,\ \alpha>0,\ a>1)
-$$
+# <span class="lang-en">Your Turn: Growth Comparisons</span><span class="lang-vi">Đến lượt bạn: so sánh tốc độ tăng</span>
 
-<span class="lang-en">Whatever is further right wins the race, so a ratio is decided by the faster term.</span>
-<span class="lang-vi">Thứ nằm bên phải hơn "thắng cuộc đua", nên một thương được quyết định bởi số hạng tăng nhanh hơn.</span>
+<div class="your-turn">
+<span class="timechip"><span class="lang-en">~3 min, in pairs</span><span class="lang-vi">~3 phút, theo cặp</span></span>
+<div class="label"><span class="lang-en">Rebuild the standard hierarchy</span><span class="lang-vi">Tự dựng lại thứ bậc chuẩn</span></div>
+<span class="lang-en">Order the growth classes, then use your order to decide the quotient limits.</span>
+<span class="lang-vi">Sắp xếp các lớp tăng trưởng, rồi dùng thứ tự đó để quyết định các giới hạn thương.</span>
+<ol>
+<li><span class="lang-en">Put $\ln^p n,\ n^\alpha,\ a^n,\ n!$ in increasing growth order $(p,\alpha>0,\ a>1)$.</span><span class="lang-vi">Sắp xếp $\ln^p n,\ n^\alpha,\ a^n,\ n!$ theo tốc độ tăng dần $(p,\alpha>0,\ a>1)$.</span></li>
+<li>$\displaystyle\lim_{n\to\infty}\frac{n^4}{2^n}$</li>
+<li>$\displaystyle\lim_{n\to\infty}\frac{3^n}{n!}$</li>
+</ol>
 </div>
 
 ---
@@ -436,8 +445,8 @@ $$
 
 # <span class="lang-en">Bernoulli's Inequality</span><span class="lang-vi">Bất đẳng thức Bernoulli</span>
 
-<div class="thm spotlight">
-<div class="tag"><span class="lang-en">The inequality</span><span class="lang-vi">Bất đẳng thức</span></div>
+<div class="thm">
+<div class="tag"><span class="lang-en">The inequality</span><span class="lang-vi">Bất đẳng thức</span></div><br>
 <span class="lang-en">For every real $h\ge -1$ and integer $n\ge 1$,</span>
 <span class="lang-vi">Với mọi số thực $h\ge -1$ và số nguyên $n\ge 1$,</span>
 
@@ -452,59 +461,144 @@ $$
 <div class="grid-2 mt-4">
 <div class="box">
 <div class="label"><span class="lang-en">Why it holds</span><span class="lang-vi">Vì sao đúng</span></div>
-<span class="lang-en">Induction: from $(1+h)^n\ge 1+nh$ and $1+h\ge 0$,</span>
-<span class="lang-vi">Quy nạp: từ $(1+h)^n\ge 1+nh$ và $1+h\ge 0$,</span>
+<span class="lang-en">Induction: if $(1+h)^n\ge 1+nh$, then since $1+h\ge0$,</span>
+<span class="lang-vi">Quy nạp: nếu $(1+h)^n\ge 1+nh$, thì vì $1+h\ge0$,</span>
 
 $$
-(1+h)^{n+1}\ge(1+nh)(1+h)=1+(n+1)h+nh^2\ge 1+(n+1)h.
+(1+h)^{n+1}\ge(1+nh)(1+h)
+$$
+
+$$
+=1+(n+1)h+nh^2\ge 1+(n+1)h.
 $$
 
 </div>
 <div class="box blue">
 <div class="label"><span class="lang-en">Why we want it</span><span class="lang-vi">Vì sao cần nó</span></div>
-<span class="lang-en">It replaces an $n$-th power by a simple linear bound - exactly what we need to compare consecutive terms of $\left(1+\tfrac1n\right)^n$ next.</span>
-<span class="lang-vi">Nó thay lũy thừa bậc $n$ bằng một cận tuyến tính đơn giản - đúng thứ ta cần để so sánh các số hạng liên tiếp của $\left(1+\tfrac1n\right)^n$ ngay sau đây.</span>
+<span class="lang-en">It replaces a power by a linear bound - exactly what we need to control the upper comparison sequence.</span>
+<span class="lang-vi">Nó thay một lũy thừa bằng một cận tuyến tính - đúng thứ ta cần để kiểm soát dãy so sánh phía trên.</span>
 </div>
-</div>
-
-<div class="refs">
-<span class="lang-en">Next: use it to show $\left(1+\tfrac1n\right)^n$ is increasing and bounded above.</span>
-<span class="lang-vi">Tiếp theo: dùng nó để chứng minh $\left(1+\tfrac1n\right)^n$ tăng và bị chặn trên.</span>
 </div>
 
 ---
 
-# <span class="lang-en">Why $\left(1+\tfrac1n\right)^n$ Is Increasing And Bounded</span><span class="lang-vi">Vì sao $\left(1+\tfrac1n\right)^n$ tăng và bị chặn</span>
+# <span class="lang-en">Why $\left(1+\tfrac1n\right)^n$ Is Increasing</span><span class="lang-vi">Vì sao $\left(1+\tfrac1n\right)^n$ tăng</span>
+
+<div class="box gold spotlight">
+<div class="label"><span class="lang-en">Set the target</span><span class="lang-vi">Đặt mục tiêu</span></div>
+<span class="lang-en">Let $x_n=\left(1+\tfrac1n\right)^n$. We want $x_n\le x_{n+1}$ for every $n$.</span>
+<span class="lang-vi">Đặt $x_n=\left(1+\tfrac1n\right)^n$. Ta cần $x_n\le x_{n+1}$ với mọi $n$.</span>
+</div>
+
+<div class="grid-2 mt-4">
+<div class="box">
+<div class="label"><span class="lang-en">AM-GM setup</span><span class="lang-vi">Thiết lập AM-GM</span></div>
+<span class="lang-en">For positive $a_1,\dots,a_k$, AM-GM says</span>
+<span class="lang-vi">Với $a_1,\dots,a_k>0$, AM-GM cho</span>
+
+$$
+\sqrt[k]{a_1a_2\cdots a_k}\le \frac{a_1+a_2+\cdots+a_k}{k}.
+$$
+
+<div v-click class="blur-step">
+<span class="lang-en">Use $k=n+1$: take $n$ copies of $1+\tfrac1n$ and one copy of $1$.</span>
+<span class="lang-vi">Dùng $k=n+1$: lấy $n$ số $1+\tfrac1n$ và một số $1$.</span>
+</div>
+</div>
+
+<div class="box blue">
+<div class="label"><span class="lang-en">The comparison</span><span class="lang-vi">So sánh</span></div>
+<div v-click class="blur-step">
+$$
+\begin{aligned}
+\sqrt[n+1]{\left(1+\tfrac1n\right)^n\cdot 1}
+&\le
+\frac{n\left(1+\tfrac1n\right)+1}{n+1}\\
+&=1+\frac{1}{n+1}.
+\end{aligned}
+$$
+</div>
+
+<div v-click class="blur-step">
+<span class="lang-en">Raise both sides to $n+1$: $x_n\le x_{n+1}$.</span>
+<span class="lang-vi">Nâng hai vế lên lũy thừa $n+1$: $x_n\le x_{n+1}$.</span>
+</div>
+</div>
+</div>
+
+<div v-click class="refs blur-step">
+<span class="lang-en">So $(x_n)$ is increasing. Now it only needs an upper bound.</span>
+<span class="lang-vi">Vậy $(x_n)$ tăng. Bây giờ chỉ cần một cận trên.</span>
+</div>
+
+---
+
+# <span class="lang-en">Why $\left(1+\tfrac1n\right)^n$ Is Bounded Above</span><span class="lang-vi">Vì sao $\left(1+\tfrac1n\right)^n$ bị chặn trên</span>
+
+<div class="box gold spotlight">
+<div class="label"><span class="lang-en">Compare with a slightly larger sequence</span><span class="lang-vi">So sánh với một dãy lớn hơn một chút</span></div>
+<span class="lang-en">Let $y_n=\left(1+\tfrac1n\right)^{n+1}$. Since $x_n\lt y_n$, it is enough to show $y_n$ is decreasing.</span>
+<span class="lang-vi">Đặt $y_n=\left(1+\tfrac1n\right)^{n+1}$. Vì $x_n\lt y_n$, chỉ cần chứng minh $y_n$ giảm.</span>
+</div>
+
+<div class="box blue mt-4">
+<div class="label"><span class="lang-en">Bernoulli gives $y_n/y_{n+1}\ge 1$</span><span class="lang-vi">Bernoulli cho $y_n/y_{n+1}\ge 1$</span></div>
+
+<div v-click class="blur-step">
+$$
+\frac{y_n}{y_{n+1}}
+=
+\left(1+\frac{1}{n(n+2)}\right)^{n+2}\frac{n}{n+1}.
+$$
+</div>
+
+<div v-click class="blur-step">
+$$
+\frac{y_n}{y_{n+1}}
+\ge
+\left(1+\frac1n\right)\frac{n}{n+1}
+=1.
+$$
+</div>
+
+<div v-click class="blur-step">
+<span class="lang-en">Thus $y_n\ge y_{n+1}$.</span>
+<span class="lang-vi">Do đó $y_n\ge y_{n+1}$.</span>
+</div>
+</div>
+
+<div v-click class="refs blur-step">
+<span class="lang-en">Now use the decreasing comparison sequence to bound $x_n$.</span>
+<span class="lang-vi">Bây giờ dùng dãy so sánh giảm để chặn $x_n$.</span>
+</div>
+
+---
+
+# <span class="lang-en">Putting The Bound Together</span><span class="lang-vi">Ghép cận lại</span>
 
 <div class="grid-2">
-<div class="box gold" v-click>
-<div class="label"><span class="lang-en">Increasing (AM-GM)</span><span class="lang-vi">Tăng (bất đẳng thức AM-GM)</span></div>
-<span class="lang-en">Geometric mean $\le$ arithmetic mean, for $n$ copies of $1+\tfrac1n$ and one $1$:</span>
-<span class="lang-vi">Trung bình nhân $\le$ trung bình cộng, cho $n$ số $1+\tfrac1n$ và một số $1$:</span>
+<div class="box">
+<div class="label"><span class="lang-en">Upper bound</span><span class="lang-vi">Cận trên</span></div>
+<span class="lang-en">Since $y_n$ decreases, $y_n\le y_1$ for every $n$.</span>
+<span class="lang-vi">Vì $y_n$ giảm, $y_n\le y_1$ với mọi $n$.</span>
 
 $$
-\sqrt[n+1]{\left(1+\tfrac1n\right)^{n}\cdot 1}\ \le\ \frac{n\left(1+\tfrac1n\right)+1}{n+1}=1+\frac{1}{n+1}
+x_n\lt y_n\le y_1=(1+1)^2=4.
 $$
 
-<span class="lang-en">Raise to the power $n+1$: $\ x_n\le x_{n+1}$.</span>
-<span class="lang-vi">Nâng lên lũy thừa $n+1$: $\ x_n\le x_{n+1}$.</span>
-</div>
-<div class="box blue" v-click>
-<div class="label"><span class="lang-en">Bounded above (Bernoulli)</span><span class="lang-vi">Bị chặn trên (Bernoulli)</span></div>
-<span class="lang-en">Set $y_n=\left(1+\tfrac1n\right)^{n+1}$. Bernoulli makes $y_n$ <strong>decreasing</strong>, and $x_n\lt y_n$, so</span>
-<span class="lang-vi">Đặt $y_n=\left(1+\tfrac1n\right)^{n+1}$. Bernoulli cho $y_n$ <strong>giảm</strong>, và $x_n\lt y_n$, nên</span>
-
-$$
-x_n\ \lt\ y_n\ \le\ y_1=(1+1)^2=4
-$$
-
-</div>
+<span class="lang-en">Also $x_1=2$ and $(x_n)$ is increasing.</span>
+<span class="lang-vi">Ngoài ra $x_1=2$ và $(x_n)$ tăng.</span>
 </div>
 
-<div class="box gold mt-4" v-click>
+<div class="box gold">
 <div class="label"><span class="lang-en">Conclusion</span><span class="lang-vi">Kết luận</span></div>
-<span class="lang-en">$(x_n)$ is increasing and bounded, $2\le x_n\lt 4$, so the monotone bounded theorem makes it converge - and the limit is $e\approx 2.718$.</span>
-<span class="lang-vi">$(x_n)$ tăng và bị chặn, $2\le x_n\lt 4$, nên định lý đơn điệu bị chặn cho nó hội tụ - và giới hạn là $e\approx 2.718$.</span>
+<span class="lang-en">We have $2\le x_n\lt4$, so $(x_n)$ is increasing and bounded above. By the monotone bounded theorem, it converges.</span>
+<span class="lang-vi">Ta có $2\le x_n\lt4$, nên $(x_n)$ tăng và bị chặn trên. Theo định lý đơn điệu bị chặn, nó hội tụ.</span>
+
+$$
+\lim_{n\to\infty}\left(1+\tfrac1n\right)^n=e\approx2.718.
+$$
+</div>
 </div>
 
 <div class="refs">
@@ -886,23 +980,38 @@ $$
 <span class="lang-vi">$f\sim g$ khi $x\to a$ nếu $\displaystyle\lim_{x\to a}\frac{f}{g}=1$.</span>
 </div>
 
-<div class="box mt-3">
-<div class="label"><span class="lang-en">As $x\to 0$ (memorize these)</span><span class="lang-vi">Khi $x\to 0$ (cần nhớ)</span></div>
-<div class="cols-2">
+---
 
-$$\sin x\sim x,\quad \tan x\sim x$$
+# <span class="lang-en">Your Turn: Standard Equivalents</span><span class="lang-vi">Đến lượt bạn: các tương đương chuẩn</span>
 
-$$\arcsin x\sim x,\quad \arctan x\sim x$$
+<div class="your-turn">
+<span class="timechip"><span class="lang-en">~6 min, in pairs</span><span class="lang-vi">~6 phút, theo cặp</span></span>
+<div class="label"><span class="lang-en">Evaluate each standard ratio</span><span class="lang-vi">Tính từng thương chuẩn</span></div>
+<span class="lang-en">Evaluate each ratio as $x\to0$. They are standard tools, but the goal is to know how to rederive them.</span>
+<span class="lang-vi">Tính từng thương khi $x\to0$. Đây là các công cụ chuẩn, nhưng mục tiêu là biết cách tự suy ra.</span>
+<ol class="cols-2">
 
-$$1-\cos x\sim \tfrac{x^2}{2}$$
+<li>$\displaystyle\lim_{x\to0}\frac{\sin x}{x}$</li>
 
-$$e^x-1\sim x,\quad \ln(1+x)\sim x$$
+<li>$\displaystyle\lim_{x\to0}\frac{\tan x}{x}$</li>
 
-$$a^x-1\sim x\ln a$$
+<li>$\displaystyle\lim_{x\to0}\frac{\arcsin x}{x}$</li>
 
-$$(1+x)^\mu-1\sim \mu x,\quad \sqrt{1+x}-1\sim\tfrac{x}{2}$$
+<li>$\displaystyle\lim_{x\to0}\frac{\arctan x}{x}$</li>
 
-</div>
+<li>$\displaystyle\lim_{x\to0}\frac{1-\cos x}{x^2/2}$</li>
+
+<li>$\displaystyle\lim_{x\to0}\frac{e^x-1}{x}$</li>
+
+<li>$\displaystyle\lim_{x\to0}\frac{\ln(1+x)}{x}$</li>
+
+<li>$\displaystyle\lim_{x\to0}\frac{a^x-1}{x\ln a}$</li>
+
+<li>$\displaystyle\lim_{x\to0}\frac{(1+x)^\mu-1}{\mu x}$</li>
+
+<li>$\displaystyle\lim_{x\to0}\frac{\sqrt{1+x}-1}{x/2}$</li>
+
+</ol>
 </div>
 
 ---

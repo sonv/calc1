@@ -632,3 +632,12 @@
 .muted {
   color: var(--calc-muted);
 }
+
+.blur-step {
+  transition: filter 0.22s ease, opacity 0.22s ease;
+}
+
+.blur-step.slidev-vclick-hidden {
+  filter: blur(5px);
+  opacity: 0.18 !important;
+}

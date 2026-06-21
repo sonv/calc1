@@ -17,6 +17,11 @@ Lecture decks are built with Slidev and published as static pages inside the Zol
   <span>Open Slidev deck</span>
 </a>
 
+<a class="slide-link" href="03-continuity-derivatives/">
+  <strong>03. Continuity And Derivatives</strong>
+  <span>Open Slidev deck</span>
+</a>
+
 ## Acknowledgment
 
 Many materials in the lecture slides are adapted from materials by Dr. Le Xuan Dai.
@@ -32,6 +37,11 @@ Slide bài giảng được xây dựng bằng Slidev và xuất bản thành tr
 
 <a class="slide-link" href="02-sequences/">
   <strong>02. Dãy số và giới hạn</strong>
+  <span>Mở bộ slide Slidev</span>
+</a>
+
+<a class="slide-link" href="03-continuity-derivatives/">
+  <strong>03. Tính liên tục và Đạo hàm</strong>
   <span>Mở bộ slide Slidev</span>
 </a>
 

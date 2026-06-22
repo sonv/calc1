@@ -98,7 +98,7 @@ when the limit exists. Notations: $f'(a)=y'(a)=\left.\frac{dy}{dx}\right|_{x=a}=
 
 ### Differentiability And Continuity
 
-The one-sided derivatives are $f'_-(a)=\lim_{x\to a^-}\frac{f(x)-f(a)}{x-a}$ and $f'_+(a)$ similarly; $f$ is **differentiable at $a$** iff both exist and are equal. Key fact: differentiable at $a$ $\Rightarrow$ continuous at $a$, but **not** conversely. The standard counterexample is $f(x)=|x|$: it is continuous at $0$ but $f'_+(0)=1\neq-1=f'_-(0)$, so $f'(0)$ does not exist (a corner).
+The one-sided derivatives are $f'&#95;{-}(a)=\lim_{x\to a^-}\frac{f(x)-f(a)}{x-a}$ and $f'&#95;{+}(a)$ similarly; $f$ is **differentiable at $a$** iff both exist and are equal. Key fact: differentiable at $a$ $\Rightarrow$ continuous at $a$, but **not** conversely. The standard counterexample is $f(x)=|x|$: it is continuous at $0$ but $f'&#95;{+}(0)=1\neq-1=f'&#95;{-}(0)$, so $f'(0)$ does not exist (a corner).
 
 ### Derivatives Of Elementary Functions
 
@@ -161,7 +161,7 @@ The **first-order differential** of $y=f(x)$ is $dy=f'(a)\,dx$. Geometrically $d
 **D. Derivative from the definition.**
 1. $f'(a)=\lim_{h\to0}\frac{(a+h)^2-8(a+h)+9-(a^2-8a+9)}{h}=\lim_{h\to0}(2a+h-8)=2a-8$.
 2. $f'(a)=\lim_{x\to a}\frac{\sqrt x-\sqrt a}{x-a}=\lim_{x\to a}\frac{1}{\sqrt x+\sqrt a}=\frac{1}{2\sqrt a}$ for $a>0$.
-3. $f(x)=|x-3|$: $f'_+(3)=1$, $f'_-(3)=-1$, so $f$ is not differentiable at $3$ (a corner).
+3. \\(f(x)=|x-3|\\): since \\(f'&#95;{+}(3)=1\\) and \\(f'&#95;{-}(3)=-1\\), the one-sided derivatives are unequal, so \\(f\\) is not differentiable at \\(3\\) (a corner).
 
 **E. Rules and the chain rule.**
 1. $y=(3x^2+1)e^x\Rightarrow y'=6xe^x+(3x^2+1)e^x=e^x(3x^2+6x+1)$.
@@ -292,7 +292,7 @@ khi giới hạn tồn tại. Ký hiệu: $f'(a)=y'(a)=\left.\frac{dy}{dx}\right
 
 ### Khả vi và liên tục
 
-Đạo hàm một phía là $f'_-(a)=\lim_{x\to a^-}\frac{f(x)-f(a)}{x-a}$ và $f'_+(a)$ tương tự; $f$ **khả vi tại $a$** khi và chỉ khi cả hai tồn tại và bằng nhau. Tính chất then chốt: khả vi tại $a$ $\Rightarrow$ liên tục tại $a$, nhưng chiều ngược lại **sai**. Phản ví dụ chuẩn là $f(x)=|x|$: liên tục tại $0$ nhưng $f'_+(0)=1\neq-1=f'_-(0)$, nên $f'(0)$ không tồn tại (một góc nhọn).
+Đạo hàm một phía là $f'&#95;{-}(a)=\lim_{x\to a^-}\frac{f(x)-f(a)}{x-a}$ và $f'&#95;{+}(a)$ tương tự; $f$ **khả vi tại $a$** khi và chỉ khi cả hai tồn tại và bằng nhau. Tính chất then chốt: khả vi tại $a$ $\Rightarrow$ liên tục tại $a$, nhưng chiều ngược lại **sai**. Phản ví dụ chuẩn là $f(x)=|x|$: liên tục tại $0$ nhưng $f'&#95;{+}(0)=1\neq-1=f'&#95;{-}(0)$, nên $f'(0)$ không tồn tại (một góc nhọn).
 
 ### Đạo hàm các hàm sơ cấp
 
@@ -355,7 +355,7 @@ Gần $a$, đường cong sát với tiếp tuyến. **Tuyến tính hóa** củ
 **D. Đạo hàm theo định nghĩa.**
 1. $f'(a)=\lim_{h\to0}\frac{(a+h)^2-8(a+h)+9-(a^2-8a+9)}{h}=\lim_{h\to0}(2a+h-8)=2a-8$.
 2. $f'(a)=\lim_{x\to a}\frac{\sqrt x-\sqrt a}{x-a}=\lim_{x\to a}\frac{1}{\sqrt x+\sqrt a}=\frac{1}{2\sqrt a}$ với $a>0$.
-3. $f(x)=|x-3|$: $f'_+(3)=1$, $f'_-(3)=-1$, nên $f$ không khả vi tại $3$ (góc nhọn).
+3. \\(f(x)=|x-3|\\): vì \\(f'&#95;{+}(3)=1\\) và \\(f'&#95;{-}(3)=-1\\), hai đạo hàm một phía không bằng nhau, nên \\(f\\) không khả vi tại \\(3\\) (góc nhọn).
 
 **E. Quy tắc và hàm hợp.**
 1. $y=(3x^2+1)e^x\Rightarrow y'=6xe^x+(3x^2+1)e^x=e^x(3x^2+6x+1)$.

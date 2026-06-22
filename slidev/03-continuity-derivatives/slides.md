@@ -541,6 +541,8 @@ $$
 </div>
 
 ---
+class: derivative-table
+---
 
 # <span class="lang-en">Derivatives Of Elementary Functions</span><span class="lang-vi">Đạo hàm các hàm sơ cấp</span>
 
@@ -581,7 +583,10 @@ $$
 <div class="label"><span class="lang-en">Hyperbolic</span><span class="lang-vi">Hyperbolic</span></div>
 
 $$
-(\sinh x)'=\cosh x,\quad (\cosh x)'=\sinh x,\quad (\tanh x)'=\frac{1}{\cosh^2 x}
+\begin{aligned}
+(\sinh x)'&=\cosh x,\quad &(\cosh x)'&=\sinh x,\\
+(\tanh x)'&=\frac{1}{\cosh^2 x}.
+\end{aligned}
 $$
 </div>
 </div>

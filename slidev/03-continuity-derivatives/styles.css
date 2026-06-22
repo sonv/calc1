@@ -235,6 +235,11 @@
   margin-top: 0.55rem;
 }
 
+.slidev-layout.derivative-table .katex-display {
+  font-size: 0.9em;
+  margin: 0.32rem 0;
+}
+
 .slidev-layout.transform-slide h1 {
   font-size: 2.85rem;
   margin-bottom: 0.65rem;

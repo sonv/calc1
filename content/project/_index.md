@@ -19,7 +19,8 @@ Students work in groups and submit:
 
 ## Class Project Pages
 
-Class-specific project group pages will be published later.
+- [DTQ1 project groups](@/project/dtq1.md)
+- [DT02 project groups](@/project/dt02.md)
 
 ## Possible Themes
 
@@ -54,7 +55,8 @@ Sinh viên làm việc theo nhóm và nộp:
 
 ## Trang nhóm theo lớp
 
-Các trang nhóm theo từng lớp sẽ được công bố sau.
+- [Nhóm bài tập lớn DTQ1](@/project/dtq1.md)
+- [Nhóm bài tập lớn DT02](@/project/dt02.md)
 
 ## Chủ đề gợi ý
 

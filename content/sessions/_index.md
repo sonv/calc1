@@ -13,6 +13,7 @@ Short notes are intentionally compact. Each page should give students just enoug
 - [01. Functions](01-functions-sequences/)
 - [02. Sequences and Limits](02-sequences/)
 - [03. Continuity and Derivatives](03-continuity-derivatives/)
+- [04. Applications and Parametric Curves](04-applications-parametric/)
 
 ## Note Template
 
@@ -33,6 +34,7 @@ Các ghi chú ngắn được cố ý giữ súc tích. Mỗi trang chỉ cung c
 - [01. Hàm số](01-functions-sequences/)
 - [02. Dãy số và giới hạn](02-sequences/)
 - [03. Tính liên tục và Đạo hàm](03-continuity-derivatives/)
+- [04. Ứng dụng đạo hàm và Đường cong tham số](04-applications-parametric/)
 
 ## Mẫu ghi chú
 

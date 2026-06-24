@@ -390,6 +390,56 @@
   margin: 0.36rem 0;
 }
 
+.series-row {
+  align-items: center;
+  display: grid;
+  gap: 0.45rem;
+  grid-template-columns: minmax(9.5rem, auto) minmax(0, 1fr);
+  min-height: 3.18rem;
+}
+
+.series-row + .series-row {
+  margin-top: 0.08rem;
+}
+
+.series-function {
+  color: var(--calc-ink);
+  font-size: 1.04rem;
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.series-answer {
+  min-width: 0;
+}
+
+.series-answer .katex,
+.series-function .katex {
+  font-size: 1.04rem;
+}
+
+.series-answer .katex-display {
+  font-size: 0.88em;
+  margin: 0;
+  text-align: left;
+}
+
+.series-answer-stack {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.series-row-tall {
+  align-items: start;
+  min-height: 4.6rem;
+}
+
+.series-row-tall .series-function {
+  padding-top: 0.58rem;
+}
+
 .wide-img {
   width: 100%;
 }

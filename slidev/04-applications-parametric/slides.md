@@ -265,34 +265,47 @@ $$
 
 <div class="formula-list">
 
-$$
-e^x=1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+o(x^n)
-$$
+<div class="series-row">
+<div class="series-function">$e^x =$</div>
+<div v-click class="series-answer blur-step">
+$1+x+\frac{x^2}{2!}+\cdots+\frac{x^n}{n!}+o(x^n)$
+</div>
+</div>
 
-$$
-\sin x=x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots+(-1)^m\frac{x^{2m+1}}{(2m+1)!}+o(x^{2m+2})
-$$
+<div class="series-row">
+<div class="series-function">$\sin x =$</div>
+<div v-click class="series-answer blur-step">
+$x-\frac{x^3}{3!}+\frac{x^5}{5!}-\cdots+(-1)^m\frac{x^{2m+1}}{(2m+1)!}+o(x^{2m+2})$
+</div>
+</div>
 
-$$
-\cos x=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots+(-1)^m\frac{x^{2m}}{(2m)!}+o(x^{2m+1})
-$$
+<div class="series-row">
+<div class="series-function">$\cos x =$</div>
+<div v-click class="series-answer blur-step">
+$1-\frac{x^2}{2!}+\frac{x^4}{4!}-\cdots+(-1)^m\frac{x^{2m}}{(2m)!}+o(x^{2m+1})$
+</div>
+</div>
 
-$$
-\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\cdots+(-1)^{n-1}\frac{x^n}{n}+o(x^n)
-$$
+<div class="series-row">
+<div class="series-function">$\ln(1+x) =$</div>
+<div v-click class="series-answer blur-step">
+$x-\frac{x^2}{2}+\frac{x^3}{3}-\cdots+(-1)^{n-1}\frac{x^n}{n}+o(x^n)$
+</div>
+</div>
 
-$$
-\begin{aligned}
-(1+x)^\alpha&=1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^2+\cdots\\
-&\quad+\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n+o(x^n)
-\end{aligned}
-$$
+<div class="series-row series-row-tall">
+<div class="series-function">$(1+x)^\alpha =$</div>
+<div v-click class="series-answer series-answer-stack blur-step">
+<div>$1+\alpha x+\frac{\alpha(\alpha-1)}{2!}x^2+\cdots$</div>
+<div>$+\frac{\alpha(\alpha-1)\cdots(\alpha-n+1)}{n!}x^n+o(x^n)$</div>
+</div>
+</div>
 
 </div>
 
 <div class="refs">
-<span class="lang-en">Use only as many terms as the denominator order demands.</span>
-<span class="lang-vi">Chỉ lấy đủ số hạng theo bậc của mẫu số.</span>
+<span class="lang-en">Start from the function, recall the series, then reveal to check. Use only as many terms as the denominator order demands.</span>
+<span class="lang-vi">Nhìn hàm trước, tự nhớ chuỗi, rồi mở để kiểm tra. Chỉ lấy đủ số hạng theo bậc của mẫu số.</span>
 </div>
 
 ---

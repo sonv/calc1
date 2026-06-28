@@ -27,6 +27,11 @@ Lecture decks are built with Slidev and published as static pages inside the Zol
   <span>Open Slidev deck</span>
 </a>
 
+<a class="slide-link" href="05-integration-foundations/">
+  <strong>05. Integration Foundations</strong>
+  <span>Open Slidev deck</span>
+</a>
+
 ## Acknowledgment
 
 Many materials in the lecture slides are adapted from materials by Dr. Le Xuan Dai.
@@ -52,6 +57,11 @@ Slide bài giảng được xây dựng bằng Slidev và xuất bản thành tr
 
 <a class="slide-link" href="04-applications-parametric/">
   <strong>04. Ứng dụng đạo hàm và Đường cong tham số</strong>
+  <span>Mở bộ slide Slidev</span>
+</a>
+
+<a class="slide-link" href="05-integration-foundations/">
+  <strong>05. Cơ sở tích phân</strong>
   <span>Mở bộ slide Slidev</span>
 </a>
 

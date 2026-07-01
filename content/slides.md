@@ -32,6 +32,11 @@ Lecture decks are built with Slidev and published as static pages inside the Zol
   <span>Open Slidev deck</span>
 </a>
 
+<a class="slide-link" href="06-applications-of-integration/">
+  <strong>06. Applications of Integration</strong>
+  <span>Open Slidev deck</span>
+</a>
+
 ## Acknowledgment
 
 Many materials in the lecture slides are adapted from materials by Dr. Le Xuan Dai.
@@ -62,6 +67,11 @@ Slide bài giảng được xây dựng bằng Slidev và xuất bản thành tr
 
 <a class="slide-link" href="05-integration-foundations/">
   <strong>05. Cơ sở tích phân</strong>
+  <span>Mở bộ slide Slidev</span>
+</a>
+
+<a class="slide-link" href="06-applications-of-integration/">
+  <strong>06. Ứng dụng tích phân</strong>
   <span>Mở bộ slide Slidev</span>
 </a>
 

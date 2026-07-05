@@ -13,8 +13,8 @@ By the end of this lecture, students should be able to:
 - set up volumes by slicing, disks, washers, and cylindrical shells
 - compute arc length for curves with continuous derivatives
 - compute surface area of revolution about the coordinate axes
-- set up physical applications such as work, spring work, and hydrostatic force
-- set up economic and life-science applications such as continuous income streams, present value, surplus, and flow
+- derive and apply the work integral and the hydrostatic-force integral
+- derive and apply the present and future value of an income stream, consumer and producer surplus, and the survival-and-renewal model
 - choose an appropriate integral model before evaluating
 
 The central idea is that an integral adds many small pieces. The hard part is usually not the antiderivative; it is choosing the correct small contribution and its unit.
@@ -150,71 +150,83 @@ $$
 
 ## Physical Applications
 
-Work done by a variable force is
+Work done by a constant force $F$ over a distance $d$ is $W=Fd$. If the force varies, divide $[a,b]$ into $n$ subintervals of width $\Delta x$ with a sample point $x_i^*$ in each; the force is nearly constant on each subinterval, and the limit of the Riemann sums defines
 
 $$
 W=\int_a^b F(x)\,dx.
 $$
 
-For a spring obeying Hooke's law, $F(x)=kx$, so
-
-$$
-W=\int_a^b kx\,dx.
-$$
-
-For a vertical plate in water, a thin horizontal strip gives
-
-$$
-dF=\rho g\,h(y)L(y)\,dy,
-$$
-
-where $h(y)$ is the depth and $L(y)$ is the strip length. Thus
-
-$$
-F=\int_c^d \rho g\,h(y)L(y)\,dy.
-$$
-
-Examples from lecture:
-
-$$
-\int_1^3(x^2+2x)\,dx=\frac{50}{3}\text{ ft-lb},
-$$
-
-and if a 40 N force holds a spring stretched 5 cm from its natural length, then $k=800$ and
+**Case 1 (spring; Stewart 6.4, Example 2).** Hooke's law: the force needed to hold a spring stretched $x$ beyond its natural length is $F(x)=kx$, where $k$ is the spring constant. A force of 40 N holds a spring stretched from its natural length of 10 cm to 15 cm, so $40=k(0.05)$ and $k=800$ N/m. The work done in stretching it from 15 cm to 18 cm is
 
 $$
 W=\int_{0.05}^{0.08}800x\,dx=1.56\text{ J}.
 $$
 
+The pressure at depth $x$ in a fluid of density $\rho$ is $P=\rho g\,x$, where $g$ is the acceleration due to gravity, and at any point it acts equally in all directions. On a thin horizontal strip of width $L(x)$ the pressure is nearly constant, so a vertical wall that is wet from depth $0$ to $H$ feels the total force
+
+$$
+F=\int_0^{H}\rho g\,x\,L(x)\,dx.
+$$
+
+**Case 2 (dam; Stewart 8.3, Example 2).** A trapezoidal dam is 20 m high, 50 m wide at the top and 30 m at the bottom, and the water level is 4 m below the top. Measuring $x$ from the water surface, the water is $16$ m deep, and similar triangles give the width $L(x)=46-x$. Hence
+
+$$
+F=\int_0^{16}9800\,x(46-x)\,dx
+\approx4.43\times10^7\text{ N},
+$$
+
+the weight of roughly 4500 tonnes.
+
 ## Economic And Life-Science Applications
 
-For a continuous income stream $f(t)$ with continuously compounded rate $r$,
+With continuous compounding at annual interest rate $r$, a deposit grows by the factor $e^{rt}$ in $t$ years, so $K$ dollars payable at time $t$ is worth $Ke^{-rt}$ today. Slicing an income stream that flows at the rate $f(t)$, the deposit $f(t)\,dt$ made at time $t$ gives
 
 $$
-FV=\int_0^T f(t)e^{r(T-t)}\,dt,
+PV=\int_0^T f(t)e^{-rt}\,dt,
 \qquad
-PV=\int_0^T f(t)e^{-rt}\,dt.
+FV=\int_0^T f(t)e^{r(T-t)}\,dt.
 $$
 
-If $R'(x)$ and $C'(x)$ are marginal revenue and cost, then net earnings over $[a,b]$ are
+**Case 3 (pricing a machine).** A machine earns income at the rate $f(t)=15-2t$ million dollars per year for $0\le t\le7$, with $r=0.08$. Its fair market price is the present value of that stream:
 
 $$
-\int_a^b\big(R'(x)-C'(x)\big)\,dx.
+PV=\int_0^7(15-2t)e^{-0.08t}\,dt
+=300e^{-0.56}-125\approx46.36\text{ million dollars}.
 $$
 
-At equilibrium price $p_0$ and quantity $q_0$, consumer and producer surplus are
+**Case 4 (tire market).** Suppose $q_0$ units sell, all at one price $p_0$. The buyer of unit $q$ would have paid the demand price $D(q)$, and the seller would have accepted the supply price $S(q)$, so
 
 $$
-CS=\int_0^{q_0}D(q)\,dq-p_0q_0,
+CS=\int_0^{q_0}\big(D(q)-p_0\big)\,dq,
 \qquad
-PS=p_0q_0-\int_0^{q_0}S(q)\,dq.
+PS=\int_0^{q_0}\big(p_0-S(q)\big)\,dq.
 $$
 
-A typical renewal model with survival function $f$ and intake rate $r(t)$ is
+With $D(q)=90-0.1q^2$ and $S(q)=0.2q^2+q+50$ (dollars per tire, $q$ in thousands of tires), the equilibrium is $q_0=10$, $p_0=80$, and
+
+$$
+CS=\frac{200}{3},
+\qquad
+PS=\frac{550}{3}
+$$
+
+in thousands of dollars.
+
+**Case 5 (survival and renewal).** If a group starts with $P_0$ members, $f(t)$ is the fraction still present $t$ months after joining, and new members arrive at the rate $r(t)$, then
 
 $$
 P(T)=P_0f(T)+\int_0^T r(t)f(T-t)\,dt.
 $$
+
+A clinic with $P_0=300$, $f(t)=e^{-t/20}$, and $r(t)=10$ patients per month has
+
+$$
+P(15)=300e^{-0.75}+200\big(1-e^{-0.75}\big)\approx247\text{ patients},
+$$
+
+and in the long run it drifts toward the steady level $10\times20=200$ (arrival rate times average stay).
+
+In the slides, each case follows the same pattern: state the question, derive the general formula by slicing, substitute the data, and interpret the result with its units.
 
 ## Practice
 
@@ -225,13 +237,10 @@ $$
 5. Find the arc length of $y=\frac{x^3}{12}+\frac1x$, $1\le x\le4$.
 6. Find the arc length of $y=\ln(1-x^2)$, $-\frac12\le x\le\frac12$.
 7. Find the surface area generated by rotating $y=\sqrt{x^2+4}$, $0\le x\le1$, about the $x$-axis.
-8. A force $F(x)=x^2+2x$ lb moves an object from $x=1$ to $x=3$ ft. Find the work.
-9. A 40 N force holds a spring stretched from 10 cm to 15 cm. Find the work needed to stretch it from 5 cm to 8 cm past natural length.
-10. A dam face is 20 m high, 50 m wide at the top and 30 m wide at the bottom. Water is 4 m below the top. Set up the hydrostatic force.
-11. Deposit 1500 dollars per year continuously for 5 years at 7% continuously compounded interest. Find the future value.
-12. A machine earns $15-2t$ million dollars/year for $0\le t\le7$. Discount at 8% continuously and find the present value.
-13. Given $C'(x)=0.1x^2+4x+10$ and $R'(x)=70-x$, find net earnings from $0$ to $10$.
-14. Given $D(q)=-0.1q^2+90$ and $S(q)=0.2q^2+q+50$, find consumer and producer surplus at equilibrium.
+8. When a particle is located a distance $x$ metres from the origin, a force of $x^2+2x$ newtons acts on it. How much work is done in moving it from $x=1$ to $x=3$?
+9. You deposit 1200 dollars per year continuously into an account paying 6% per year, compounded continuously. How much is in the account after 10 years?
+10. Marginal cost is $C'(x)=0.1x^2+4x+10$ and marginal revenue is $R'(x)=70-x$ (thousand dollars per unit). Find $x_m$ where they are equal, and the net earnings $\int_0^{x_m}(R'-C')\,dx$.
+11. Blood at distance $r$ from the axis of an artery of radius $R$ flows at speed $S(r)=k(R^2-r^2)$, where $k$ is a constant. Slicing the cross-section into thin rings of area $2\pi r\,dr$, find the volume rate of blood flow.
 
 Answers:
 
@@ -242,19 +251,17 @@ Answers:
 5. $\displaystyle 6$.
 6. $\displaystyle 2\ln3-1$.
 7. $\displaystyle \pi\sqrt2\left(\sqrt3+2\ln\frac{1+\sqrt3}{\sqrt2}\right)$.
-8. $\displaystyle \frac{50}{3}$ ft-lb.
-9. $\displaystyle 1.56$ J.
-10. $\displaystyle F=1000(9.8)\int_0^{16}x(46-x)\,dx\approx4.43\times10^7$ N.
-11. $\displaystyle \int_0^5 1500e^{0.07(5-t)}\,dt\approx8980.02$ dollars.
-12. $\displaystyle \int_0^7(15-2t)e^{-0.08t}\,dt\approx46.36$ million dollars.
-13. $\displaystyle \frac{950}{3}$ thousand dollars.
-14. $q_0=10$, $p_0=80$, $\displaystyle CS=\frac{200}{3}$, and $\displaystyle PS=\frac{550}{3}$.
+8. $\displaystyle \frac{50}{3}\approx16.7$ J.
+9. $\displaystyle 20000\big(e^{0.6}-1\big)\approx16442$ dollars.
+10. $x_m=10$; $\displaystyle \frac{950}{3}\approx316.7$ thousand dollars.
+11. $\displaystyle \frac{\pi kR^4}{2}$.
 
 ## Reading And Practice Sources
 
-- Boelkins, M., *Active Calculus* (2nd ed.), Sections 6.1, 6.2, and 6.4.
-- Strang, G., & Herman, E. "Jed", *Calculus Volume 1*, OpenStax, Sections 6.1-6.6.
+- Boelkins, M., [*Active Calculus*](https://activecalculus.org/single/) (2nd ed.), Sections 6.1, 6.2, and [6.4 (work, force, and pressure)](https://activecalculus.org/single/sec-6-4-physics.html).
+- Strang, G., & Herman, E. "Jed", *Calculus Volume 1*, OpenStax, Sections [6.1](https://openstax.org/books/calculus-volume-1/pages/6-1-areas-between-curves)-[6.5 (physical applications)](https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications).
 - Stewart, J. (2016), *Calculus: Early Transcendentals* (8th ed., metric version), Sections 6.1-6.5 and 8.1-8.4.
+- Lê Xuân Đại, HCMUT lecture slides: source of the five application cases.
 - Instructor notes: local examples and extra exercises adapted for MT1003 Calculus 1.
 {% end %}
 
@@ -267,8 +274,8 @@ Sau bài này, sinh viên có thể:
 - thiết lập thể tích bằng lát cắt, đĩa, vòng đệm, và vỏ trụ
 - tính độ dài cung của đường cong có đạo hàm liên tục
 - tính diện tích mặt tròn xoay quanh các trục tọa độ
-- thiết lập các ứng dụng vật lý như công, công kéo lò xo, và áp lực thủy tĩnh
-- thiết lập các ứng dụng kinh tế và khoa học sự sống như dòng thu nhập liên tục, hiện giá, thặng dư, và dòng chảy
+- xây dựng và áp dụng tích phân công và tích phân áp lực thủy tĩnh
+- xây dựng và áp dụng hiện giá/giá trị tương lai của dòng thu nhập, thặng dư tiêu dùng và sản xuất, và mô hình tồn tại-bổ sung
 - chọn đúng mô hình tích phân trước khi tính
 
 Ý tưởng chính là tích phân cộng nhiều phần rất nhỏ. Phần khó thường không phải là nguyên hàm, mà là chọn đúng phần đóng góp nhỏ và đơn vị của nó.
@@ -404,71 +411,83 @@ $$
 
 ## Ứng dụng vật lý
 
-Công sinh bởi lực biến thiên là
+Công của lực không đổi $F$ trên quãng đường $d$ là $W=Fd$. Nếu lực biến thiên, chia $[a,b]$ thành $n$ đoạn con độ rộng $\Delta x$ với điểm mẫu $x_i^*$ trong mỗi đoạn; trên mỗi đoạn lực gần như không đổi, và giới hạn của tổng Riemann định nghĩa
 
 $$
 W=\int_a^b F(x)\,dx.
 $$
 
-Với lò xo tuân theo định luật Hooke, $F(x)=kx$, nên
-
-$$
-W=\int_a^b kx\,dx.
-$$
-
-Với một tấm thẳng đứng trong nước, một dải ngang mỏng cho
-
-$$
-dF=\rho g\,h(y)L(y)\,dy,
-$$
-
-trong đó $h(y)$ là độ sâu và $L(y)$ là chiều dài của dải. Do đó
-
-$$
-F=\int_c^d \rho g\,h(y)L(y)\,dy.
-$$
-
-Ví dụ trong bài giảng:
-
-$$
-\int_1^3(x^2+2x)\,dx=\frac{50}{3}\text{ ft-lb},
-$$
-
-và nếu lực 40 N giữ lò xo giãn 5 cm so với chiều dài tự nhiên, thì $k=800$ và
+**Tình huống 1 (lò xo; Stewart 6.4, Ví dụ 2).** Định luật Hooke: lực cần để giữ lò xo giãn $x$ so với chiều dài tự nhiên là $F(x)=kx$, với $k$ là hằng số lò xo. Cần lực 40 N để giữ lò xo giãn từ chiều dài tự nhiên 10 cm đến 15 cm, nên $40=k(0.05)$ và $k=800$ N/m. Công kéo giãn lò xo từ 15 cm đến 18 cm là
 
 $$
 W=\int_{0.05}^{0.08}800x\,dx=1.56\text{ J}.
 $$
 
+Áp suất ở độ sâu $x$ trong chất lỏng có khối lượng riêng $\rho$ là $P=\rho g\,x$, với $g$ là gia tốc trọng trường, và tại mỗi điểm nó tác dụng như nhau theo mọi hướng. Trên một dải ngang mỏng bề rộng $L(x)$, áp suất gần như không đổi, nên thành đứng ướt từ độ sâu $0$ đến $H$ chịu tổng lực
+
+$$
+F=\int_0^{H}\rho g\,x\,L(x)\,dx.
+$$
+
+**Tình huống 2 (đập nước; Stewart 8.3, Ví dụ 2).** Đập hình thang cao 20 m, rộng 50 m ở đỉnh và 30 m ở đáy, mực nước thấp hơn đỉnh 4 m. Đo $x$ từ mặt nước, nước sâu $16$ m, và tam giác đồng dạng cho bề rộng $L(x)=46-x$. Do đó
+
+$$
+F=\int_0^{16}9800\,x(46-x)\,dx
+\approx4.43\times10^7\text{ N},
+$$
+
+bằng trọng lượng cỡ 4500 tấn.
+
 ## Ứng dụng kinh tế và khoa học sự sống
 
-Với dòng thu nhập liên tục $f(t)$ và lãi suất ghép liên tục $r$,
+Với lãi ghép liên tục lãi suất năm $r$, khoản gửi tăng theo hệ số $e^{rt}$ sau $t$ năm, nên $K$ đô-la nhận ở thời điểm $t$ hiện đáng $Ke^{-rt}$. Cắt nhỏ dòng thu nhập chảy với tốc độ $f(t)$: khoản gửi $f(t)\,dt$ ở thời điểm $t$ cho
 
 $$
-FV=\int_0^T f(t)e^{r(T-t)}\,dt,
+PV=\int_0^T f(t)e^{-rt}\,dt,
 \qquad
-PV=\int_0^T f(t)e^{-rt}\,dt.
+FV=\int_0^T f(t)e^{r(T-t)}\,dt.
 $$
 
-Nếu $R'(x)$ và $C'(x)$ là doanh thu biên và chi phí biên, lợi nhuận ròng trên $[a,b]$ là
+**Tình huống 3 (định giá cỗ máy).** Một cỗ máy tạo thu nhập với tốc độ $f(t)=15-2t$ triệu đô-la mỗi năm với $0\le t\le7$, và $r=0.08$. Giá thị trường hợp lý là hiện giá của dòng tiền đó:
 
 $$
-\int_a^b\big(R'(x)-C'(x)\big)\,dx.
+PV=\int_0^7(15-2t)e^{-0.08t}\,dt
+=300e^{-0.56}-125\approx46.36\text{ triệu đô-la}.
 $$
 
-Tại giá cân bằng $p_0$ và lượng cân bằng $q_0$, thặng dư tiêu dùng và sản xuất là
+**Tình huống 4 (thị trường lốp xe).** Giả sử bán được $q_0$ đơn vị, cùng một giá $p_0$. Người mua đơn vị thứ $q$ chịu trả tới giá cầu $D(q)$, còn người bán chấp nhận giá cung $S(q)$, nên
 
 $$
-CS=\int_0^{q_0}D(q)\,dq-p_0q_0,
+CS=\int_0^{q_0}\big(D(q)-p_0\big)\,dq,
 \qquad
-PS=p_0q_0-\int_0^{q_0}S(q)\,dq.
+PS=\int_0^{q_0}\big(p_0-S(q)\big)\,dq.
 $$
 
-Một mô hình bổ sung liên tục với hàm tồn tại $f$ và tốc độ tiếp nhận $r(t)$ là
+Với $D(q)=90-0.1q^2$ và $S(q)=0.2q^2+q+50$ (đô-la mỗi lốp, $q$ theo nghìn lốp), điểm cân bằng là $q_0=10$, $p_0=80$, và
+
+$$
+CS=\frac{200}{3},
+\qquad
+PS=\frac{550}{3}
+$$
+
+theo nghìn đô-la.
+
+**Tình huống 5 (tồn tại và bổ sung).** Nếu một nhóm bắt đầu với $P_0$ thành viên, $f(t)$ là tỉ lệ còn lại $t$ tháng sau khi vào, và thành viên mới đến với tốc độ $r(t)$, thì
 
 $$
 P(T)=P_0f(T)+\int_0^T r(t)f(T-t)\,dt.
 $$
+
+Phòng khám với $P_0=300$, $f(t)=e^{-t/20}$, và $r(t)=10$ bệnh nhân mỗi tháng có
+
+$$
+P(15)=300e^{-0.75}+200\big(1-e^{-0.75}\big)\approx247\text{ bệnh nhân},
+$$
+
+và về lâu dài tiến tới mức ổn định $10\times20=200$ (tốc độ vào nhân thời gian ở trung bình).
+
+Trong slide, mỗi tình huống theo cùng một khuôn: nêu câu hỏi, xây dựng công thức tổng quát bằng cách cắt nhỏ, thế số liệu, và diễn giải kết quả kèm đơn vị.
 
 ## Luyện tập
 
@@ -479,13 +498,10 @@ $$
 5. Tìm độ dài cung của $y=\frac{x^3}{12}+\frac1x$, $1\le x\le4$.
 6. Tìm độ dài cung của $y=\ln(1-x^2)$, $-\frac12\le x\le\frac12$.
 7. Tìm diện tích mặt tạo bởi $y=\sqrt{x^2+4}$, $0\le x\le1$, quay quanh trục $x$.
-8. Lực $F(x)=x^2+2x$ lb di chuyển vật từ $x=1$ đến $x=3$ ft. Tính công.
-9. Lực 40 N giữ một lò xo giãn từ 10 cm đến 15 cm. Tính công để kéo từ 5 cm đến 8 cm so với chiều dài tự nhiên.
-10. Mặt đập cao 20 m, rộng 50 m ở trên và 30 m ở đáy. Mực nước thấp hơn đỉnh 4 m. Thiết lập áp lực thủy tĩnh.
-11. Gửi liên tục 1500 đô-la mỗi năm trong 5 năm với lãi suất ghép liên tục 7%. Tính giá trị tương lai.
-12. Một máy tạo thu nhập $15-2t$ triệu đô-la/năm với $0\le t\le7$. Chiết khấu liên tục 8% và tính hiện giá.
-13. Cho $C'(x)=0.1x^2+4x+10$ và $R'(x)=70-x$. Tính lợi nhuận ròng từ $0$ đến $10$.
-14. Cho $D(q)=-0.1q^2+90$ và $S(q)=0.2q^2+q+50$. Tính thặng dư tiêu dùng và sản xuất tại cân bằng.
+8. Khi chất điểm cách gốc tọa độ $x$ mét, một lực $x^2+2x$ newton tác dụng lên nó. Hỏi cần bao nhiêu công để di chuyển nó từ $x=1$ đến $x=3$?
+9. Bạn gửi liên tục 1200 đô-la mỗi năm vào tài khoản lãi suất 6%/năm, ghép lãi liên tục. Sau 10 năm tài khoản có bao nhiêu?
+10. Chi phí biên $C'(x)=0.1x^2+4x+10$ và doanh thu biên $R'(x)=70-x$ (nghìn đô-la mỗi đơn vị). Tìm $x_m$ tại đó chúng bằng nhau, và lợi nhuận ròng $\int_0^{x_m}(R'-C')\,dx$.
+11. Máu ở cách trục động mạch (bán kính $R$) một khoảng $r$ chảy với tốc độ $S(r)=k(R^2-r^2)$, với $k$ là hằng số. Cắt tiết diện thành các vành mỏng diện tích $2\pi r\,dr$, tìm lưu lượng máu.
 
 Đáp số:
 
@@ -496,18 +512,16 @@ $$
 5. $\displaystyle 6$.
 6. $\displaystyle 2\ln3-1$.
 7. $\displaystyle \pi\sqrt2\left(\sqrt3+2\ln\frac{1+\sqrt3}{\sqrt2}\right)$.
-8. $\displaystyle \frac{50}{3}$ ft-lb.
-9. $\displaystyle 1.56$ J.
-10. $\displaystyle F=1000(9.8)\int_0^{16}x(46-x)\,dx\approx4.43\times10^7$ N.
-11. $\displaystyle \int_0^5 1500e^{0.07(5-t)}\,dt\approx8980.02$ đô-la.
-12. $\displaystyle \int_0^7(15-2t)e^{-0.08t}\,dt\approx46.36$ triệu đô-la.
-13. $\displaystyle \frac{950}{3}$ nghìn đô-la.
-14. $q_0=10$, $p_0=80$, $\displaystyle CS=\frac{200}{3}$, và $\displaystyle PS=\frac{550}{3}$.
+8. $\displaystyle \frac{50}{3}\approx16.7$ J.
+9. $\displaystyle 20000\big(e^{0.6}-1\big)\approx16442$ đô-la.
+10. $x_m=10$; $\displaystyle \frac{950}{3}\approx316.7$ nghìn đô-la.
+11. $\displaystyle \frac{\pi kR^4}{2}$.
 
 ## Nguồn đọc và luyện tập
 
-- Boelkins, M., *Active Calculus* (ấn bản thứ 2), Mục 6.1, 6.2, và 6.4.
-- Strang, G., & Herman, E. "Jed", *Calculus Volume 1*, OpenStax, Mục 6.1-6.6.
+- Boelkins, M., [*Active Calculus*](https://activecalculus.org/single/) (ấn bản thứ 2), Mục 6.1, 6.2, và [6.4 (công, lực, và áp suất)](https://activecalculus.org/single/sec-6-4-physics.html).
+- Strang, G., & Herman, E. "Jed", *Calculus Volume 1*, OpenStax, Mục [6.1](https://openstax.org/books/calculus-volume-1/pages/6-1-areas-between-curves)-[6.5 (ứng dụng vật lý)](https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications).
 - Stewart, J. (2016), *Calculus: Early Transcendentals* (ấn bản thứ 8, bản metric), Mục 6.1-6.5 và 8.1-8.4.
+- Lê Xuân Đại, slide bài giảng ĐHBK TP.HCM: nguồn của năm tình huống ứng dụng.
 - Ghi chú của giảng viên: ví dụ và bài tập bổ sung được điều chỉnh cho MT1003 Giải tích 1.
 {% end %}

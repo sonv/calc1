@@ -60,7 +60,7 @@ tsvan@hcmut.edu.vn
 <div class="tl-row break"><span class="clock">70-80</span><span><span class="lang-en"><strong>Break</strong></span><span class="lang-vi"><strong>Nghỉ giải lao</strong></span></span></div>
 <div class="tl-row"><span class="clock">80-115</span><span><span class="lang-en"><strong>Arc length</strong> - build length from small line segments</span><span class="lang-vi"><strong>Độ dài cung</strong> - xây dựng độ dài từ các đoạn thẳng nhỏ</span></span></div>
 <div class="tl-row"><span class="clock">115-135</span><span><span class="lang-en"><strong>Surface area</strong> - rotate a curve and add frustums</span><span class="lang-vi"><strong>Diện tích mặt</strong> - quay đường cong và cộng các nón cụt</span></span></div>
-<div class="tl-row"><span class="clock">135-155</span><span><span class="lang-en"><strong>Physical/economic models</strong> - work, pressure, present value, surplus</span><span class="lang-vi"><strong>Mô hình vật lý/kinh tế</strong> - công, áp lực, hiện giá, thặng dư</span></span></div>
+<div class="tl-row"><span class="clock">135-155</span><span><span class="lang-en"><strong>Five models</strong> - spring work, dam force, present value, surplus, renewal</span><span class="lang-vi"><strong>Năm mô hình</strong> - công lò xo, áp lực đập, hiện giá, thặng dư, bổ sung</span></span></div>
 <div class="tl-row disc"><span class="clock">155-170</span><span><span class="lang-en"><strong>Exercise lab</strong> - setup first, compute second</span><span class="lang-vi"><strong>Luyện tập</strong> - thiết lập trước, tính sau</span></span></div>
 </div>
 
@@ -114,7 +114,7 @@ $$
 </div>
 
 <div class="box mt-3 formula-stack">
-<div class="label"><span class="lang-en">Set up</span><span class="lang-vi">Thiết lập</span></div>
+<div class="label"><span class="lang-en">Set up and compute</span><span class="lang-vi">Thiết lập và tính</span></div>
 
 $$
 4x-x^2=x(4-x)=0
@@ -122,17 +122,11 @@ $$
 
 $$
 A=\int_0^4(4x-x^2)\,dx
+=\left[2x^2-\frac{x^3}{3}\right]_0^4=\frac{32}{3}.
 $$
 </div>
 </div>
 <img src="./images/2.jpeg" class="graph-img" alt="Parabolic region bounded by x-axis">
-</div>
-
-<div class="thm mt-3">
-
-$$
-A=\left[2x^2-\frac{x^3}{3}\right]_0^4=\frac{32}{3}.
-$$
 </div>
 
 <div class="refs">
@@ -196,10 +190,7 @@ $$
 
 $$
 3-x=x^2-9
-$$
-
-$$
-(x-3)(x+4)=0.
+\ \Rightarrow\ (x-3)(x+4)=0
 $$
 
 $$
@@ -207,7 +198,7 @@ A=\int_{-4}^{3}(-x^2-x+12)\,dx=\frac{343}{6}.
 $$
 </div>
 </div>
-<img src="./images/dt_1.jpg" class="graph-img" alt="Line and parabola enclosed region">
+<img src="./images/dt_1.jpg" class="graph-img small" alt="Line and parabola enclosed region">
 </div>
 
 <div class="refs">
@@ -313,7 +304,7 @@ V=\int_{-r}^r A(x)\,dx=\frac{4}{3}\pi r^3.
 $$
 </div>
 </div>
-<img src="./images/the_tich_3.jpg" class="graph-img" alt="Sphere cross section">
+<img src="./images/the_tich_3.jpg" class="graph-img small" alt="Sphere cross section">
 </div>
 
 <div class="refs">
@@ -713,16 +704,10 @@ t=2\cos2x,\qquad dt=-4\sin2x\,dx
 $$
 
 $$
-S=\pi\int_0^2\sqrt{1+t^2}\,dt.
+S=\pi\int_0^2\sqrt{1+t^2}\,dt
+=\pi\left(\sqrt5+\frac12\ln(2+\sqrt5)\right).
 $$
 </div>
-</div>
-
-<div class="thm mt-3">
-
-$$
-S=\pi\left(\sqrt5+\frac12\ln(2+\sqrt5)\right).
-$$
 </div>
 
 <div class="refs">
@@ -759,7 +744,7 @@ $S=\pi\sqrt2\left(\sqrt3+2\ln\dfrac{1+\sqrt3}{\sqrt2}\right)$
 </span>
 </div>
 </div>
-<img src="./images/6.JPG" class="graph-img" alt="Surface area formula figure">
+<img src="./images/6.JPG" class="graph-img small" alt="Surface area formula figure">
 </div>
 
 <div class="refs">
@@ -771,601 +756,902 @@ $S=\pi\sqrt2\left(\sqrt3+2\ln\dfrac{1+\sqrt3}{\sqrt2}\right)$
 class: compact
 ---
 
-# <span class="lang-en">Physical Applications</span><span class="lang-vi">Ứng dụng vật lý</span>
+# <span class="lang-en">Applications: Slice, Add, Interpret</span><span class="lang-vi">Ứng dụng: cắt nhỏ, cộng lại, diễn giải</span>
 
-<div class="grid-2 align-center">
-<div>
-<div class="box gold">
-<div class="label"><span class="lang-en">Same integral, different unit</span><span class="lang-vi">Cùng tích phân, khác đơn vị</span></div>
-<span class="lang-en">First identify the tiny contribution, then add it over the interval.</span>
-<span class="lang-vi">Trước hết nhận diện phần đóng góp rất nhỏ, rồi cộng trên khoảng.</span>
+<div class="box gold spotlight">
+<div class="label"><span class="lang-en">One method for every model</span><span class="lang-vi">Một phương pháp cho mọi mô hình</span></div>
+<span class="lang-en">In every model we divide the quantity into small pieces, approximate each piece, and take a limit of the sums — a definite integral, read with its units.</span>
+<span class="lang-vi">Trong mọi mô hình, ta chia đại lượng thành các phần nhỏ, xấp xỉ từng phần, rồi qua giới hạn của các tổng — được một tích phân xác định, đọc kèm đơn vị.</span>
 </div>
 
-<div class="method-grid app-methods mt-3">
+<div class="method-grid app-methods mt-4">
 <div class="method-card">
-<strong><span class="lang-en">Work</span><span class="lang-vi">Công</span></strong>
-
-$$
-dW=F(x)\,dx
-$$
+<strong><span class="lang-en">1 · Spring</span><span class="lang-vi">1 · Lò xo</span></strong>
+<span class="lang-en">Work to stretch it 3 more cm?</span>
+<span class="lang-vi">Công kéo giãn thêm 3 cm?</span>
 </div>
 <div class="method-card">
-<strong><span class="lang-en">Spring</span><span class="lang-vi">Lò xo</span></strong>
-
-$$
-F(x)=kx
-$$
+<strong><span class="lang-en">2 · Dam</span><span class="lang-vi">2 · Đập nước</span></strong>
+<span class="lang-en">How hard do 16 m of water push?</span>
+<span class="lang-vi">16 m nước đẩy mạnh cỡ nào?</span>
 </div>
 <div class="method-card">
-<strong><span class="lang-en">Fluid force</span><span class="lang-vi">Áp lực chất lỏng</span></strong>
-
-$$
-dF=\rho g\,hL\,dy
-$$
+<strong><span class="lang-en">3 · Pricing</span><span class="lang-vi">3 · Định giá</span></strong>
+<span class="lang-en">7 years of income — worth what today?</span>
+<span class="lang-vi">7 năm thu nhập — hôm nay đáng bao nhiêu?</span>
 </div>
+<div class="method-card">
+<strong><span class="lang-en">4 · Market</span><span class="lang-vi">4 · Thị trường</span></strong>
+<span class="lang-en">Who gains at one price?</span>
+<span class="lang-vi">Ai lợi khi chỉ có một giá?</span>
 </div>
-</div>
-<div class="img-strip vertical-strip">
-<img src="./images/hooke.jpg" class="graph-img" alt="Spring force illustration">
-<img src="./images/pressure3.jpg" class="graph-img" alt="Fluid pressure on a plate">
-<img src="./images/dam.jpg" class="graph-img" alt="Dam force illustration">
+<div class="method-card">
+<strong><span class="lang-en">5 · Clinic</span><span class="lang-vi">5 · Phòng khám</span></strong>
+<span class="lang-en">How many patients at month 15?</span>
+<span class="lang-vi">Tháng 15 còn bao nhiêu bệnh nhân?</span>
 </div>
 </div>
 
 <div class="refs">
-<span class="lang-en">Physical applications: OpenStax Vol 1, 6.5; related setup ideas from Active Calculus 6.4 and Stewart 6.5.</span>
-<span class="lang-vi">Ứng dụng vật lý: OpenStax Tập 1, 6.5; ý tưởng thiết lập liên quan từ Active Calculus 6.4 và Stewart 6.5.</span>
-</div>
-
----
-class: compact exercise-heavy
----
-
-# <span class="lang-en">Your Turn: Physical Models</span><span class="lang-vi">Tự luyện: mô hình vật lý</span>
-
-<div class="exercise-grid">
-<div class="exercise-card">
-<div class="num">P1 Work</div>
-<span class="lang-en">A force of $F(x)=x^2+2x$ lb moves an object from $x=1$ to $x=3$ ft.</span>
-<span class="lang-vi">Lực $F(x)=x^2+2x$ lb di chuyển vật từ $x=1$ đến $x=3$ ft.</span>
-</div>
-<div class="exercise-card">
-<div class="num">P2 Spring</div>
-<span class="lang-en">A 40 N force holds a spring stretched from 10 cm to 15 cm. Find the work to stretch it from 5 cm to 8 cm past natural length.</span>
-<span class="lang-vi">Lực 40 N giữ lò xo giãn từ 10 cm đến 15 cm. Tính công để kéo từ 5 cm đến 8 cm so với chiều dài tự nhiên.</span>
-</div>
-<div class="exercise-card">
-<div class="num">P3 Fluid</div>
-<span class="lang-en">A vertical dam face is 20 m high, 50 m wide at the top and 30 m wide at the bottom. Water is 4 m below the top. Set up the force.</span>
-<span class="lang-vi">Mặt đập cao 20 m, rộng 50 m ở trên và 30 m ở đáy. Mực nước thấp hơn đỉnh 4 m. Thiết lập áp lực.</span>
-</div>
-</div>
-
-<div class="box blue mt-3">
-<div class="label"><span class="lang-en">Before computing</span><span class="lang-vi">Trước khi tính</span></div>
-<span class="lang-en">Write the small piece first, then check the unit of the final answer.</span>
-<span class="lang-vi">Viết phần nhỏ cần cộng trước, rồi kiểm tra đơn vị của đáp số.</span>
-</div>
-
-<div class="refs">
-<span class="lang-en">Practice: OpenStax Vol 1, 6.5; extra practice: Stewart 6.5; local instructor exercises.</span>
-<span class="lang-vi">Luyện tập: OpenStax Tập 1, 6.5; luyện thêm: Stewart 6.5; bài tập bổ sung của giảng viên.</span>
-</div>
-
----
-class: compact solution-slide
----
-
-# <span class="lang-en">Solution P1: Variable Work</span><span class="lang-vi">Lời giải P1: công với lực biến thiên</span>
-
-<div class="grid-2">
-<div class="box gold">
-<div class="label"><span class="lang-en">Small piece</span><span class="lang-vi">Phần nhỏ</span></div>
-<span class="lang-en">During a tiny displacement $dx$, the force is nearly constant.</span>
-<span class="lang-vi">Trong một dịch chuyển rất nhỏ $dx$, lực gần như không đổi.</span>
-
-$$
-dW=F(x)\,dx=(x^2+2x)\,dx.
-$$
-</div>
-<div class="box formula-stack">
-<div class="label"><span class="lang-en">Add from $1$ to $3$</span><span class="lang-vi">Cộng từ $1$ đến $3$</span></div>
-
-$$
-W=\int_1^3(x^2+2x)\,dx
-$$
-
-$$
-W=\left[\frac{x^3}{3}+x^2\right]_1^3
-=18-\frac43=\frac{50}{3}.
-$$
-</div>
-</div>
-
-<div class="thm mt-3">
-<span class="lang-en">The unit is force times distance, so $W=\dfrac{50}{3}$ ft-lb.</span>
-<span class="lang-vi">Đơn vị là lực nhân quãng đường, nên $W=\dfrac{50}{3}$ ft-lb.</span>
-</div>
-
-<div class="refs">
-<span class="lang-en">Worked example: OpenStax Vol 1, 6.5; Stewart 6.5; local instructor exercises.</span>
-<span class="lang-vi">Ví dụ lời giải: OpenStax Tập 1, 6.5; Stewart 6.5; bài tập bổ sung của giảng viên.</span>
-</div>
-
----
-class: compact solution-slide
----
-
-# <span class="lang-en">Solution P2: Spring Work</span><span class="lang-vi">Lời giải P2: công kéo lò xo</span>
-
-<div class="grid-2">
-<div class="box gold formula-stack">
-<div class="label"><span class="lang-en">Find the spring constant</span><span class="lang-vi">Tìm hằng số lò xo</span></div>
-<span class="lang-en">The extension is $15-10=5$ cm, or $0.05$ m.</span>
-<span class="lang-vi">Độ giãn là $15-10=5$ cm, tức $0.05$ m.</span>
-
-$$
-F=kx,\qquad 40=k(0.05)
-$$
-
-$$
-k=800\ \text{N/m}.
-$$
-</div>
-<div class="box formula-stack">
-<div class="label"><span class="lang-en">Integrate the force</span><span class="lang-vi">Tích phân lực</span></div>
-<span class="lang-en">Stretching from 5 cm to 8 cm means $x=0.05$ to $0.08$ m.</span>
-<span class="lang-vi">Kéo từ 5 cm đến 8 cm nghĩa là $x=0.05$ đến $0.08$ m.</span>
-
-$$
-W=\int_{0.05}^{0.08}800x\,dx
-=400x^2\Big|_{0.05}^{0.08}
-$$
-
-$$
-W=400(0.08^2-0.05^2)=1.56.
-$$
-</div>
-</div>
-
-<div class="thm mt-3">
-<span class="lang-en">The work is $1.56$ J, since N m = J.</span>
-<span class="lang-vi">Công bằng $1.56$ J, vì N m = J.</span>
-</div>
-
-<div class="refs">
-<span class="lang-en">Worked example: OpenStax Vol 1, 6.5; Stewart 6.5; local instructor exercises.</span>
-<span class="lang-vi">Ví dụ lời giải: OpenStax Tập 1, 6.5; Stewart 6.5; bài tập bổ sung của giảng viên.</span>
-</div>
-
----
-class: compact solution-slide
----
-
-# <span class="lang-en">Solution P3: Hydrostatic Force</span><span class="lang-vi">Lời giải P3: áp lực thủy tĩnh</span>
-
-<div class="grid-2 align-center">
-<div class="formula-stack">
-<div class="box gold">
-<div class="label"><span class="lang-en">Choose depth $x$</span><span class="lang-vi">Chọn độ sâu $x$</span></div>
-<span class="lang-en">Let $x$ be depth below the water surface. Then $0\le x\le16$.</span>
-<span class="lang-vi">Gọi $x$ là độ sâu dưới mặt nước. Khi đó $0\le x\le16$.</span>
-</div>
-
-<div class="box mt-3">
-<div class="label"><span class="lang-en">Strip width</span><span class="lang-vi">Chiều rộng dải</span></div>
-<span class="lang-en">The dam narrows linearly: at depth $x$, the width is $L(x)=46-x$.</span>
-<span class="lang-vi">Mặt đập hẹp tuyến tính: tại độ sâu $x$, chiều rộng là $L(x)=46-x$.</span>
-</div>
-</div>
-<img src="./images/dam.jpg" class="graph-img" alt="Dam force illustration">
-</div>
-
-<div class="thm mt-3 formula-stack">
-
-$$
-dF=1000(9.8)\,x(46-x)\,dx
-$$
-
-$$
-F=1000(9.8)\int_0^{16}x(46-x)\,dx
-\approx4.43\times10^7\ \text{N}.
-$$
-</div>
-
-<div class="refs">
-<span class="lang-en">Worked example: OpenStax Vol 1, 6.5; Stewart 6.5; local instructor exercises.</span>
-<span class="lang-vi">Ví dụ lời giải: OpenStax Tập 1, 6.5; Stewart 6.5; bài tập bổ sung của giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4, 8.3-8.4.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4, 8.3-8.4.</span>
 </div>
 
 ---
 class: compact
 ---
 
-# <span class="lang-en">Economic Applications</span><span class="lang-vi">Ứng dụng kinh tế</span>
+# <span class="lang-en">Work: When The Force Varies</span><span class="lang-vi">Công: khi lực biến thiên</span>
+
+<div class="grid-2">
+<div class="box gold">
+<div class="label"><span class="lang-en">Work done by a constant force</span><span class="lang-vi">Công của lực không đổi</span></div>
+<span class="lang-en">A constant force $F$ acting over a distance $d$ does work $W=Fd$. Lifting a 1.2 kg book 0.7 m against gravity ($F=mg$, $g=9.8$ m/s²): $W=(1.2)(9.8)(0.7)\approx8.2$ J.</span>
+<span class="lang-vi">Lực không đổi $F$ trên quãng đường $d$ sinh công $W=Fd$. Nâng cuốn sách 1.2 kg lên 0.7 m thắng trọng lực ($F=mg$, $g=9.8$ m/s²): $W=(1.2)(9.8)(0.7)\approx8.2$ J.</span>
+</div>
+<div class="box blue formula-stack">
+<div class="label"><span class="lang-en">A variable force</span><span class="lang-vi">Lực biến thiên</span></div>
+<span class="lang-en">Divide $[a,b]$ into $n$ subintervals of width $\Delta x$, with a point $x_i^*$ in the $i$-th; there the force is nearly constant:</span>
+<span class="lang-vi">Chia $[a,b]$ thành $n$ đoạn con độ rộng $\Delta x$, chọn điểm $x_i^*$ trong đoạn thứ $i$; tại đó lực gần như không đổi:</span>
+
+$$
+W_i\approx F(x_i^*)\,\Delta x
+$$
+</div>
+</div>
+
+<div class="thm mt-3">
+<div class="tag"><span class="lang-en">Definition of work</span><span class="lang-vi">Định nghĩa công</span></div>
+
+$$
+W=\lim_{n\to\infty}\sum_{i=1}^{n}F(x_i^*)\,\Delta x=\int_a^b F(x)\,dx.
+$$
+
+<span class="lang-en">This limit defines the work done by $F(x)$ from $a$ to $b$.</span>
+<span class="lang-vi">Giới hạn này định nghĩa công của lực $F(x)$ từ $a$ đến $b$.</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4 (Work).</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4 (Công).</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Case 1 - Stretching A Spring</span><span class="lang-vi">Tình huống 1 - kéo giãn lò xo</span>
+
+<div class="grid-2">
+<div class="box gold">
+<div class="label"><span class="lang-en">The question (Stewart 6.4)</span><span class="lang-vi">Câu hỏi (Stewart 6.4)</span></div>
+<span class="lang-en">A force of 40 N is required to hold a spring that has been stretched from its natural length of 10 cm to a length of 15 cm. How much work is done in stretching the spring from 15 cm to 18 cm?</span>
+<span class="lang-vi">Cần lực 40 N để giữ lò xo giãn từ chiều dài tự nhiên 10 cm đến 15 cm. Tính công kéo giãn lò xo từ 15 cm đến 18 cm.</span>
+</div>
+<div class="box">
+<div class="label"><span class="lang-en">Hooke's law</span><span class="lang-vi">Định luật Hooke</span></div>
+<span class="lang-en">The force needed to hold a spring stretched $x$ beyond its natural length is proportional to $x$: $F(x)=kx$ ($k$ = the spring constant), valid while $x$ is not too large.</span>
+<span class="lang-vi">Lực cần để giữ lò xo giãn $x$ so với chiều dài tự nhiên tỉ lệ thuận với $x$: $F(x)=kx$ ($k$ = hằng số lò xo), đúng khi $x$ không quá lớn.</span>
+</div>
+</div>
+
+<div class="box blue mt-3 formula-stack">
+<div class="label"><span class="lang-en">1. Find $k$ from the given force</span><span class="lang-vi">1. Tìm $k$ từ lực đã cho</span></div>
+<span class="lang-en">At 15 cm the extension is $0.05$ m, so $F(0.05)=40$:</span>
+<span class="lang-vi">Ở 15 cm, độ giãn là $0.05$ m, nên $F(0.05)=40$:</span>
+
+$$
+40=k(0.05)\ \Rightarrow\ k=800\ \text{N/m},\qquad F(x)=800x.
+$$
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4 (Work).</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4 (Công).</span>
+</div>
+
+---
+class: compact solution-slide
+---
+
+# <span class="lang-en">Case 1 - Solve And Check</span><span class="lang-vi">Tình huống 1 - giải và kiểm tra</span>
+
+<div class="grid-2 align-center">
+<div class="box blue formula-stack">
+<div class="label"><span class="lang-en">2. Integrate the force</span><span class="lang-vi">2. Tích phân lực</span></div>
+<span class="lang-en">Stretching from 15 cm to 18 cm means the extension goes from $0.05$ m to $0.08$ m:</span>
+<span class="lang-vi">Kéo từ 15 cm đến 18 cm nghĩa là độ giãn đi từ $0.05$ m đến $0.08$ m:</span>
+
+$$
+W=\int_{0.05}^{0.08}800x\,dx
+=400x^2\Big|_{0.05}^{0.08}
+=1.56\ \text{J}
+$$
+</div>
+<img src="./images/hooke.jpg" class="graph-img" alt="Spring force grows with extension">
+</div>
+
+<div class="thm mt-3">
+<span class="tag"><span class="lang-en">3. Interpret and check</span><span class="lang-vi">3. Diễn giải và kiểm tra</span></span>
+<span class="lang-en">The work done is 1.56 J. As a check: the force grows linearly from 40 N to 64 N here, so its average is 52 N, and $52\times0.03=1.56$ J — the same answer.</span>
+<span class="lang-vi">Công thực hiện là 1.56 J. Kiểm tra lại: lực tăng tuyến tính từ 40 N đến 64 N trên đoạn này, trung bình là 52 N, và $52\times0.03=1.56$ J — cùng đáp số.</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4 (Work).</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4 (Công).</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Case 2 - Water Against A Dam</span><span class="lang-vi">Tình huống 2 - nước đẩy mặt đập</span>
 
 <div class="grid-2 align-center">
 <div>
 <div class="box gold">
-<div class="label"><span class="lang-en">Accumulate money continuously</span><span class="lang-vi">Tích lũy tiền liên tục</span></div>
-<span class="lang-en">A payment made at time $t$ grows or discounts according to how far it is from the target time.</span>
-<span class="lang-vi">Một khoản tiền tại thời điểm $t$ tăng trưởng hoặc chiết khấu tùy khoảng cách đến thời điểm mục tiêu.</span>
+<div class="label"><span class="lang-en">The question (Stewart 8.3)</span><span class="lang-vi">Câu hỏi (Stewart 8.3)</span></div>
+<span class="lang-en">A dam has the shape of a trapezoid: the height is 20 m, and the width is 50 m at the top and 30 m at the bottom. Find the force on the dam due to hydrostatic pressure if the water level is 4 m from the top. Here $\rho=1000$ kg/m³ is the density of water and $g=9.8$ m/s² is the acceleration due to gravity.</span>
+<span class="lang-vi">Một đập nước có dạng hình thang: cao 20 m, rộng 50 m ở đỉnh và 30 m ở đáy. Tìm áp lực thủy tĩnh lên đập, biết mực nước thấp hơn đỉnh đập 4 m. Ở đây $\rho=1000$ kg/m³ là khối lượng riêng của nước và $g=9.8$ m/s² là gia tốc trọng trường.</span>
 </div>
 
-<div class="grid-2 mt-3 economic-formulas">
-<div class="box formula-stack">
-<div class="label"><span class="lang-en">Future value</span><span class="lang-vi">Giá trị tương lai</span></div>
+<div class="box blue mt-3">
+<div class="label"><span class="lang-en">Why this is not straightforward</span><span class="lang-vi">Vì sao bài này không đơn giản</span></div>
+<span class="lang-en">The pressure is not constant — it increases as the depth increases. So we first need to know how pressure depends on depth.</span>
+<span class="lang-vi">Áp suất không phải hằng số — nó tăng khi độ sâu tăng. Vì vậy trước hết ta cần biết áp suất phụ thuộc độ sâu như thế nào.</span>
+</div>
+</div>
+<img src="./images/dam.jpg" class="graph-img" alt="Trapezoidal dam with water level below the top">
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Pressure Under Water</span><span class="lang-vi">Áp suất dưới nước</span>
+
+<div class="grid-2">
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">Pressure at depth $d$</span><span class="lang-vi">Áp suất ở độ sâu $d$</span></div>
+<span class="lang-en">A horizontal plate of area $A$ at depth $d$ in a fluid of density $\rho$ carries mass $\rho Ad$, weight $\rho g\,Ad$ ($g$ = gravity's acceleration). Pressure = force per unit area:</span>
+<span class="lang-vi">Tấm ngang diện tích $A$ ở độ sâu $d$ trong chất lỏng có khối lượng riêng $\rho$ đỡ khối lượng $\rho Ad$, nặng $\rho g\,Ad$ ($g$ = gia tốc trọng trường). Áp suất = lực trên diện tích:</span>
 
 $$
-FV=\int_0^T f(t)e^{r(T-t)}\,dt
+P=\frac{F}{A}=\rho g\,d
+$$
+</div>
+<div class="box blue">
+<div class="label"><span class="lang-en">The same in all directions</span><span class="lang-vi">Như nhau theo mọi hướng</span></div>
+<span class="lang-en">At any point in a liquid, the pressure is the same in all directions. So at depth $d$, a vertical surface also feels the pressure $\rho g\,d$.</span>
+<span class="lang-vi">Tại mỗi điểm trong chất lỏng, áp suất như nhau theo mọi hướng. Vậy ở độ sâu $d$, mặt thẳng đứng cũng chịu áp suất $\rho g\,d$.</span>
+</div>
+</div>
+
+<div class="caution mt-3">
+<div class="label"><span class="lang-en">Consequence: slice horizontally</span><span class="lang-vi">Hệ quả: cắt dải ngang</span></div>
+<span class="lang-en">On a vertical face the pressure grows with depth. On a thin horizontal strip, however, the depth — and so the pressure — is essentially constant.</span>
+<span class="lang-vi">Trên mặt thẳng đứng, áp suất tăng theo độ sâu. Nhưng trên một dải ngang mỏng, độ sâu — và do đó áp suất — hầu như không đổi.</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Force On A Submerged Wall</span><span class="lang-vi">Lực nước lên thành đứng</span>
+
+<div class="grid-2">
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">Force on one strip</span><span class="lang-vi">Lực trên một dải</span></div>
+<span class="lang-en">Let the wall be wet from depth $0$ to $H$, with width $L(x)$ at depth $x$. A strip there has area $L(x)\,dx$ and nearly constant pressure $\rho g\,x$:</span>
+<span class="lang-vi">Giả sử thành ướt từ độ sâu $0$ đến $H$, bề rộng ở độ sâu $x$ là $L(x)$. Dải tại đó có diện tích $L(x)\,dx$ và áp suất gần như không đổi $\rho g\,x$:</span>
+
+$$
+dF=\rho g\,x\,L(x)\,dx
+$$
+</div>
+<div class="thm formula-stack">
+<div class="tag"><span class="lang-en">Total hydrostatic force</span><span class="lang-vi">Tổng áp lực thủy tĩnh</span></div>
+<span class="lang-en">Summing the strip forces and taking the limit of the Riemann sums:</span>
+<span class="lang-vi">Cộng lực trên các dải và qua giới hạn của tổng Riemann:</span>
+
+$$
+F=\int_0^{H}\rho g\,x\,L(x)\,dx
+$$
+</div>
+</div>
+
+<div class="caution mt-3">
+<div class="label"><span class="lang-en">Strategy</span><span class="lang-vi">Chiến lược</span></div>
+<span class="lang-en">Choose the depth variable $x$, find the wet depth $H$, and find the width $L(x)$ from the geometry of the face.</span>
+<span class="lang-vi">Chọn biến độ sâu $x$, tìm độ sâu ướt $H$, và tìm bề rộng $L(x)$ từ hình học của mặt.</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a> (problem-solving strategy); <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a> (chiến lược giải); <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3.</span>
+</div>
+
+---
+class: compact solution-slide
+---
+
+# <span class="lang-en">Case 2 - Slice: One Horizontal Strip</span><span class="lang-vi">Tình huống 2 - cắt: một dải ngang</span>
+
+<div class="grid-2 align-center">
+<div>
+<div class="box gold">
+<div class="label"><span class="lang-en">1. Choose the axis</span><span class="lang-vi">1. Chọn trục</span></div>
+<span class="lang-en">Choose a vertical $x$-axis with origin at the surface of the water, directed downward. The water is $20-4=16$ m deep, so $0\le x\le16$.</span>
+<span class="lang-vi">Chọn trục $x$ thẳng đứng, gốc tại mặt nước, hướng xuống dưới. Nước sâu $20-4=16$ m, nên $0\le x\le16$.</span>
+</div>
+
+<div class="box mt-3 formula-stack">
+<div class="label"><span class="lang-en">2. Width from similar triangles</span><span class="lang-vi">2. Bề rộng từ tam giác đồng dạng</span></div>
+<span class="lang-en">Let $a$ be the horizontal overhang of the sloped edge beside the strip (see figure). From similar triangles,</span>
+<span class="lang-vi">Gọi $a$ là phần nhô ngang của cạnh xiên bên cạnh dải (xem hình). Từ tam giác đồng dạng,</span>
+
+$$
+\frac{a}{16-x}=\frac{10}{20}
+\ \Rightarrow\ L(x)=2(15+a)=46-x
+$$
+</div>
+</div>
+<div>
+<img src="./images/dam2.jpg" class="graph-img" alt="Dam cross-section with a horizontal strip and similar triangles">
+
+<div class="box blue mt-3 formula-stack">
+<div class="label"><span class="lang-en">3. Force on the strip at depth $x$</span><span class="lang-vi">3. Lực trên dải ở độ sâu $x$</span></div>
+<span class="lang-en">Here $\rho g=1000\times9.8=9800$:</span>
+<span class="lang-vi">Ở đây $\rho g=1000\times9.8=9800$:</span>
+
+$$
+dF=\underbrace{\rho g\,x}_{P}\,\underbrace{L(x)\,dx}_{dA}=9800\,x(46-x)\,dx
+$$
+</div>
+</div>
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3 (this is Example 2).</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3 (đây là Ví dụ 2).</span>
+</div>
+
+---
+class: compact solution-slide
+---
+
+# <span class="lang-en">Case 2 - Add And Interpret</span><span class="lang-vi">Tình huống 2 - cộng và diễn giải</span>
+
+<div class="grid-2">
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">4. Add the strip forces</span><span class="lang-vi">4. Cộng lực trên các dải</span></div>
+<span class="lang-en">Adding the forces and taking the limit as $n\to\infty$:</span>
+<span class="lang-vi">Cộng các lực và qua giới hạn khi $n\to\infty$:</span>
+
+$$
+F=\int_0^{16}9800\,x(46-x)\,dx
+=9800\left[23x^2-\frac{x^3}{3}\right]_0^{16}
+$$
+
+$$
+=9800\left(5888-\tfrac{4096}{3}\right)
+\approx4.43\times10^7\ \text{N}
+$$
+</div>
+<div class="box blue">
+<div class="label"><span class="lang-en">5. Interpret</span><span class="lang-vi">5. Diễn giải</span></div>
+<span class="lang-en">About $4.4\times10^7$ N — the weight of roughly 4500 tonnes. Since $x(46-x)$ increases up to $x=16$, the deepest strips carry the largest forces, even though the dam is narrower there.</span>
+<span class="lang-vi">Khoảng $4.4\times10^7$ N — bằng trọng lượng cỡ 4500 tấn. Vì $x(46-x)$ tăng đến tận $x=16$, các dải sâu nhất chịu lực lớn nhất, dù đập ở đó hẹp hơn.</span>
+</div>
+</div>
+
+<div class="caution mt-3">
+<div class="label"><span class="lang-en">A common error</span><span class="lang-vi">Một lỗi thường gặp</span></div>
+<span class="lang-en">In $P=\rho g\,x$, depth is measured from the water surface, not from the top of the dam.</span>
+<span class="lang-vi">Trong $P=\rho g\,x$, độ sâu được đo từ mặt nước, không phải từ đỉnh đập.</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3 (this is Example 2).</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 8.3 (đây là Ví dụ 2).</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Money Through Time</span><span class="lang-vi">Tiền theo dòng thời gian</span>
+
+<div class="grid-2">
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">Continuous compounding</span><span class="lang-vi">Ghép lãi liên tục</span></div>
+<span class="lang-en">Compounded $n$ times a year at annual interest rate $r$, a deposit $PV$ (present value) grows after $t$ years to the future value $FV$. Letting $n\to\infty$:</span>
+<span class="lang-vi">Ghép lãi $n$ lần mỗi năm với lãi suất năm $r$, khoản gửi $PV$ (hiện giá) sau $t$ năm tăng thành giá trị tương lai $FV$. Cho $n\to\infty$:</span>
+
+$$
+FV=PV\left(1+\frac{r}{n}\right)^{nt}
+\ \xrightarrow{\ n\to\infty\ }\ PV\,e^{rt}
+$$
+</div>
+<div class="box blue">
+<div class="label"><span class="lang-en">Present value</span><span class="lang-vi">Hiện giá</span></div>
+<span class="lang-en">The present value of $K$ dollars payable $t$ years from now is $Ke^{-rt}$ — the deposit today that grows to $K$.</span>
+<span class="lang-vi">Hiện giá của $K$ đô-la nhận sau $t$ năm là $Ke^{-rt}$ — khoản gửi hôm nay sẽ tăng thành $K$.</span>
+</div>
+</div>
+
+<div class="box mt-3">
+<div class="label"><span class="lang-en">Summary</span><span class="lang-vi">Tóm tắt</span></div>
+<span class="lang-en">Multiply by $e^{rt}$ to move money $t$ years forward in time; multiply by $e^{-rt}$ to move it back to today ($e$ enters through the limit above).</span>
+<span class="lang-vi">Nhân với $e^{rt}$ để chuyển tiền tới $t$ năm sau; nhân với $e^{-rt}$ để chuyển ngược về hôm nay (số $e$ xuất hiện qua giới hạn ở trên).</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Continuous money streams: instructor notes — see <a href="../../readings/">course readings</a>; related: Stewart 8.4.</span>
+<span class="lang-vi">Dòng tiền liên tục: ghi chú môn học — xem <a href="../../readings/">tài liệu đọc của môn</a>; đọc thêm: Stewart 8.4.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Value Of An Income Stream</span><span class="lang-vi">Giá trị của dòng thu nhập</span>
+
+<div class="grid-2">
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">One small deposit</span><span class="lang-vi">Một khoản gửi nhỏ</span></div>
+<span class="lang-en">$f(t)$ = the deposit rate, $r$ = the interest rate. The deposit in $[t,\,t+dt]$ is about $f(t)\,dt$; its present value is</span>
+<span class="lang-vi">$f(t)$ = tốc độ gửi tiền, $r$ = lãi suất. Khoản gửi trong $[t,\,t+dt]$ xấp xỉ $f(t)\,dt$; hiện giá của nó là</span>
+
+$$
+dPV=f(t)\,e^{-rt}\,dt
+$$
+</div>
+<div class="thm formula-stack">
+<div class="tag"><span class="lang-en">Present value of the stream</span><span class="lang-vi">Hiện giá của dòng tiền</span></div>
+
+$$
+PV=\int_0^{T}f(t)\,e^{-rt}\,dt
+$$
+</div>
+</div>
+
+<div class="thm mt-3 formula-stack">
+<span class="tag"><span class="lang-en">Future value of the stream</span><span class="lang-vi">Giá trị tương lai của dòng tiền</span></span>
+<span class="lang-en">Each deposit still earns interest for $T-t$ more years (try X2):</span>
+<span class="lang-vi">Mỗi khoản gửi còn sinh lãi thêm $T-t$ năm (thử X2):</span>
+
+$$
+FV=\int_0^{T}f(t)\,e^{r(T-t)}\,dt
+$$
+</div>
+
+<div class="refs">
+<span class="lang-en">Continuous money streams: instructor notes — see <a href="../../readings/">course readings</a>; related: Stewart 8.4.</span>
+<span class="lang-vi">Dòng tiền liên tục: ghi chú môn học — xem <a href="../../readings/">tài liệu đọc của môn</a>; đọc thêm: Stewart 8.4.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Case 3 - Pricing A Machine</span><span class="lang-vi">Tình huống 3 - định giá cỗ máy</span>
+
+<div class="grid-2 align-center">
+<div class="box gold">
+<div class="label"><span class="lang-en">The question</span><span class="lang-vi">Câu hỏi</span></div>
+<span class="lang-en">A machine generates income at the rate $f(t)=15-2t$ million dollars per year, $0\le t\le7$. Money can be invested at 8% compounded continuously. Find the machine's fair market price.</span>
+<span class="lang-vi">Một cỗ máy tạo thu nhập với tốc độ $f(t)=15-2t$ triệu đô-la mỗi năm, $0\le t\le7$. Tiền có thể đầu tư với lãi suất 8% ghép liên tục. Tìm giá thị trường hợp lý của máy.</span>
+</div>
+<img src="./images/5year.jpg" class="graph-img" alt="Timeline of an income stream sliced into small deposits">
+</div>
+
+<div class="box mt-3 formula-stack">
+<div class="label"><span class="lang-en">Fair price = present value</span><span class="lang-vi">Giá hợp lý = hiện giá</span></div>
+<span class="lang-en">The fair price is the present value of the machine's income. Substitute $f(t)=15-2t$, $r=0.08$, $T=7$:</span>
+<span class="lang-vi">Giá hợp lý là hiện giá của dòng thu nhập của máy. Thế $f(t)=15-2t$, $r=0.08$, $T=7$:</span>
+
+$$
+PV=\int_0^7(15-2t)\,e^{-0.08t}\,dt
+$$
+</div>
+
+<div class="refs">
+<span class="lang-en">Continuous money streams: instructor notes — see <a href="../../readings/">course readings</a>; related: Stewart 8.4.</span>
+<span class="lang-vi">Dòng tiền liên tục: ghi chú môn học — xem <a href="../../readings/">tài liệu đọc của môn</a>; đọc thêm: Stewart 8.4.</span>
+</div>
+
+---
+class: compact solution-slide
+---
+
+# <span class="lang-en">Case 3 - Solve: Present Value</span><span class="lang-vi">Tình huống 3 - giải: hiện giá</span>
+
+<div class="grid-2">
+<div class="box formula-stack">
+<div class="label"><span class="lang-en">1. Integrate by parts</span><span class="lang-vi">1. Tích phân từng phần</span></div>
+<span class="lang-en">Take $u=15-2t$, $dv=e^{-0.08t}dt$, so $du=-2\,dt$ and $v=-12.5\,e^{-0.08t}$:</span>
+<span class="lang-vi">Chọn $u=15-2t$, $dv=e^{-0.08t}dt$, suy ra $du=-2\,dt$ và $v=-12.5\,e^{-0.08t}$:</span>
+
+$$
+\int(15-2t)e^{-0.08t}dt
+=-12.5(15-2t)e^{-0.08t}-25\!\int e^{-0.08t}dt
+$$
+
+$$
+=e^{-0.08t}(25t+125)
+$$
+</div>
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">2. Evaluate and check</span><span class="lang-vi">2. Thế cận và kiểm tra</span></div>
+
+$$
+PV=\Big[e^{-0.08t}(25t+125)\Big]_0^7
+=300e^{-0.56}-125\approx46.36
+$$
+
+<span class="lang-en">Check: differentiating $e^{-0.08t}(25t+125)$ gives back $(15-2t)e^{-0.08t}$.</span>
+<span class="lang-vi">Kiểm tra: đạo hàm $e^{-0.08t}(25t+125)$ trả lại đúng $(15-2t)e^{-0.08t}$.</span>
+</div>
+</div>
+
+<div class="thm mt-3">
+<span class="tag"><span class="lang-en">3. Interpret</span><span class="lang-vi">3. Diễn giải</span></span>
+<span class="lang-en">The fair price is about 46.4 million dollars. In total the machine pays $\int_0^7(15-2t)\,dt=56$ million; discounting at 8% reduces its value today to 46.4 million.</span>
+<span class="lang-vi">Giá hợp lý xấp xỉ 46.4 triệu đô-la. Tổng cộng cỗ máy trả $\int_0^7(15-2t)\,dt=56$ triệu; chiết khấu 8% đưa giá trị hôm nay về 46.4 triệu.</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Continuous money streams: instructor notes — see <a href="../../readings/">course readings</a>; related: Stewart 8.4.</span>
+<span class="lang-vi">Dòng tiền liên tục: ghi chú môn học — xem <a href="../../readings/">tài liệu đọc của môn</a>; đọc thêm: Stewart 8.4.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Case 4 - A Tire Market</span><span class="lang-vi">Tình huống 4 - thị trường lốp xe</span>
+
+<div class="grid-2 align-center">
+<div>
+<div class="box gold">
+<div class="label"><span class="lang-en">The question</span><span class="lang-vi">Câu hỏi</span></div>
+<span class="lang-en">Wholesalers will buy $q$ thousand tires when the price is $p=D(q)=90-0.1q^2$ dollars per tire, and producers will supply $q$ thousand tires when the price is $p=S(q)=0.2q^2+q+50$. Find the equilibrium price and the consumer's and producer's surplus there.</span>
+<span class="lang-vi">Nhà bán sỉ sẽ mua $q$ nghìn lốp khi giá là $p=D(q)=90-0.1q^2$ đô-la/lốp, và nhà sản xuất sẽ cung ứng $q$ nghìn lốp khi giá là $p=S(q)=0.2q^2+q+50$. Tìm giá cân bằng cùng thặng dư tiêu dùng và thặng dư sản xuất tại đó.</span>
+</div>
+
+<div class="box mt-3">
+<div class="label"><span class="lang-en">Demand and supply curves</span><span class="lang-vi">Đường cầu và đường cung</span></div>
+<span class="lang-en">The demand curve $p=D(q)$ gives the price per unit at which $q$ units can be sold; it decreases as $q$ increases. The supply curve $p=S(q)$ gives the price at which producers will supply $q$ units; it increases.</span>
+<span class="lang-vi">Đường cầu $p=D(q)$ cho mức giá mỗi đơn vị mà tại đó bán được $q$ đơn vị; nó giảm khi $q$ tăng. Đường cung $p=S(q)$ cho mức giá mà tại đó nhà sản xuất cung ứng $q$ đơn vị; nó tăng.</span>
+</div>
+</div>
+<img src="./images/surplus.jpg" class="graph-img" alt="Demand and supply curves with surplus areas">
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: Stewart 8.4 (consumer surplus); notes on <a href="../../readings/">course readings</a>.</span>
+<span class="lang-vi">Đọc: Stewart 8.4 (thặng dư tiêu dùng); ghi chú trên <a href="../../readings/">tài liệu đọc của môn</a>.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Why Surplus Is An Area</span><span class="lang-vi">Vì sao thặng dư là diện tích</span>
+
+<div class="grid-2">
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">Consumer surplus</span><span class="lang-vi">Thặng dư tiêu dùng</span></div>
+<span class="lang-en">Suppose $q_0$ units sell, all at one price $p_0$. Buyers of the $dq$ units near $q$ would have paid $D(q)$ each — saving $(D(q)-p_0)\,dq$. Total saving = consumer surplus:</span>
+<span class="lang-vi">Giả sử bán được $q_0$ đơn vị, cùng một giá $p_0$. Người mua $dq$ đơn vị quanh mức $q$ chịu trả tới $D(q)$ — tiết kiệm $(D(q)-p_0)\,dq$. Tổng tiết kiệm = thặng dư tiêu dùng:</span>
+
+$$
+CS=\int_0^{q_0}\big(D(q)-p_0\big)\,dq
 $$
 </div>
 <div class="box blue formula-stack">
-<div class="label"><span class="lang-en">Present value</span><span class="lang-vi">Hiện giá</span></div>
+<div class="label"><span class="lang-en">Producer surplus</span><span class="lang-vi">Thặng dư sản xuất</span></div>
+<span class="lang-en">Producers would have supplied unit $q$ at the price $S(q)$ but receive $p_0$. Their total gain is the producer surplus:</span>
+<span class="lang-vi">Nhà sản xuất sẵn lòng cung ứng đơn vị thứ $q$ với giá $S(q)$ nhưng nhận được $p_0$. Tổng phần lời của họ là thặng dư sản xuất:</span>
 
 $$
-PV=\int_0^T f(t)e^{-rt}\,dt
+PS=\int_0^{q_0}\big(p_0-S(q)\big)\,dq
 $$
 </div>
 </div>
 
-<div class="box mt-3 formula-stack">
-<div class="label"><span class="lang-en">Marginal profit</span><span class="lang-vi">Lợi nhuận biên</span></div>
+<div class="thm mt-3">
+<span class="tag"><span class="lang-en">As areas</span><span class="lang-vi">Dưới dạng diện tích</span></span>
+<span class="lang-en">$CS$ is the area between the demand curve and the line $p=p_0$; $PS$ is the area between $p=p_0$ and the supply curve — both from $0$ to $q_0$.</span>
+<span class="lang-vi">$CS$ là diện tích giữa đường cầu và đường thẳng $p=p_0$; $PS$ là diện tích giữa $p=p_0$ và đường cung — đều tính từ $0$ đến $q_0$.</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: Stewart 8.4 (consumer surplus); notes on <a href="../../readings/">course readings</a>.</span>
+<span class="lang-vi">Đọc: Stewart 8.4 (thặng dư tiêu dùng); ghi chú trên <a href="../../readings/">tài liệu đọc của môn</a>.</span>
+</div>
+
+---
+class: compact solution-slide
+---
+
+# <span class="lang-en">Case 4 - Equilibrium: One Price</span><span class="lang-vi">Tình huống 4 - cân bằng: một mức giá</span>
+
+<div class="grid-2">
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">1. Supply equals demand</span><span class="lang-vi">1. Cung bằng cầu</span></div>
 
 $$
-\Delta E=\int_a^b\big(R'(x)-C'(x)\big)\,dx
+D(q)=S(q)\ \Rightarrow\ 0.3q^2+q-40=0
 $$
+
+$$
+q_0=10,\qquad p_0=D(10)=80
+$$
+
+<span class="lang-en">(the negative root $q=-40/3$ is rejected).</span>
+<span class="lang-vi">(loại nghiệm âm $q=-40/3$).</span>
 </div>
-</div>
-<div class="img-strip vertical-strip">
-<img src="./images/compounding.jpg" class="graph-img" alt="Continuous compounding">
-<img src="./images/5year.jpg" class="graph-img" alt="Continuous income stream timeline">
-<img src="./images/surplus.jpg" class="graph-img" alt="Consumer and producer surplus">
+<div class="box blue">
+<div class="label"><span class="lang-en">What the surpluses measure</span><span class="lang-vi">Thặng dư đo điều gì</span></div>
+<span class="lang-en">All $q_0$ units sell at the single price $p_0=80$ — yet buyers of earlier units were willing to pay more, and producers of earlier units to accept less. The surpluses measure these gains.</span>
+<span class="lang-vi">Cả $q_0$ đơn vị đều bán ở một mức giá $p_0=80$ — nhưng người mua các đơn vị đầu sẵn lòng trả cao hơn, và nhà sản xuất các đơn vị đầu chấp nhận thấp hơn. Thặng dư đo các phần lợi này.</span>
 </div>
 </div>
 
 <div class="refs">
-<span class="lang-en">Economic applications use the same accumulation principle as OpenStax Vol 1, 6.1-6.6; practice anchors: Stewart 6.1-6.5 and local instructor exercises.</span>
-<span class="lang-vi">Ứng dụng kinh tế dùng cùng nguyên lý cộng dồn như OpenStax Tập 1, 6.1-6.6; nguồn luyện tập: Stewart 6.1-6.5 và bài tập bổ sung của giảng viên.</span>
+<span class="lang-en">Read: Stewart 8.4 (consumer surplus); notes on <a href="../../readings/">course readings</a>.</span>
+<span class="lang-vi">Đọc: Stewart 8.4 (thặng dư tiêu dùng); ghi chú trên <a href="../../readings/">tài liệu đọc của môn</a>.</span>
 </div>
 
 ---
-class: compact exercise-heavy
+class: compact solution-slide
 ---
 
-# <span class="lang-en">Economic Models I: Money Streams</span><span class="lang-vi">Mô hình kinh tế I: dòng tiền</span>
+# <span class="lang-en">Case 4 - Compute The Surpluses</span><span class="lang-vi">Tình huống 4 - tính hai thặng dư</span>
 
-<div class="exercise-grid">
-<div class="exercise-card">
-<div class="num">E1 Future value</div>
-<span class="lang-en">Deposit 1500 dollars per year continuously for 5 years at 7% continuously compounded interest.</span>
-<span class="lang-vi">Gửi liên tục 1500 đô-la mỗi năm trong 5 năm với lãi suất ghép liên tục 7%.</span>
+<div class="grid-2">
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">2. Consumer surplus</span><span class="lang-vi">2. Thặng dư tiêu dùng</span></div>
+<span class="lang-en">Substitute $D(q)=90-0.1q^2$, $p_0=80$, $q_0=10$ into the boxed formula:</span>
+<span class="lang-vi">Thế $D(q)=90-0.1q^2$, $p_0=80$, $q_0=10$ vào công thức đã đóng khung:</span>
+
+$$
+CS=\int_0^{10}\big(10-0.1q^2\big)\,dq=\frac{200}{3}
+$$
 </div>
-<div class="exercise-card">
-<div class="num">E2 Present value</div>
-<span class="lang-en">A machine earns $15-2t$ million dollars/year for $0\le t\le7$. Discount at 8% continuously.</span>
-<span class="lang-vi">Một máy tạo thu nhập $15-2t$ triệu đô-la/năm với $0\le t\le7$. Chiết khấu liên tục 8%.</span>
+<div class="box blue formula-stack">
+<div class="label"><span class="lang-en">3. Producer surplus</span><span class="lang-vi">3. Thặng dư sản xuất</span></div>
+<span class="lang-en">And $S(q)=0.2q^2+q+50$ into the formula for $PS$:</span>
+<span class="lang-vi">Và $S(q)=0.2q^2+q+50$ vào công thức của $PS$:</span>
+
+$$
+PS=\int_0^{10}\big(30-q-0.2q^2\big)\,dq=\frac{550}{3}
+$$
 </div>
+</div>
+
+<div class="thm mt-3">
+<span class="tag"><span class="lang-en">4. Interpret</span><span class="lang-vi">4. Diễn giải</span></span>
+<span class="lang-en">Units: thousands of dollars. $CS\approx66.7$, $PS\approx183.3$ — producers gain more, since supply starts 30 below the price and demand only 10 above.</span>
+<span class="lang-vi">Đơn vị: nghìn đô-la. $CS\approx66.7$, $PS\approx183.3$ — nhà sản xuất lợi hơn, vì đường cung thấp hơn giá 30 còn đường cầu chỉ cao hơn 10.</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: Stewart 8.4 (consumer surplus); notes on <a href="../../readings/">course readings</a>.</span>
+<span class="lang-vi">Đọc: Stewart 8.4 (thặng dư tiêu dùng); ghi chú trên <a href="../../readings/">tài liệu đọc của môn</a>.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Case 5 - A Clinic With Arrivals</span><span class="lang-vi">Tình huống 5 - phòng khám có bệnh nhân mới</span>
+
+<div class="grid-2 align-center">
+<div>
+<div class="box gold">
+<div class="label"><span class="lang-en">The question</span><span class="lang-vi">Câu hỏi</span></div>
+<span class="lang-en">A new clinic accepts 300 patients when it opens. The fraction of patients still receiving treatment $t$ months after joining is $f(t)=e^{-t/20}$, and new patients arrive at the rate of 10 per month. How many patients will be in treatment 15 months from now?</span>
+<span class="lang-vi">Một phòng khám mới nhận 300 bệnh nhân khi mở cửa. Tỉ lệ bệnh nhân còn được điều trị $t$ tháng sau khi vào là $f(t)=e^{-t/20}$, và bệnh nhân mới đến với tốc độ 10 người mỗi tháng. Hỏi 15 tháng nữa có bao nhiêu bệnh nhân đang được điều trị?</span>
 </div>
 
 <div class="box blue mt-3">
-<div class="label"><span class="lang-en">Before computing</span><span class="lang-vi">Trước khi tính</span></div>
-<span class="lang-en">For each dollar at time $t$, decide whether it grows forward to year 5 or discounts back to today.</span>
-<span class="lang-vi">Với mỗi đô-la tại thời điểm $t$, quyết định nó tăng đến năm 5 hay chiết khấu về hiện tại.</span>
+<div class="label"><span class="lang-en">Two groups of patients</span><span class="lang-vi">Hai nhóm bệnh nhân</span></div>
+<span class="lang-en">At month 15 there are two kinds of patients: the remaining originals, and later arrivals. A patient admitted at time $t$ has then been treated for only $15-t$ months.</span>
+<span class="lang-vi">Ở tháng 15 có hai nhóm bệnh nhân: những người ban đầu còn lại, và những người vào sau. Bệnh nhân vào ở thời điểm $t$ khi đó mới được điều trị $15-t$ tháng.</span>
+</div>
+</div>
+<img src="./images/treatment.jpg" class="graph-img" alt="Timeline of patients arriving and leaving treatment">
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: OpenStax Vol 1, 6.1-6.6 for integral setup fluency; Stewart 6.1-6.5; local instructor exercises.</span>
-<span class="lang-vi">Luyện tập: OpenStax Tập 1, 6.1-6.6 để thuần thục thiết lập tích phân; Stewart 6.1-6.5; bài tập bổ sung của giảng viên.</span>
+<span class="lang-en">Survival-and-renewal models: instructor notes — see <a href="../../readings/">course readings</a>; related: Stewart 8.4.</span>
+<span class="lang-vi">Mô hình tồn tại và bổ sung: ghi chú môn học — xem <a href="../../readings/">tài liệu đọc của môn</a>; đọc thêm: Stewart 8.4.</span>
 </div>
 
 ---
 class: compact solution-slide
 ---
 
-# <span class="lang-en">Solution E1: Future Value</span><span class="lang-vi">Lời giải E1: giá trị tương lai</span>
+# <span class="lang-en">Survival And Renewal: The Formula</span><span class="lang-vi">Tồn tại và bổ sung: công thức</span>
 
 <div class="grid-2">
-<div class="box gold formula-stack">
-<div class="label"><span class="lang-en">Model one small deposit</span><span class="lang-vi">Mô hình một khoản gửi nhỏ</span></div>
-<span class="lang-en">A deposit $1500\,dt$ made at time $t$ grows for $5-t$ years.</span>
-<span class="lang-vi">Khoản gửi $1500\,dt$ tại thời điểm $t$ tăng trưởng trong $5-t$ năm.</span>
-
-$$
-dFV=1500e^{0.07(5-t)}\,dt.
-$$
+<div class="box gold">
+<div class="label"><span class="lang-en">The original group</span><span class="lang-vi">Nhóm ban đầu</span></div>
+<span class="lang-en">A group starts with $P_0$ members, and $f(t)$ is the fraction that remains $t$ months after joining. Of the originals, $P_0\,f(T)$ remain at time $T$.</span>
+<span class="lang-vi">Một nhóm bắt đầu với $P_0$ thành viên, và $f(t)$ là tỉ lệ còn lại $t$ tháng sau khi vào. Trong nhóm ban đầu, còn $P_0\,f(T)$ ở thời điểm $T$.</span>
 </div>
-<div class="box formula-stack">
-<div class="label"><span class="lang-en">Add all deposits</span><span class="lang-vi">Cộng tất cả khoản gửi</span></div>
+<div class="box blue formula-stack">
+<div class="label"><span class="lang-en">The arrivals</span><span class="lang-vi">Nhóm vào sau</span></div>
+<span class="lang-en">Of the $r(t)\,dt$ members arriving during $[t,\,t+dt]$, the fraction $f(T-t)$ remains at time $T$:</span>
+<span class="lang-vi">Trong $r(t)\,dt$ thành viên vào lúc $[t,\,t+dt]$, tỉ lệ $f(T-t)$ còn lại ở thời điểm $T$:</span>
 
 $$
-FV=\int_0^5 1500e^{0.07(5-t)}\,dt
-$$
-
-$$
-FV=\frac{1500}{0.07}\left(e^{0.35}-1\right)
-\approx8980.02.
+dP=r(t)\,f(T-t)\,dt
 $$
 </div>
 </div>
 
-<div class="thm mt-3">
-<span class="lang-en">The future value after 5 years is about 8980 dollars.</span>
-<span class="lang-vi">Giá trị tương lai sau 5 năm xấp xỉ 8980 đô-la.</span>
+<div class="thm mt-3 formula-stack">
+<span class="tag"><span class="lang-en">Population at time $T$</span><span class="lang-vi">Số lượng ở thời điểm $T$</span></span>
+
+$$
+P(T)=P_0\,f(T)+\int_0^{T}r(t)\,f(T-t)\,dt
+$$
 </div>
 
 <div class="refs">
-<span class="lang-en">Worked example: continuous accumulation; OpenStax Vol 1, 6.1-6.6; Stewart 6.1-6.5; local instructor exercises.</span>
-<span class="lang-vi">Ví dụ lời giải: tích lũy liên tục; OpenStax Tập 1, 6.1-6.6; Stewart 6.1-6.5; bài tập bổ sung của giảng viên.</span>
+<span class="lang-en">Survival-and-renewal models: instructor notes — see <a href="../../readings/">course readings</a>; related: Stewart 8.4.</span>
+<span class="lang-vi">Mô hình tồn tại và bổ sung: ghi chú môn học — xem <a href="../../readings/">tài liệu đọc của môn</a>; đọc thêm: Stewart 8.4.</span>
 </div>
 
 ---
 class: compact solution-slide
 ---
 
-# <span class="lang-en">Solution E2: Present Value</span><span class="lang-vi">Lời giải E2: hiện giá</span>
+# <span class="lang-en">Case 5 - Apply The Formula</span><span class="lang-vi">Tình huống 5 - áp dụng công thức</span>
 
 <div class="grid-2">
-<div class="box gold formula-stack">
-<div class="label"><span class="lang-en">Discount each payment</span><span class="lang-vi">Chiết khấu từng khoản</span></div>
-<span class="lang-en">Income at time $t$ is worth less today by the factor $e^{-0.08t}$.</span>
-<span class="lang-vi">Thu nhập tại thời điểm $t$ có giá trị hiện tại giảm bởi hệ số $e^{-0.08t}$.</span>
+<div class="box gold">
+<div class="label"><span class="lang-en">Identify the ingredients</span><span class="lang-vi">Xác định các thành phần</span></div>
+<span class="lang-en">$P_0=300$, arrival rate $r(t)=10$ patients per month, survival fraction $f(t)=e^{-t/20}$, and $T=15$ months.</span>
+<span class="lang-vi">$P_0=300$, tốc độ vào $r(t)=10$ bệnh nhân mỗi tháng, tỉ lệ còn lại $f(t)=e^{-t/20}$, và $T=15$ tháng.</span>
+</div>
+<div class="box blue">
+<div class="label"><span class="lang-en">Why $f(15-t)$, not $f(t)$</span><span class="lang-vi">Vì sao là $f(15-t)$, không phải $f(t)$</span></div>
+<span class="lang-en">A patient admitted at time $t$ has been in treatment for $15-t$ months at month 15, so the fraction remaining is $f(15-t)$.</span>
+<span class="lang-vi">Bệnh nhân vào ở thời điểm $t$ thì đến tháng 15 mới điều trị được $15-t$ tháng, nên tỉ lệ còn lại là $f(15-t)$.</span>
+</div>
+</div>
+
+<div class="thm mt-3 formula-stack">
+<span class="tag"><span class="lang-en">The number to evaluate</span><span class="lang-vi">Biểu thức cần tính</span></span>
 
 $$
-PV=\int_0^7(15-2t)e^{-0.08t}\,dt.
+P(15)=300\,e^{-15/20}+\int_0^{15}10\,e^{-(15-t)/20}\,dt
 $$
 </div>
+
+<div class="refs">
+<span class="lang-en">Survival-and-renewal models: instructor notes — see <a href="../../readings/">course readings</a>; related: Stewart 8.4.</span>
+<span class="lang-vi">Mô hình tồn tại và bổ sung: ghi chú môn học — xem <a href="../../readings/">tài liệu đọc của môn</a>; đọc thêm: Stewart 8.4.</span>
+</div>
+
+---
+class: compact solution-slide
+---
+
+# <span class="lang-en">Case 5 - Solve And Look Ahead</span><span class="lang-vi">Tình huống 5 - giải và nhìn xa hơn</span>
+
+<div class="grid-2">
 <div class="box formula-stack">
-<div class="label"><span class="lang-en">Evaluate</span><span class="lang-vi">Tính tích phân</span></div>
+<div class="label"><span class="lang-en">1. Evaluate the integral</span><span class="lang-vi">1. Tính tích phân</span></div>
+<span class="lang-en">Substitute $u=15-t$, $du=-dt$; the limits $t:0\to15$ become $u:15\to0$:</span>
+<span class="lang-vi">Đổi biến $u=15-t$, $du=-dt$; cận $t:0\to15$ thành $u:15\to0$:</span>
 
 $$
-\int(15-2t)e^{-0.08t}\,dt
-=e^{-0.08t}(25t+125)
+\int_0^{15}10\,e^{-(15-t)/20}\,dt
+=\int_0^{15}10\,e^{-u/20}\,du
+=200\big(1-e^{-0.75}\big)
+$$
+</div>
+<div class="box gold formula-stack">
+<div class="label"><span class="lang-en">2. Count both groups</span><span class="lang-vi">2. Đếm cả hai nhóm</span></div>
+
+$$
+P(15)=300e^{-0.75}+200\big(1-e^{-0.75}\big)
 $$
 
 $$
-PV=300e^{-0.56}-125\approx46.36.
+\approx141.7+105.5\approx247
 $$
+
+<span class="lang-en">About 247 patients will be in treatment.</span>
+<span class="lang-vi">Khoảng 247 bệnh nhân đang được điều trị.</span>
 </div>
 </div>
 
 <div class="thm mt-3">
-<span class="lang-en">The present value is about 46.36 million dollars.</span>
-<span class="lang-vi">Hiện giá xấp xỉ 46.36 triệu đô-la.</span>
+<span class="tag"><span class="lang-en">3. Look ahead</span><span class="lang-vi">3. Nhìn xa hơn</span></span>
+<span class="lang-en">As $T\to\infty$ the originals tend to $0$ and the arrivals term to $200$ = rate × average stay ($\int_0^\infty e^{-t/20}dt=20$ months): the clinic approaches a steady 200 patients.</span>
+<span class="lang-vi">Khi $T\to\infty$, nhóm cũ tiến về $0$ còn nhóm vào sau tiến về $200$ = tốc độ vào × thời gian ở trung bình ($\int_0^\infty e^{-t/20}dt=20$ tháng): phòng khám tiến về mức ổn định 200 bệnh nhân.</span>
 </div>
 
 <div class="refs">
-<span class="lang-en">Worked example: continuous discounting; OpenStax Vol 1, 6.1-6.6; Stewart 6.1-6.5; local instructor exercises.</span>
-<span class="lang-vi">Ví dụ lời giải: chiết khấu liên tục; OpenStax Tập 1, 6.1-6.6; Stewart 6.1-6.5; bài tập bổ sung của giảng viên.</span>
+<span class="lang-en">Survival-and-renewal models: instructor notes — see <a href="../../readings/">course readings</a>; related: Stewart 8.4.</span>
+<span class="lang-vi">Mô hình tồn tại và bổ sung: ghi chú môn học — xem <a href="../../readings/">tài liệu đọc của môn</a>; đọc thêm: Stewart 8.4.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Five Models, One Recipe</span><span class="lang-vi">Năm mô hình, một công thức chung</span>
+
+<div class="method-grid app-methods">
+<div class="method-card">
+<strong><span class="lang-en">Spring</span><span class="lang-vi">Lò xo</span></strong>
+<span class="lang-en">force × small stretch</span>
+<span class="lang-vi">lực × đoạn giãn nhỏ</span>
+
+$$
+dW=kx\,dx
+$$
+</div>
+<div class="method-card">
+<strong><span class="lang-en">Dam</span><span class="lang-vi">Đập nước</span></strong>
+<span class="lang-en">pressure × strip area</span>
+<span class="lang-vi">áp suất × diện tích dải</span>
+
+$$
+dF=\rho g\,x\,L(x)\,dx
+$$
+</div>
+<div class="method-card">
+<strong><span class="lang-en">Pricing</span><span class="lang-vi">Định giá</span></strong>
+<span class="lang-en">deposit, discounted</span>
+<span class="lang-vi">khoản gửi, đã chiết khấu</span>
+
+$$
+dPV=f(t)\,e^{-rt}\,dt
+$$
+</div>
+<div class="method-card">
+<strong><span class="lang-en">Market</span><span class="lang-vi">Thị trường</span></strong>
+<span class="lang-en">saving on each unit</span>
+<span class="lang-vi">khoản lời trên từng đơn vị</span>
+
+$$
+dCS=\big(D(q)-p_0\big)\,dq
+$$
+</div>
+<div class="method-card">
+<strong><span class="lang-en">Clinic</span><span class="lang-vi">Phòng khám</span></strong>
+<span class="lang-en">arrivals × fraction left</span>
+<span class="lang-vi">người vào × tỉ lệ còn lại</span>
+
+$$
+dP=r(t)\,f(T-t)\,dt
+$$
+</div>
+</div>
+
+<div class="box blue mt-4">
+<div class="label"><span class="lang-en">Check units first</span><span class="lang-vi">Kiểm tra đơn vị trước</span></div>
+<span class="lang-en">Write the small piece first and check its units; wrong units mean a wrong integral.</span>
+<span class="lang-vi">Hãy viết phần nhỏ trước và kiểm tra đơn vị của nó; đơn vị sai nghĩa là tích phân sai.</span>
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4, 8.3-8.4.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; <a href="https://activecalculus.org/single/sec-6-4-physics.html">Active Calculus 6.4</a>; Stewart 6.4, 8.3-8.4.</span>
 </div>
 
 ---
 class: compact exercise-heavy
 ---
 
-# <span class="lang-en">Economic Models II: Margins And Surplus</span><span class="lang-vi">Mô hình kinh tế II: biên và thặng dư</span>
+# <span class="lang-en">Your Turn: Applications I</span><span class="lang-vi">Tự luyện: ứng dụng I</span>
 
 <div class="exercise-grid">
 <div class="exercise-card">
-<div class="num">E3 Net earnings</div>
-<span class="lang-en">$C'(x)=0.1x^2+4x+10$, $R'(x)=70-x$. Find net earnings from $0$ to $10$.</span>
-<span class="lang-vi">$C'(x)=0.1x^2+4x+10$, $R'(x)=70-x$. Tính lợi nhuận ròng từ $0$ đến $10$.</span>
+<div class="num">X1</div>
+<span class="lang-en">When a particle is located a distance $x$ metres from the origin, a force of $x^2+2x$ newtons acts on it. How much work is done in moving it from $x=1$ to $x=3$?</span>
+<span class="lang-vi">Khi chất điểm cách gốc tọa độ $x$ mét, một lực $x^2+2x$ newton tác dụng lên nó. Hỏi cần bao nhiêu công để di chuyển nó từ $x=1$ đến $x=3$?</span>
 </div>
 <div class="exercise-card">
-<div class="num">E4 Surplus</div>
-<span class="lang-en">Demand $D(q)=-0.1q^2+90$; supply $S(q)=0.2q^2+q+50$. Find both surpluses.</span>
-<span class="lang-vi">Cầu $D(q)=-0.1q^2+90$; cung $S(q)=0.2q^2+q+50$. Tìm hai thặng dư.</span>
+<div class="num">X2</div>
+<span class="lang-en">You deposit 1200 dollars per year continuously into an account paying 6% per year, compounded continuously. How much is in the account after 10 years?</span>
+<span class="lang-vi">Bạn gửi liên tục 1200 đô-la mỗi năm vào tài khoản lãi suất 6%/năm, ghép lãi liên tục. Sau 10 năm tài khoản có bao nhiêu?</span>
 </div>
 </div>
 
-<div class="box blue mt-3">
-<div class="label"><span class="lang-en">Before computing</span><span class="lang-vi">Trước khi tính</span></div>
-<span class="lang-en">Net earnings integrate marginal revenue minus marginal cost; surplus integrates the vertical gap from equilibrium price.</span>
-<span class="lang-vi">Lợi nhuận ròng là tích phân doanh thu biên trừ chi phí biên; thặng dư là tích phân khoảng cách theo phương đứng từ giá cân bằng.</span>
+<div class="grid-2 mt-3">
+<div class="box blue">
+<div class="label"><span class="lang-en">Hints</span><span class="lang-vi">Gợi ý</span></div>
+<span class="lang-en">X1: apply the definition of work. X2: a deposit made at time $t$ grows for $10-t$ years, so $dFV=1200e^{0.06(10-t)}\,dt$.</span>
+<span class="lang-vi">X1: áp dụng định nghĩa của công. X2: khoản gửi lúc $t$ sinh lãi trong $10-t$ năm, nên $dFV=1200e^{0.06(10-t)}\,dt$.</span>
 </div>
-
-<div class="refs">
-<span class="lang-en">Practice: OpenStax Vol 1, 6.1-6.6 for integral setup fluency; Stewart 6.1-6.5; local instructor exercises.</span>
-<span class="lang-vi">Luyện tập: OpenStax Tập 1, 6.1-6.6 để thuần thục thiết lập tích phân; Stewart 6.1-6.5; bài tập bổ sung của giảng viên.</span>
-</div>
-
----
-class: compact solution-slide
----
-
-# <span class="lang-en">Solution E3: Net Earnings</span><span class="lang-vi">Lời giải E3: lợi nhuận ròng</span>
-
-<div class="grid-2">
-<div class="box gold formula-stack">
-<div class="label"><span class="lang-en">Build the marginal profit</span><span class="lang-vi">Lập lợi nhuận biên</span></div>
-
-$$
-R'(x)-C'(x)
-=(70-x)-(0.1x^2+4x+10)
-$$
-
-$$
-=60-5x-0.1x^2.
-$$
-</div>
-<div class="box formula-stack">
-<div class="label"><span class="lang-en">Add from $0$ to $10$</span><span class="lang-vi">Cộng từ $0$ đến $10$</span></div>
-
-$$
-\Delta E=\int_0^{10}(60-5x-0.1x^2)\,dx
-$$
-
-$$
-\Delta E=\left[60x-\frac52x^2-\frac{x^3}{30}\right]_0^{10}
-=\frac{950}{3}.
-$$
-</div>
-</div>
-
-<div class="thm mt-3">
-<span class="lang-en">Net earnings are $\dfrac{950}{3}$ thousand dollars, about 316667 dollars.</span>
-<span class="lang-vi">Lợi nhuận ròng là $\dfrac{950}{3}$ nghìn đô-la, xấp xỉ 316667 đô-la.</span>
-</div>
-
-<div class="refs">
-<span class="lang-en">Worked example: marginal functions; OpenStax Vol 1, 6.1-6.6; Stewart 6.1-6.5; local instructor exercises.</span>
-<span class="lang-vi">Ví dụ lời giải: hàm biên; OpenStax Tập 1, 6.1-6.6; Stewart 6.1-6.5; bài tập bổ sung của giảng viên.</span>
-</div>
-
----
-class: compact solution-slide
----
-
-# <span class="lang-en">Solution E4: Consumer And Producer Surplus</span><span class="lang-vi">Lời giải E4: thặng dư tiêu dùng và sản xuất</span>
-
-<div class="grid-2">
-<div class="box gold formula-stack">
-<div class="label"><span class="lang-en">Equilibrium</span><span class="lang-vi">Điểm cân bằng</span></div>
-
-$$
--0.1q^2+90=0.2q^2+q+50
-$$
-
-$$
-0.3q^2+q-40=0
-$$
-
-$$
-q_0=10,\qquad p_0=80.
-$$
-</div>
-<div class="box formula-stack">
-<div class="label"><span class="lang-en">Surplus integrals</span><span class="lang-vi">Tích phân thặng dư</span></div>
-
-$$
-CS=\int_0^{10}(D(q)-80)\,dq
-=\int_0^{10}(10-0.1q^2)\,dq
-$$
-
-$$
-CS=\frac{200}{3}
-$$
-
-$$
-PS=\int_0^{10}(80-S(q))\,dq
-=\int_0^{10}(30-q-0.2q^2)\,dq
-$$
-
-$$
-PS=\frac{550}{3}.
-$$
+<div class="box gold">
+<div class="label"><span class="lang-en">Answers</span><span class="lang-vi">Đáp số</span></div>
+<span class="blur-step" v-click>X1: $W=\dfrac{50}{3}\approx16.7$ J</span><br>
+<span class="blur-step" v-click>X2: $FV=20000\big(e^{0.6}-1\big)\approx16442$</span>
 </div>
 </div>
 
 <div class="refs">
-<span class="lang-en">Worked example: surplus as area; OpenStax Vol 1, 6.1-6.6; Stewart 6.1-6.5; local instructor exercises.</span>
-<span class="lang-vi">Ví dụ lời giải: thặng dư như diện tích; OpenStax Tập 1, 6.1-6.6; Stewart 6.1-6.5; bài tập bổ sung của giảng viên.</span>
+<span class="lang-en">Practice: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Vol 1, 6.5</a>; Stewart 6.4 (X1 is Example 1).</span>
+<span class="lang-vi">Luyện tập: <a href="https://openstax.org/books/calculus-volume-1/pages/6-5-physical-applications">OpenStax Tập 1, 6.5</a>; Stewart 6.4 (X1 là Ví dụ 1).</span>
 </div>
 
 ---
 class: compact exercise-heavy
 ---
 
-# <span class="lang-en">Life Science And Flow Models</span><span class="lang-vi">Mô hình dòng chảy và khoa học sự sống</span>
+# <span class="lang-en">Your Turn: Applications II</span><span class="lang-vi">Tự luyện: ứng dụng II</span>
 
-<div class="grid-2 align-center">
-<div>
-<div class="box gold formula-stack">
-<div class="label"><span class="lang-en">Survival with continuous intake</span><span class="lang-vi">Tồn tại với dòng vào liên tục</span></div>
-
-$$
-P(T)=P_0f(T)+\int_0^T r(t)f(T-t)\,dt
-$$
+<div class="exercise-grid">
+<div class="exercise-card">
+<div class="num">X3</div>
+<span class="lang-en">Marginal cost $C'(x)=0.1x^2+4x+10$, marginal revenue $R'(x)=70-x$ (thousand dollars/unit). Find $x_m$ where they are equal, and the net earnings $\int_0^{x_m}\big(R'-C'\big)\,dx$.</span>
+<span class="lang-vi">Chi phí biên $C'(x)=0.1x^2+4x+10$, doanh thu biên $R'(x)=70-x$ (nghìn đô-la/đơn vị). Tìm $x_m$ tại đó chúng bằng nhau, và lợi nhuận ròng $\int_0^{x_m}\big(R'-C'\big)\,dx$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">X4</div>
+<span class="lang-en">Blood at distance $r$ from the axis of an artery of radius $R$ flows at speed $S(r)=k(R^2-r^2)$, where $k$ is a constant. Slicing the cross-section into thin rings, find the volume rate of blood flow.</span>
+<span class="lang-vi">Máu ở cách trục động mạch (bán kính $R$) một khoảng $r$ chảy với tốc độ $S(r)=k(R^2-r^2)$, với $k$ là hằng số. Cắt tiết diện thành các vành mỏng, tìm lưu lượng máu chảy qua động mạch.</span>
+</div>
 </div>
 
-<div class="box blue mt-3 formula-stack">
-<div class="label"><span class="lang-en">Blood-flow rate</span><span class="lang-vi">Lưu lượng máu</span></div>
-
-$$
-S(r)=k(R^2-r^2)
-$$
-
-$$
-Q=\int_0^R2\pi rS(r)\,dr=\frac{\pi kR^4}{2}
-$$
+<div class="grid-2 mt-3">
+<div class="box blue">
+<div class="label"><span class="lang-en">Hints</span><span class="lang-vi">Gợi ý</span></div>
+<span class="lang-en">X3: solve $C'(x)=R'(x)$, reject the negative root. X4: a ring at radius $r$ has area $2\pi r\,dr$, and all of it moves at speed $S(r)$.</span>
+<span class="lang-vi">X3: giải $C'(x)=R'(x)$, loại nghiệm âm. X4: vành ở bán kính $r$ có diện tích $2\pi r\,dr$, và cả vành chuyển động với tốc độ $S(r)$.</span>
 </div>
-
-</div>
-<div class="img-strip vertical-strip">
-<img src="./images/treatment.jpg" class="graph-img" alt="Treatment survival model">
-<img src="./images/artery.jpg" class="graph-img" alt="Artery flow model">
+<div class="box gold">
+<div class="label"><span class="lang-en">Answers</span><span class="lang-vi">Đáp số</span></div>
+<span class="blur-step" v-click>X3: $x_m=10$; $\displaystyle\int_0^{10}\big(R'-C'\big)\,dx=\dfrac{950}{3}\approx316.7$</span><br>
+<span class="blur-step" v-click>X4: $\dfrac{\pi kR^4}{2}$</span>
 </div>
 </div>
 
 <div class="refs">
-<span class="lang-en">Flow and life-science models extend the same accumulation idea; reading/practice anchors: OpenStax Vol 1, 6.1-6.6; Stewart 6.1-6.5.</span>
-<span class="lang-vi">Mô hình dòng chảy và khoa học sự sống mở rộng cùng ý tưởng cộng dồn; nguồn đọc/luyện: OpenStax Tập 1, 6.1-6.6; Stewart 6.1-6.5.</span>
-</div>
-
----
-class: compact exercise-heavy
----
-
-# <span class="lang-en">Your Turn: Flow Model</span><span class="lang-vi">Tự luyện: mô hình dòng chảy</span>
-
-<div class="grid-2 align-center">
-<div>
-<div class="your-turn">
-<span class="timechip">4 min</span>
-<div class="label"><span class="lang-en">Exercise</span><span class="lang-vi">Bài tập</span></div>
-<span class="lang-en">A clinic has 300 patients, survival $f(t)=e^{-t/20}$, and admits 10 new patients per month. Estimate the number of patients after 15 months.</span>
-<span class="lang-vi">Một phòng khám có 300 bệnh nhân, hàm tồn tại $f(t)=e^{-t/20}$, và nhận thêm 10 người/tháng. Ước lượng số bệnh nhân sau 15 tháng.</span>
-</div>
-</div>
-<img src="./images/treatment.jpg" class="graph-img" alt="Treatment survival model">
-</div>
-
-<div class="refs">
-<span class="lang-en">Practice: renewal and flow models as continuous accumulation; OpenStax Vol 1, 6.1-6.6; Stewart 6.1-6.5.</span>
-<span class="lang-vi">Luyện tập: mô hình bổ sung và dòng chảy như tích lũy liên tục; OpenStax Tập 1, 6.1-6.6; Stewart 6.1-6.5.</span>
-</div>
-
----
-class: compact solution-slide
----
-
-# <span class="lang-en">Solution: Flow Model</span><span class="lang-vi">Lời giải: mô hình dòng chảy</span>
-
-<div class="grid-2 align-center">
-<div>
-<div class="box gold formula-stack">
-<div class="label"><span class="lang-en">Two groups remain</span><span class="lang-vi">Hai nhóm còn lại</span></div>
-<span class="lang-en">Original patients survive for 15 months. A new patient admitted at time $t$ survives for $15-t$ months.</span>
-<span class="lang-vi">Bệnh nhân ban đầu tồn tại 15 tháng. Bệnh nhân mới vào lúc $t$ tồn tại trong $15-t$ tháng.</span>
-
-$$
-P(15)=300e^{-15/20}+\int_0^{15}10e^{-(15-t)/20}\,dt.
-$$
-</div>
-
-<div class="box mt-3 formula-stack">
-<div class="label"><span class="lang-en">Evaluate</span><span class="lang-vi">Tính</span></div>
-
-$$
-\int_0^{15}10e^{-(15-t)/20}\,dt
-=200(1-e^{-15/20})
-$$
-
-$$
-P(15)=300e^{-0.75}+200(1-e^{-0.75})
-$$
-
-$$
-P(15)\approx247.24\ \text{patients}.
-$$
-</div>
-</div>
-<img src="./images/treatment.jpg" class="graph-img" alt="Treatment survival model">
-</div>
-
-<div class="refs">
-<span class="lang-en">Worked example: renewal and flow models; OpenStax Vol 1, 6.1-6.6; Stewart 6.1-6.5; local instructor exercises.</span>
-<span class="lang-vi">Ví dụ lời giải: mô hình bổ sung và dòng chảy; OpenStax Tập 1, 6.1-6.6; Stewart 6.1-6.5; bài tập bổ sung của giảng viên.</span>
+<span class="lang-en">Practice: Stewart 8.4 (blood flow); notes on <a href="../../readings/">course readings</a>.</span>
+<span class="lang-vi">Luyện tập: Stewart 8.4 (dòng máu); ghi chú trên <a href="../../readings/">tài liệu đọc của môn</a>.</span>
 </div>
 
 ---
@@ -1519,6 +1805,11 @@ $$
 <strong>Stewart, J.</strong>&nbsp;
 <span class="lang-en"><em>Calculus: Early Transcendentals</em> (8th ed., metric version), Sections 6.1-6.5 and 8.1-8.4.</span>
 <span class="lang-vi"><em>Calculus: Early Transcendentals</em> (ấn bản thứ 8, bản metric), Mục 6.1-6.5 và 8.1-8.4.</span>
+</div>
+<div class="source-item">
+<strong>Lê Xuân Đại.</strong>&nbsp;
+<span class="lang-en">HCMUT lecture slides: physical applications; applications to business, economics, and life sciences (source of the five application cases).</span>
+<span class="lang-vi">Slide bài giảng ĐHBK TP.HCM: ứng dụng vật lý; ứng dụng trong kinh doanh, kinh tế và khoa học sự sống (nguồn của năm tình huống ứng dụng).</span>
 </div>
 <div class="source-item">
 <strong><span class="lang-en">Instructor notes.</span><span class="lang-vi">Ghi chú của giảng viên.</span></strong>&nbsp;

@@ -35,4 +35,5 @@ Follow the pattern in `slidev/01-functions-sequences/slides.md`.
 
 - Keep the existing bilingual EN/VI toggle, footer style, cards, and compact math layout.
 - Avoid final-only bibliographies as the sole source cue; students should see useful reading references near the relevant topic.
+- For application showcase examples, use a two-pass sequence: a `Model` slide first explains the real-world meaning, partition/tiny contribution, and why the integral has that form; a `Solve` slide then carries out the computation and unit interpretation. This matches the pacing of Dr. Lê Xuân Đại's application slides without citing local source filenames.
 - After edits, run the deck build, Zola build, screenshots of dense slides, and a full overflow sweep.

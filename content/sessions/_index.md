@@ -16,6 +16,7 @@ Short notes are intentionally compact. Each page should give students just enoug
 - [04. Applications and Parametric Curves](04-applications-parametric/)
 - [05. Integration Foundations](05-integration-foundations/)
 - [06. Applications of Integration](06-applications-of-integration/)
+- [07. Improper Integrals](07-improper-integrals/)
 
 ## Note Template
 
@@ -39,6 +40,7 @@ Các ghi chú ngắn được cố ý giữ súc tích. Mỗi trang chỉ cung c
 - [04. Ứng dụng đạo hàm và Đường cong tham số](04-applications-parametric/)
 - [05. Cơ sở tích phân](05-integration-foundations/)
 - [06. Ứng dụng tích phân](06-applications-of-integration/)
+- [07. Tích phân suy rộng](07-improper-integrals/)
 
 ## Mẫu ghi chú
 

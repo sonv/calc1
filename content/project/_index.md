@@ -72,8 +72,8 @@ Every group must include a short peer-evaluation section in its report so that e
 1. **Assign tasks (leader).** The group leader records and assigns a specific task to each member and documents this clearly in the report (see the task table below).
 2. **Track completion (leader).** The leader notes whether each member finished their assigned task. If a task was not completed, the leader records who took it over and finished it.
 3. **Self-evaluation (each member).** Each member lists the tasks they were responsible for and rates how well each was done from 1 to 5, briefly explaining what they actually did to justify the score.
-4. **Peer evaluation (each member).** Each member rates every other member, including the leader, on the same 1–5 scale. Any complaints or concerns about contribution can be recorded here.
-5. **Final individual score.** Each person's contribution score is the average of the scores the other team members gave them.
+4. **Peer evaluation (each member, confidential).** Each member privately rates every other member, including the leader, on the same 1–5 scale, and may add a comment or complaint. These individual ratings are submitted confidentially to the instructor and are **not** shown with rater names in the group report.
+5. **Final individual score.** Each person's contribution score is the average of the confidential ratings their teammates give them. The instructor collects the ratings and computes the averages.
 
 Scale: 1 = very weak contribution, 3 = adequate, 5 = excellent contribution.
 
@@ -89,14 +89,7 @@ Scale: 1 = very weak contribution, 3 = adequate, 5 = excellent contribution.
 |---|---|---:|---|
 |  |  |  |  |
 
-**Peer-evaluation matrix — rows are the rater, columns are the person rated; the final score is the column average:**
-
-| Rater | M1 | M2 | M3 | ... | Leader |
-|---|---:|---:|---:|---:|---:|
-| M1 | — |  |  |  |  |
-| M2 |  | — |  |  |  |
-| ... |  |  |  |  |  |
-| **Average (final score)** |  |  |  |  |  |
+**Peer ratings are collected separately.** The instructor sends out a short confidential survey in which each member rates every teammate (including the leader) from 1 to 5, with optional comments. These ratings are **not** placed in the group report, and no one in the group sees who gave which score.
 {% end %}
 
 {% lang(code="vi") %}
@@ -167,8 +160,8 @@ Mỗi nhóm phải kèm một phần đánh giá đồng đẳng ngắn trong b�
 1. **Phân công nhiệm vụ (nhóm trưởng).** Nhóm trưởng ghi lại và phân công nhiệm vụ cụ thể cho từng thành viên, và ghi rõ trong bài báo cáo (xem bảng phân công bên dưới).
 2. **Theo dõi hoàn thành (nhóm trưởng).** Nhóm trưởng ghi nhận mỗi thành viên có hoàn thành nhiệm vụ được giao hay không. Nếu một nhiệm vụ chưa hoàn thành, nhóm trưởng ghi rõ ai đã đảm nhận và hoàn thành thay.
 3. **Tự đánh giá (mỗi thành viên).** Mỗi thành viên liệt kê các nhiệm vụ mình phụ trách và tự chấm mức độ hoàn thành từ 1 đến 5, giải thích ngắn gọn mình đã làm gì để minh chứng cho điểm số.
-4. **Đánh giá chéo (mỗi thành viên).** Mỗi thành viên chấm điểm tất cả các thành viên khác, bao gồm cả nhóm trưởng, theo cùng thang điểm 1–5. Mọi phàn nàn hoặc ý kiến về mức đóng góp có thể được ghi lại ở đây.
-5. **Điểm cá nhân cuối cùng.** Điểm đóng góp của mỗi người là trung bình cộng các điểm mà những thành viên khác trong nhóm chấm cho người đó.
+4. **Đánh giá chéo (mỗi thành viên, bảo mật).** Mỗi thành viên chấm điểm riêng cho tất cả các thành viên khác, bao gồm cả nhóm trưởng, theo cùng thang điểm 1–5, và có thể kèm nhận xét hoặc phàn nàn. Các điểm chấm này được nộp bảo mật cho giảng viên và **không** ghi kèm tên người chấm trong bài báo cáo của nhóm.
+5. **Điểm cá nhân cuối cùng.** Điểm đóng góp của mỗi người là trung bình cộng các điểm bảo mật mà các thành viên khác chấm cho người đó. Giảng viên thu thập các điểm này và tính trung bình.
 
 Thang điểm: 1 = đóng góp rất yếu, 3 = đạt yêu cầu, 5 = đóng góp xuất sắc.
 
@@ -184,12 +177,5 @@ Thang điểm: 1 = đóng góp rất yếu, 3 = đạt yêu cầu, 5 = đóng g�
 |---|---|---:|---|
 |  |  |  |  |
 
-**Ma trận đánh giá chéo — hàng là người chấm, cột là người được chấm; điểm cuối là trung bình theo cột:**
-
-| Người chấm | TV1 | TV2 | TV3 | ... | Nhóm trưởng |
-|---|---:|---:|---:|---:|---:|
-| TV1 | — |  |  |  |  |
-| TV2 |  | — |  |  |  |
-| ... |  |  |  |  |  |
-| **Trung bình (điểm cuối)** |  |  |  |  |  |
+**Điểm đánh giá chéo được thu thập riêng.** Giảng viên gửi một khảo sát bảo mật ngắn, trong đó mỗi thành viên chấm điểm tất cả các thành viên khác (kể cả nhóm trưởng) từ 1 đến 5, kèm nhận xét tùy chọn. Các điểm này **không** đưa vào bài báo cáo của nhóm, và không ai trong nhóm biết ai đã chấm điểm nào.
 {% end %}

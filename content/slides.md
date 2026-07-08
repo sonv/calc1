@@ -42,6 +42,11 @@ Lecture decks are built with Slidev and published as static pages inside the Zol
   <span>Open Slidev deck</span>
 </a>
 
+<a class="slide-link" href="08-midterm-review/">
+  <strong>08. Midterm Review</strong>
+  <span>Open Slidev deck</span>
+</a>
+
 ## Acknowledgment
 
 Many materials in the lecture slides are adapted from materials by Dr. Le Xuan Dai.
@@ -82,6 +87,11 @@ Slide bài giảng được xây dựng bằng Slidev và xuất bản thành tr
 
 <a class="slide-link" href="07-improper-integrals/">
   <strong>07. Tích phân suy rộng</strong>
+  <span>Mở bộ slide Slidev</span>
+</a>
+
+<a class="slide-link" href="08-midterm-review/">
+  <strong>08. Ôn tập giữa kỳ</strong>
   <span>Mở bộ slide Slidev</span>
 </a>
 

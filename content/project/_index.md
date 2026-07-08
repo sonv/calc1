@@ -64,6 +64,39 @@ References: [Paul's Online Notes: Mechanical Vibrations](https://tutorial.math.l
 | Correct calculations | 25 percent |
 | Interpretation and communication | 25 percent |
 | Presentation and teamwork | 20 percent |
+
+## Peer Evaluation and Individual Contribution
+
+Every group must include a short peer-evaluation section in its report so that each person's contribution is visible and graded fairly. The process has five steps.
+
+1. **Assign tasks (leader).** The group leader records and assigns a specific task to each member and documents this clearly in the report (see the task table below).
+2. **Track completion (leader).** The leader notes whether each member finished their assigned task. If a task was not completed, the leader records who took it over and finished it.
+3. **Self-evaluation (each member).** Each member lists the tasks they were responsible for and rates how well each was done from 1 to 5, briefly explaining what they actually did to justify the score.
+4. **Peer evaluation (each member).** Each member rates every other member, including the leader, on the same 1–5 scale. Any complaints or concerns about contribution can be recorded here.
+5. **Final individual score.** Each person's contribution score is the average of the scores the other team members gave them.
+
+Scale: 1 = very weak contribution, 3 = adequate, 5 = excellent contribution.
+
+**Task assignment and completion (filled in by the leader):**
+
+| Member | Assigned task | Completed? | If not, who finished it |
+|---|---|---|---|
+|  |  | Yes / No |  |
+
+**Self-evaluation (filled in by each member):**
+
+| Member | Task(s) performed | Self-score (1–5) | What they did to complete it |
+|---|---|---:|---|
+|  |  |  |  |
+
+**Peer-evaluation matrix — rows are the rater, columns are the person rated; the final score is the column average:**
+
+| Rater | M1 | M2 | M3 | ... | Leader |
+|---|---:|---:|---:|---:|---:|
+| M1 | — |  |  |  |  |
+| M2 |  | — |  |  |  |
+| ... |  |  |  |  |  |
+| **Average (final score)** |  |  |  |  |  |
 {% end %}
 
 {% lang(code="vi") %}
@@ -126,4 +159,37 @@ Tài liệu tham khảo: [Paul's Online Notes: Mechanical Vibrations](https://tu
 | Phép tính đúng | 25 phần trăm |
 | Diễn giải và trình bày | 25 phần trăm |
 | Thuyết trình và làm việc nhóm | 20 phần trăm |
+
+## Đánh giá đồng đẳng và đóng góp cá nhân
+
+Mỗi nhóm phải kèm một phần đánh giá đồng đẳng ngắn trong bài báo cáo để đóng góp của từng người được thể hiện rõ và chấm điểm công bằng. Quy trình gồm năm bước.
+
+1. **Phân công nhiệm vụ (nhóm trưởng).** Nhóm trưởng ghi lại và phân công nhiệm vụ cụ thể cho từng thành viên, và ghi rõ trong bài báo cáo (xem bảng phân công bên dưới).
+2. **Theo dõi hoàn thành (nhóm trưởng).** Nhóm trưởng ghi nhận mỗi thành viên có hoàn thành nhiệm vụ được giao hay không. Nếu một nhiệm vụ chưa hoàn thành, nhóm trưởng ghi rõ ai đã đảm nhận và hoàn thành thay.
+3. **Tự đánh giá (mỗi thành viên).** Mỗi thành viên liệt kê các nhiệm vụ mình phụ trách và tự chấm mức độ hoàn thành từ 1 đến 5, giải thích ngắn gọn mình đã làm gì để minh chứng cho điểm số.
+4. **Đánh giá chéo (mỗi thành viên).** Mỗi thành viên chấm điểm tất cả các thành viên khác, bao gồm cả nhóm trưởng, theo cùng thang điểm 1–5. Mọi phàn nàn hoặc ý kiến về mức đóng góp có thể được ghi lại ở đây.
+5. **Điểm cá nhân cuối cùng.** Điểm đóng góp của mỗi người là trung bình cộng các điểm mà những thành viên khác trong nhóm chấm cho người đó.
+
+Thang điểm: 1 = đóng góp rất yếu, 3 = đạt yêu cầu, 5 = đóng góp xuất sắc.
+
+**Phân công và hoàn thành nhiệm vụ (nhóm trưởng điền):**
+
+| Thành viên | Nhiệm vụ được giao | Hoàn thành? | Nếu không, ai hoàn thành thay |
+|---|---|---|---|
+|  |  | Có / Không |  |
+
+**Tự đánh giá (mỗi thành viên điền):**
+
+| Thành viên | Nhiệm vụ đã làm | Tự chấm (1–5) | Đã làm gì để hoàn thành |
+|---|---|---:|---|
+|  |  |  |  |
+
+**Ma trận đánh giá chéo — hàng là người chấm, cột là người được chấm; điểm cuối là trung bình theo cột:**
+
+| Người chấm | TV1 | TV2 | TV3 | ... | Nhóm trưởng |
+|---|---:|---:|---:|---:|---:|
+| TV1 | — |  |  |  |  |
+| TV2 |  | — |  |  |  |
+| ... |  |  |  |  |  |
+| **Trung bình (điểm cuối)** |  |  |  |  |  |
 {% end %}

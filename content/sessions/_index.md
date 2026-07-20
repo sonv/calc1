@@ -17,6 +17,7 @@ Short notes are intentionally compact. Each page should give students just enoug
 - [05. Integration Foundations](05-integration-foundations/)
 - [06. Applications of Integration](06-applications-of-integration/)
 - [07. Improper Integrals](07-improper-integrals/)
+- [09. First-Order Differential Equations](09-first-order-differential-equations/)
 
 ## Note Template
 
@@ -41,6 +42,7 @@ Các ghi chú ngắn được cố ý giữ súc tích. Mỗi trang chỉ cung c
 - [05. Cơ sở tích phân](05-integration-foundations/)
 - [06. Ứng dụng tích phân](06-applications-of-integration/)
 - [07. Tích phân suy rộng](07-improper-integrals/)
+- [09. Phương trình vi phân cấp một](09-first-order-differential-equations/)
 
 ## Mẫu ghi chú
 

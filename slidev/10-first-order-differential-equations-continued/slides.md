@@ -91,8 +91,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: Active Calculus 7.2 for qualitative context; OpenStax Vol 2, 4.5; Stewart 9.5; instructor notes for homogeneous and Bernoulli equations.</span>
-<span class="lang-vi">Đọc: Active Calculus 7.2 cho bối cảnh định tính; OpenStax Tập 2, 4.5; Stewart 9.5; ghi chú giảng viên cho phương trình đẳng cấp và Bernoulli.</span>
+<span class="lang-en">Read: <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Active Calculus 7.2</a> for qualitative context; <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; instructor notes for homogeneous and Bernoulli equations.</span>
+<span class="lang-vi">Đọc: <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Active Calculus 7.2</a> cho bối cảnh định tính; <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ghi chú giảng viên cho phương trình đẳng cấp và Bernoulli.</span>
 </div>
 
 ---
@@ -166,15 +166,18 @@ $$
 <div class="label"><span class="lang-en">Integrating factor</span><span class="lang-vi">Thừa số tích phân</span></div>
 <span class="blur-step" v-click>
 $$
-\mu=e^{\int-\cot x\,dx}=e^{-\ln|\sin x|}=\csc x.
+\begin{aligned}
+\mu&=e^{\int-\cot x\,dx}\\
+&=e^{-\ln|\sin x|}=\csc x.
+\end{aligned}
 $$
 </span>
 </div>
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: OpenStax Vol 2, 4.5; Stewart 9.5. Example adapted from instructor notes and local exercises.</span>
-<span class="lang-vi">Luyện tập: OpenStax Tập 2, 4.5; Stewart 9.5. Ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
+<span class="lang-en">Practice: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5. Example adapted from instructor notes and local exercises.</span>
+<span class="lang-vi">Luyện tập: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5. Ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
 </div>
 
 ---
@@ -212,8 +215,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: OpenStax Vol 2, 4.5; Stewart 9.5. Example adapted from instructor notes and local exercises.</span>
-<span class="lang-vi">Luyện tập: OpenStax Tập 2, 4.5; Stewart 9.5. Ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
+<span class="lang-en">Practice: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5. Example adapted from instructor notes and local exercises.</span>
+<span class="lang-vi">Luyện tập: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5. Ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
 </div>
 
 ---
@@ -257,8 +260,92 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: OpenStax Vol 2, 4.5; Stewart 9.5; local exercise set.</span>
-<span class="lang-vi">Luyện tập: OpenStax Tập 2, 4.5; Stewart 9.5; bộ bài tập địa phương.</span>
+<span class="lang-en">Practice: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; local exercise set.</span>
+<span class="lang-vi">Luyện tập: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; bộ bài tập địa phương.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Textbook Practice: Linear Fluency</span><span class="lang-vi">Luyện tập giáo trình: tuyến tính</span>
+
+<div class="exercise-grid">
+<div class="exercise-card">
+<div class="num">OS L1</div>
+$$
+y'+y=x
+$$
+<span class="blur-step" v-click>$y=x-1+Ce^{-x}$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">OS L2</div>
+$$
+y'-2y=e^{3x}
+$$
+<span class="blur-step" v-click>$y=e^{3x}+Ce^{2x}$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">OS L3</div>
+$$
+y'+2xy=x
+$$
+<span class="blur-step" v-click>$y=\dfrac12+Ce^{-x^2}$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">OS L4</div>
+$$
+xy'+y=\cos x
+$$
+<span class="blur-step" v-click>$y=\dfrac{\sin x+C}{x}$.</span>
+</div>
+</div>
+
+<div class="refs">
+<span class="lang-en">Practice source: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5 for extra fluency.</span>
+<span class="lang-vi">Nguồn luyện tập: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5 để luyện thêm.</span>
+</div>
+
+---
+class: compact exercise-heavy
+---
+
+# <span class="lang-en">Textbook Practice: Separable Review</span><span class="lang-vi">Luyện tập giáo trình: ôn tách biến</span>
+
+<div class="exercise-grid">
+<div class="exercise-card">
+<div class="num">AC S1</div>
+$$
+\frac{dy}{dt}=-3y
+$$
+<span class="blur-step" v-click>$y=Ce^{-3t}$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">AC S2</div>
+$$
+\frac{dy}{dt}=(t-1)y
+$$
+<span class="blur-step" v-click>$y=Ce^{t^2/2-t}$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">OS S3</div>
+$$
+\frac{dy}{dx}=e^{x-y}
+$$
+<span class="blur-step" v-click>$e^y=e^x+C$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">OS S4</div>
+$$
+\frac{dy}{dt}=\frac{t}{y^2},\qquad y(0)=2
+$$
+<span class="blur-step" v-click>$y^3=\dfrac32t^2+8$.</span>
+</div>
+</div>
+
+<div class="refs">
+<span class="lang-en">Practice sources: <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">OpenStax Vol 2, 4.3</a>; Stewart 9.3.</span>
+<span class="lang-vi">Nguồn luyện tập: <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">OpenStax Tập 2, 4.3</a>; Stewart 9.3.</span>
 </div>
 
 ---
@@ -284,8 +371,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: Active Calculus 7.2 for solution behavior; Stewart 9.5 and instructor notes for substitution methods.</span>
-<span class="lang-vi">Đọc: Active Calculus 7.2 cho dáng điệu nghiệm; Stewart 9.5 và ghi chú giảng viên cho phương pháp đổi biến.</span>
+<span class="lang-en">Read: <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Active Calculus 7.2</a> for solution behavior; Stewart 9.5 and instructor notes for substitution methods.</span>
+<span class="lang-vi">Đọc: <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Active Calculus 7.2</a> cho dáng điệu nghiệm; Stewart 9.5 và ghi chú giảng viên cho phương pháp đổi biến.</span>
 </div>
 
 ---
@@ -318,8 +405,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: Stewart 9.5; instructor notes for homogeneous first-order equations.</span>
-<span class="lang-vi">Đọc: Stewart 9.5; ghi chú giảng viên cho phương trình vi phân đẳng cấp cấp một.</span>
+<span class="lang-en">Read: Stewart 9.5; instructor notes for homogeneous first-order equations; separable backbone in <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>.</span>
+<span class="lang-vi">Đọc: Stewart 9.5; ghi chú giảng viên cho phương trình vi phân đẳng cấp cấp một; nền tảng tách biến trong <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>.</span>
 </div>
 
 ---
@@ -356,8 +443,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: Stewart 9.5; example adapted from instructor notes and local exercises.</span>
-<span class="lang-vi">Luyện tập: Stewart 9.5; ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
+<span class="lang-en">Practice: Stewart 9.5; separable review in <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; example adapted from instructor notes and local exercises.</span>
+<span class="lang-vi">Luyện tập: Stewart 9.5; ôn tách biến trong <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
 </div>
 
 ---
@@ -397,8 +484,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: Stewart 9.5; example adapted from instructor notes and local exercises.</span>
-<span class="lang-vi">Luyện tập: Stewart 9.5; ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
+<span class="lang-en">Practice: Stewart 9.5; separable review in <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; example adapted from instructor notes and local exercises.</span>
+<span class="lang-vi">Luyện tập: Stewart 9.5; ôn tách biến trong <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
 </div>
 
 ---
@@ -433,8 +520,8 @@ Since $-\dfrac{x}{y}-2=-\dfrac{1}{y/x}-2$, this depends only on $u=y/x$.
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: Stewart 9.5; local exercise set. Homogeneous form from instructor notes.</span>
-<span class="lang-vi">Luyện tập: Stewart 9.5; bộ bài tập địa phương. Dạng đẳng cấp từ ghi chú giảng viên.</span>
+<span class="lang-en">Practice: Stewart 9.5; separable review in <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; local exercise set.</span>
+<span class="lang-vi">Luyện tập: Stewart 9.5; ôn tách biến trong <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; bộ bài tập địa phương.</span>
 </div>
 
 ---
@@ -473,8 +560,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: Stewart 9.5; local exercise set. Example adapted from instructor notes.</span>
-<span class="lang-vi">Luyện tập: Stewart 9.5; bộ bài tập địa phương. Ví dụ phỏng theo ghi chú giảng viên.</span>
+<span class="lang-en">Practice: Stewart 9.5; separable review in <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; local exercise set.</span>
+<span class="lang-vi">Luyện tập: Stewart 9.5; ôn tách biến trong <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; bộ bài tập địa phương.</span>
 </div>
 
 ---
@@ -500,8 +587,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5 for linear equations; Stewart 9.5 and instructor notes for Bernoulli equations.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5 cho phương trình tuyến tính; Stewart 9.5 và ghi chú giảng viên cho Bernoulli.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a> for linear equations; Stewart 9.5 and instructor notes for Bernoulli equations.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a> cho phương trình tuyến tính; Stewart 9.5 và ghi chú giảng viên cho Bernoulli.</span>
 </div>
 
 ---
@@ -540,8 +627,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5; Stewart 9.5; instructor notes.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5; Stewart 9.5; ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -575,8 +662,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: Stewart 9.5; example adapted from instructor notes and local exercises.</span>
-<span class="lang-vi">Luyện tập: Stewart 9.5; ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
+<span class="lang-en">Practice: Stewart 9.5; linear support in <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; example adapted from instructor notes and local exercises.</span>
+<span class="lang-vi">Luyện tập: Stewart 9.5; nền tảng tuyến tính trong <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
 </div>
 
 ---
@@ -615,8 +702,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: Stewart 9.5; example adapted from instructor notes and local exercises.</span>
-<span class="lang-vi">Luyện tập: Stewart 9.5; ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
+<span class="lang-en">Practice: Stewart 9.5; linear support in <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; example adapted from instructor notes and local exercises.</span>
+<span class="lang-vi">Luyện tập: Stewart 9.5; nền tảng tuyến tính trong <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; ví dụ phỏng theo ghi chú giảng viên và bài tập địa phương.</span>
 </div>
 
 ---
@@ -653,8 +740,50 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: Stewart 9.5; local exercise set.</span>
-<span class="lang-vi">Luyện tập: Stewart 9.5; bộ bài tập địa phương.</span>
+<span class="lang-en">Practice: Stewart 9.5; local exercise set. Review linear support in <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>.</span>
+<span class="lang-vi">Luyện tập: Stewart 9.5; bộ bài tập địa phương. Ôn nền tuyến tính trong <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>.</span>
+</div>
+
+---
+class: compact exercise-heavy
+---
+
+# <span class="lang-en">Practice Drill: Homogeneous And Bernoulli</span><span class="lang-vi">Luyện tập nhanh: đẳng cấp và Bernoulli</span>
+
+<div class="exercise-grid">
+<div class="exercise-card">
+<div class="num">H1</div>
+$$
+y'=1+\frac{y}{x}
+$$
+<span class="blur-step" v-click>$y=x(\ln|x|+C)$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">H2</div>
+$$
+y'=\frac{x^2+y^2}{xy}
+$$
+<span class="blur-step" v-click>$y^2=x^2(C+2\ln|x|)$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">B2</div>
+$$
+y'+y=xy^2
+$$
+<span class="blur-step" v-click>$y=\dfrac{1}{x+1+Ce^x}$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">B3</div>
+$$
+y'-\frac{1}{x}y=xy^2
+$$
+<span class="blur-step" v-click>$y=\dfrac{x}{C-x^3/3}$.</span>
+</div>
+</div>
+
+<div class="refs">
+<span class="lang-en">Practice sources: Stewart 9.5; instructor notes for homogeneous and Bernoulli methods; <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a> for the linear reduction.</span>
+<span class="lang-vi">Nguồn luyện tập: Stewart 9.5; ghi chú giảng viên cho phương pháp đẳng cấp và Bernoulli; <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a> cho bước đưa về tuyến tính.</span>
 </div>
 
 ---
@@ -695,8 +824,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: Active Calculus 7.4; OpenStax Vol 2, 4.3 and 4.5; Stewart 9.3, 9.5; local exercises.</span>
-<span class="lang-vi">Luyện tập: Active Calculus 7.4; OpenStax Tập 2, 4.3 và 4.5; Stewart 9.3, 9.5; bài tập địa phương.</span>
+<span class="lang-en">Practice: <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">OpenStax Vol 2, 4.3</a> and <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">4.5</a>; Stewart 9.3, 9.5; local exercises.</span>
+<span class="lang-vi">Luyện tập: <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">OpenStax Tập 2, 4.3</a> và <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">4.5</a>; Stewart 9.3, 9.5; bài tập địa phương.</span>
 </div>
 
 ---
@@ -716,8 +845,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: Active Calculus 7.2, 7.4; OpenStax Vol 2, 4.5; Stewart 9.5; application examples from instructor notes.</span>
-<span class="lang-vi">Đọc: Active Calculus 7.2, 7.4; OpenStax Tập 2, 4.5; Stewart 9.5; ví dụ ứng dụng từ ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Active Calculus 7.2</a>, <a href="https://activecalculus.org/single/sec-7-4-separable.html">7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; application examples from instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Active Calculus 7.2</a>, <a href="https://activecalculus.org/single/sec-7-4-separable.html">7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ví dụ ứng dụng từ ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -746,8 +875,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5; Stewart 9.5; application adapted from instructor notes.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; application adapted from instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -772,7 +901,10 @@ $$
 <span class="lang-vi">Thể tích bồn giữ ở $1000$ gal. Nồng độ muối là $y(t)/1000$ lb/gal.</span>
 
 $$
-\text{out}=10\cdot \frac{y}{1000}=0.01y\ \text{lb/min}.
+\begin{aligned}
+\text{out}&=10\cdot \frac{y}{1000}\\
+&=0.01y\ \text{lb/min}.
+\end{aligned}
 $$
 </div>
 </div>
@@ -789,8 +921,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5; Stewart 9.5; application adapted from instructor notes.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; application adapted from instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -829,8 +961,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5; Stewart 9.5; application adapted from instructor notes.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; application adapted from instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -860,8 +992,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5; Stewart 9.5; application adapted from instructor notes.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; application adapted from instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -900,8 +1032,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5; Stewart 9.5; application adapted from instructor notes.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; application adapted from instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ứng dụng phỏng theo ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -923,8 +1055,8 @@ class: compact
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5; Stewart 9.5; variable-mass example adapted from instructor notes.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5; Stewart 9.5; ví dụ khối lượng biến đổi phỏng theo ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; variable-mass example adapted from instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ví dụ khối lượng biến đổi phỏng theo ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -962,8 +1094,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5; Stewart 9.5; variable-mass example adapted from instructor notes.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5; Stewart 9.5; ví dụ khối lượng biến đổi phỏng theo ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; variable-mass example adapted from instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ví dụ khối lượng biến đổi phỏng theo ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -1000,8 +1132,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: OpenStax Vol 2, 4.5; Stewart 9.5; variable-mass example adapted from instructor notes.</span>
-<span class="lang-vi">Đọc: OpenStax Tập 2, 4.5; Stewart 9.5; ví dụ khối lượng biến đổi phỏng theo ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; variable-mass example adapted from instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; ví dụ khối lượng biến đổi phỏng theo ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -1037,8 +1169,46 @@ class: compact exercise-heavy
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: Active Calculus 7.4; OpenStax Vol 2, 4.5; Stewart 9.5; local exercises.</span>
-<span class="lang-vi">Luyện tập: Active Calculus 7.4; OpenStax Tập 2, 4.5; Stewart 9.5; bài tập địa phương.</span>
+<span class="lang-en">Practice: <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; local exercises.</span>
+<span class="lang-vi">Luyện tập: <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; bài tập địa phương.</span>
+</div>
+
+---
+class: compact exercise-heavy
+---
+
+# <span class="lang-en">Textbook Modeling Practice</span><span class="lang-vi">Luyện mô hình hóa từ giáo trình</span>
+
+<div class="exercise-grid">
+<div class="exercise-card">
+<div class="num">M1</div>
+<span class="lang-en">Population grows continuously at $3\%$ per year and $P(0)=10000$. Find $P(t)$ and the doubling time.</span>
+<span class="lang-vi">Dân số tăng liên tục $3\%$ mỗi năm và $P(0)=10000$. Tìm $P(t)$ và thời gian nhân đôi.</span>
+<span class="blur-step" v-click>$P=10000e^{0.03t}$; $t_2=\dfrac{\ln2}{0.03}$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">M2</div>
+<span class="lang-en">A cup at $105^\circ$F is placed in a $75^\circ$F room. Initially it cools at $1^\circ$F/min. Find $T(t)$.</span>
+<span class="lang-vi">Một cốc ở $105^\circ$F đặt trong phòng $75^\circ$F. Ban đầu nguội $1^\circ$F/phút. Tìm $T(t)$.</span>
+<span class="blur-step" v-click>$T=75+30e^{-t/30}$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">M3</div>
+<span class="lang-en">A radioactive isotope has half-life $1600$ years. What fraction remains after $1000$ years?</span>
+<span class="lang-vi">Một đồng vị phóng xạ có chu kỳ bán rã $1600$ năm. Sau $1000$ năm còn lại tỉ phần nào?</span>
+<span class="blur-step" v-click>$2^{-1000/1600}\approx0.648$.</span>
+</div>
+<div class="exercise-card">
+<div class="num">M4</div>
+<span class="lang-en">For a well-mixed tank, explain why the outflow term is always flow rate times current concentration.</span>
+<span class="lang-vi">Với bồn khuấy đều, giải thích vì sao dòng ra luôn bằng lưu lượng nhân nồng độ hiện tại.</span>
+<span class="blur-step" v-click><span class="lang-en">Units:</span><span class="lang-vi">Đơn vị:</span> $(V/t)(A/V)=A/t$.</span>
+</div>
+</div>
+
+<div class="refs">
+<span class="lang-en">Practice sources: <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">OpenStax Vol 2, 4.3</a>, <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">4.5</a>; Stewart 9.3, 9.5.</span>
+<span class="lang-vi">Nguồn luyện tập: <a href="https://activecalculus.org/single/sec-7-4-separable.html">Active Calculus 7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">OpenStax Tập 2, 4.3</a>, <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">4.5</a>; Stewart 9.3, 9.5.</span>
 </div>
 
 ---
@@ -1079,8 +1249,8 @@ $$
 </div>
 
 <div class="refs">
-<span class="lang-en">Practice: OpenStax Vol 2, 4.5; Stewart 9.5; local exercise set. Solve after naming the method.</span>
-<span class="lang-vi">Luyện tập: OpenStax Tập 2, 4.5; Stewart 9.5; bộ bài tập địa phương. Giải sau khi gọi tên phương pháp.</span>
+<span class="lang-en">Practice: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Vol 2, 4.5</a>; Stewart 9.5; local exercise set. Solve after naming the method.</span>
+<span class="lang-vi">Luyện tập: <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">OpenStax Tập 2, 4.5</a>; Stewart 9.5; bộ bài tập địa phương. Giải sau khi gọi tên phương pháp.</span>
 </div>
 
 ---
@@ -1098,8 +1268,8 @@ class: compact
 </div>
 
 <div class="refs">
-<span class="lang-en">Read: Active Calculus 7.2, 7.4; OpenStax Vol 2, 4.3 and 4.5; Stewart 9.3, 9.5; instructor notes.</span>
-<span class="lang-vi">Đọc: Active Calculus 7.2, 7.4; OpenStax Tập 2, 4.3 và 4.5; Stewart 9.3, 9.5; ghi chú giảng viên.</span>
+<span class="lang-en">Read: <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Active Calculus 7.2</a>, <a href="https://activecalculus.org/single/sec-7-4-separable.html">7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">OpenStax Vol 2, 4.3</a> and <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">4.5</a>; Stewart 9.3, 9.5; instructor notes.</span>
+<span class="lang-vi">Đọc: <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Active Calculus 7.2</a>, <a href="https://activecalculus.org/single/sec-7-4-separable.html">7.4</a>; <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">OpenStax Tập 2, 4.3</a> và <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">4.5</a>; Stewart 9.3, 9.5; ghi chú giảng viên.</span>
 </div>
 
 ---
@@ -1111,13 +1281,13 @@ class: compact
 <div class="source-list compact-sources">
 <div class="source-item">
 <strong>Boelkins, M.</strong>&nbsp;
-<span class="lang-en"><em>Active Calculus</em> (2nd ed.), Sections 7.2 (Qualitative behavior) and 7.4 (Separable equations).</span>
-<span class="lang-vi"><em>Active Calculus</em> (ấn bản thứ 2), Mục 7.2 (Dáng điệu định tính) và 7.4 (Phương trình tách biến).</span>
+<span class="lang-en"><em>Active Calculus</em> (2nd ed.), <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Section 7.2</a> (Qualitative behavior) and <a href="https://activecalculus.org/single/sec-7-4-separable.html">Section 7.4</a> (Separable equations).</span>
+<span class="lang-vi"><em>Active Calculus</em> (ấn bản thứ 2), <a href="https://activecalculus.org/single/sec-7-2-qualitative.html">Mục 7.2</a> (Dáng điệu định tính) và <a href="https://activecalculus.org/single/sec-7-4-separable.html">Mục 7.4</a> (Phương trình tách biến).</span>
 </div>
 <div class="source-item">
 <strong>Strang, G., & Herman, E. "Jed".</strong>&nbsp;
-<span class="lang-en"><em>Calculus Volume 2</em>, OpenStax, Sections 4.3 and 4.5.</span>
-<span class="lang-vi"><em>Calculus Volume 2</em>, OpenStax, Mục 4.3 và 4.5.</span>
+<span class="lang-en"><em>Calculus Volume 2</em>, OpenStax, <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">Section 4.3</a> and <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">Section 4.5</a>.</span>
+<span class="lang-vi"><em>Calculus Volume 2</em>, OpenStax, <a href="https://openstax.org/books/calculus-volume-2/pages/4-3-separable-equations">Mục 4.3</a> và <a href="https://openstax.org/books/calculus-volume-2/pages/4-5-first-order-linear-equations">Mục 4.5</a>.</span>
 </div>
 <div class="source-item">
 <strong>Stewart, J.</strong>&nbsp;

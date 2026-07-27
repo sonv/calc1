@@ -24,8 +24,8 @@ tsvan@hcmut.edu.vn
 </div>
 
 <div class="refs">
-<span class="lang-en">Reading map: <a href="../../readings/">course readings</a>. Read: Stewart 17.1; instructor notes adapted from Dr. Lê Xuân Đại. Background ODE language: <a href="https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations">OpenStax Vol 2, 4.1</a>.</span>
-<span class="lang-vi">Bản đồ đọc: <a href="../../readings/">tài liệu đọc của môn</a>. Đọc: Stewart 17.1; ghi chú giảng viên phỏng theo TS. Lê Xuân Đại. Ngôn ngữ ODE nền tảng: <a href="https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations">OpenStax Tập 2, 4.1</a>.</span>
+<span class="lang-en">Reading map: <a href="../../readings/">course readings</a>. Short notes: <a href="../../sessions/11-second-order-differential-equations/">Session 11 notes</a>. Read: Stewart 17.1; instructor notes adapted from Dr. Lê Xuân Đại. Background ODE language: <a href="https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations">OpenStax Vol 2, 4.1</a>.</span>
+<span class="lang-vi">Bản đồ đọc: <a href="../../readings/">tài liệu đọc của môn</a>. Ghi chú ngắn: <a href="../../sessions/11-second-order-differential-equations/">Buổi 11</a>. Đọc: Stewart 17.1; ghi chú giảng viên phỏng theo TS. Lê Xuân Đại. Ngôn ngữ ODE nền tảng: <a href="https://openstax.org/books/calculus-volume-2/pages/4-1-basics-of-differential-equations">OpenStax Tập 2, 4.1</a>.</span>
 </div>
 
 ---
@@ -1416,6 +1416,6 @@ class: compact
 </div>
 
 <div class="refs">
-<span class="lang-en">Full map: <a href="../../readings/">course readings</a>. Use section titles if a Stewart edition has different numbering.</span>
-<span class="lang-vi">Bản đồ đầy đủ: <a href="../../readings/">tài liệu đọc của môn</a>. Nếu phiên bản Stewart khác số mục, hãy dùng tên mục.</span>
+<span class="lang-en">Full map: <a href="../../readings/">course readings</a>. Short notes: <a href="../../sessions/11-second-order-differential-equations/">Session 11 notes</a>. Use section titles if a Stewart edition has different numbering.</span>
+<span class="lang-vi">Bản đồ đầy đủ: <a href="../../readings/">tài liệu đọc của môn</a>. Ghi chú ngắn: <a href="../../sessions/11-second-order-differential-equations/">Buổi 11</a>. Nếu phiên bản Stewart khác số mục, hãy dùng tên mục.</span>
 </div>

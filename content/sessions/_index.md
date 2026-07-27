@@ -18,6 +18,8 @@ Short notes are intentionally compact. Each page should give students just enoug
 - [06. Applications of Integration](06-applications-of-integration/)
 - [07. Improper Integrals](07-improper-integrals/)
 - [09. First-Order Differential Equations](09-first-order-differential-equations/)
+- [10. First-Order Differential Equations Continued](10-first-order-differential-equations-continued/)
+- [11. Second-Order Differential Equations](11-second-order-differential-equations/)
 
 ## Note Template
 
@@ -43,6 +45,8 @@ Các ghi chú ngắn được cố ý giữ súc tích. Mỗi trang chỉ cung c
 - [06. Ứng dụng tích phân](06-applications-of-integration/)
 - [07. Tích phân suy rộng](07-improper-integrals/)
 - [09. Phương trình vi phân cấp một](09-first-order-differential-equations/)
+- [10. Phương trình vi phân cấp một: tiếp theo](10-first-order-differential-equations-continued/)
+- [11. Phương trình vi phân cấp hai](11-second-order-differential-equations/)
 
 ## Mẫu ghi chú
 

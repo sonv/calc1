@@ -955,6 +955,25 @@
   margin: 0.32rem 0;
 }
 
+.slidev-layout.reduction-worked h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.slidev-layout.reduction-worked .thm,
+.slidev-layout.reduction-worked .box {
+  padding: 0.48rem 0.68rem;
+}
+
+.slidev-layout.reduction-worked .formula-stack .katex-display {
+  font-size: 0.76em;
+  margin: 0.2rem 0;
+}
+
+.slidev-layout.reduction-worked .refs {
+  margin-top: 0.45rem;
+}
+
 /* ---- Lecture 09: slope-field thumbnails ---- */
 
 .sf-thumb {

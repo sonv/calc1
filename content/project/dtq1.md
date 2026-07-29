@@ -10,6 +10,17 @@ These are the DTQ1 project groups.
 - 109 students are listed in G1-G20.
 - Student IDs are shown before names to avoid ambiguity.
 
+## Presentation Schedule
+
+Each group has a 13-minute slot: 10 minutes for presentation, 2 minutes for questions, and 1 minute for transition. There is no scheduled break during the presentation sessions.
+
+| Date | Time | Groups |
+|---|---:|---|
+| Monday, August 10, 2026 | 13:00-15:50 | G1-G10 |
+| Wednesday, August 12, 2026 | 13:00-15:50 | G11-G20 |
+
+**Report submission deadline:** Friday, August 14, 2026.
+
 | Group | Members |
 |---|---|
 | G1 | 2453269 - Huỳnh Phạm Hồng Trang<br>2210950 - Trần Gia Hân<br>2550077 - Huỳnh Phúc Khang<br>2352918 - Nguyễn Lê Đức Phú<br>2551740 - Nguyễn Hữu Thắng<br>2551007 - Nguyễn Thị Hương Trà |
@@ -39,6 +50,17 @@ These are the DTQ1 project groups.
 
 - Có 109 sinh viên trong G1-G20.
 - Mã số sinh viên được ghi trước họ tên để tránh nhầm lẫn.
+
+## Lịch thuyết trình
+
+Mỗi nhóm có 13 phút: 10 phút thuyết trình, 2 phút trả lời câu hỏi, và 1 phút chuyển nhóm. Các buổi thuyết trình không có giờ nghỉ chính thức.
+
+| Ngày | Giờ | Nhóm |
+|---|---:|---|
+| Thứ Hai, 10/08/2026 | 13:00-15:50 | G1-G10 |
+| Thứ Tư, 12/08/2026 | 13:00-15:50 | G11-G20 |
+
+**Hạn nộp báo cáo:** Thứ Sáu, 14/08/2026.
 
 | Nhóm | Thành viên |
 |---|---|

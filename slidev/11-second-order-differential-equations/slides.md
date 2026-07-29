@@ -477,32 +477,45 @@ $$
 </div>
 
 ---
-class: compact
+class: compact solution-slide reduction-worked
 ---
 
 # <span class="lang-en">Why Repeated Roots Need $xe^{k_0x}$</span><span class="lang-vi">Vì sao nghiệm kép cần $xe^{k_0x}$</span>
 
-<div class="thm formula-stack">
+<div class="thm formula-stack tight">
 <div class="tag"><span class="lang-en">Reduction of order idea</span><span class="lang-vi">Ý tưởng hạ bậc</span></div>
-<span class="lang-en">If one solution $y_1$ of a homogeneous second-order linear equation is known, set</span>
-<span class="lang-vi">Nếu đã biết một nghiệm $y_1$ của phương trình tuyến tính thuần nhất cấp hai, đặt</span>
+<span class="lang-en">For a repeated root $k_0$, write the characteristic polynomial as $A(k-k_0)^2$. Then</span>
+<span class="lang-vi">Với nghiệm kép $k_0$, viết đa thức đặc trưng là $A(k-k_0)^2$. Khi đó</span>
 
 $$
-y_2=y_1(x)v(x).
+2Ak_0+B=0,\qquad Ak_0^2+Bk_0+C=0.
 $$
-
-<span class="lang-en">This reduces the problem of finding a second solution to a first-order equation in $w=v'$.</span>
-<span class="lang-vi">Cách này hạ bài toán tìm nghiệm thứ hai về một phương trình cấp một theo $w=v'$.</span>
 </div>
 
-<div class="box gold mt-3 formula-stack">
-<div class="label"><span class="lang-en">For a repeated root</span><span class="lang-vi">Với nghiệm kép</span></div>
-<span class="lang-en">The first solution is $y_1=e^{k_0x}$. Reduction of order gives the independent companion</span>
-<span class="lang-vi">Nghiệm thứ nhất là $y_1=e^{k_0x}$. Hạ bậc cho nghiệm độc lập đi kèm</span>
+<div class="box blue mt-2 formula-stack tight">
+<div class="label"><span class="lang-en">Work out the reduction</span><span class="lang-vi">Thực hiện hạ bậc</span></div>
+<span class="lang-en">The known solution is $y_1=e^{k_0x}$. Look for $y_2=v(x)e^{k_0x}$:</span>
+<span class="lang-vi">Nghiệm đã biết là $y_1=e^{k_0x}$. Tìm $y_2=v(x)e^{k_0x}$:</span>
 
 $$
-y_2=xe^{k_0x}.
+y_2'=e^{k_0x}(v'+k_0v),\qquad
+y_2''=e^{k_0x}(v''+2k_0v'+k_0^2v).
 $$
+
+$$
+Ay_2''+By_2'+Cy_2
+=e^{k_0x}\!\left[Av''+(2Ak_0+B)v'+(Ak_0^2+Bk_0+C)v\right]
+=Ae^{k_0x}v''.
+$$
+
+$$
+v''=0.
+$$
+</div>
+
+<div class="box gold mt-2 mini">
+<span class="lang-en">Let $w=v'$. Then $w'=0$, so $v=Cx+D$. The $D e^{k_0x}$ part repeats $y_1$, so choose $v=x$ and get $y_2=xe^{k_0x}$.</span>
+<span class="lang-vi">Đặt $w=v'$. Khi đó $w'=0$, nên $v=Cx+D$. Phần $D e^{k_0x}$ trùng với $y_1$, nên chọn $v=x$ và được $y_2=xe^{k_0x}$.</span>
 </div>
 
 <div class="refs">

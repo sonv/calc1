@@ -20,6 +20,7 @@ Short notes are intentionally compact. Each page should give students just enoug
 - [09. First-Order Differential Equations](09-first-order-differential-equations/)
 - [10. First-Order Differential Equations Continued](10-first-order-differential-equations-continued/)
 - [11. Second-Order Differential Equations](11-second-order-differential-equations/)
+- [12. Systems of First-Order Linear ODEs](12-systems-of-odes/)
 
 ## Note Template
 
@@ -47,6 +48,7 @@ Các ghi chú ngắn được cố ý giữ súc tích. Mỗi trang chỉ cung c
 - [09. Phương trình vi phân cấp một](09-first-order-differential-equations/)
 - [10. Phương trình vi phân cấp một: tiếp theo](10-first-order-differential-equations-continued/)
 - [11. Phương trình vi phân cấp hai](11-second-order-differential-equations/)
+- [12. Hệ phương trình vi phân tuyến tính cấp một](12-systems-of-odes/)
 
 ## Mẫu ghi chú
 

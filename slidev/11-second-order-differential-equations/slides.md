@@ -868,28 +868,196 @@ class: compact exercise-heavy ode-bank
 class: compact
 ---
 
-# <span class="lang-en">Variation Of Parameters</span><span class="lang-vi">Biến thiên hằng số</span>
+# <span class="lang-en">Variation Of Parameters: First Order</span><span class="lang-vi">Biến thiên hằng số: cấp một</span>
 
-<div class="thm formula-stack">
-<div class="tag"><span class="lang-en">Method theorem</span><span class="lang-vi">Định lý phương pháp</span></div>
-<span class="lang-en">For $Ay''+By'+Cy=f(x)$, if $y_1,y_2$ form a fundamental set for the homogeneous equation and $W=W(y_1,y_2)$, then a particular solution can be found from</span>
-<span class="lang-vi">Với $Ay''+By'+Cy=f(x)$, nếu $y_1,y_2$ là hệ nghiệm cơ bản của phương trình thuần nhất và $W=W(y_1,y_2)$, thì có thể tìm nghiệm riêng từ</span>
+<div class="grid-2">
+<div class="box formula-stack">
+<div class="label"><span class="lang-en">One constant in the homogeneous solution</span><span class="lang-vi">Một hằng số trong nghiệm thuần nhất</span></div>
+<span class="lang-en">For $y'+P(x)y=Q(x)$, set $I(x)=\int P(x)\,dx$. The homogeneous equation has</span>
+<span class="lang-vi">Với $y'+P(x)y=Q(x)$, đặt $I(x)=\int P(x)\,dx$. Phương trình thuần nhất có</span>
 
 $$
-y_p=-y_1\int \frac{y_2f(x)}{AW(x)}\,dx
-+y_2\int \frac{y_1f(x)}{AW(x)}\,dx.
+y_h=Ce^{-I(x)}.
+$$
+</div>
+<div class="box blue formula-stack">
+<div class="label"><span class="lang-en">Let that constant vary</span><span class="lang-vi">Cho hằng số đó biến thiên</span></div>
+
+$$
+y=C(x)e^{-I(x)}.
+$$
+
+<span class="lang-en">Substitution gives</span>
+<span class="lang-vi">Thay vào phương trình cho</span>
+
+$$
+y'+Py=C'e^{-I}=Q,\qquad C'=Qe^I.
+$$
+</div>
+</div>
+
+<div class="thm mt-3 formula-stack">
+<div class="tag"><span class="lang-en">Method, not a magic formula</span><span class="lang-vi">Một phương pháp, không phải công thức</span></div>
+<span class="lang-en">One homogeneous constant becomes one function. Second order uses the same move with two constants.</span>
+<span class="lang-vi">Một hằng số thuần nhất trở thành một hàm. Cấp hai dùng cùng ý tưởng với hai hằng số.</span>
+
+$$
+y=e^{-I(x)}\left(\int Q(x)e^{I(x)}\,dx+C_0\right).
 $$
 </div>
 
-<div class="box gold mt-3">
-<div class="label"><span class="lang-en">When to use it</span><span class="lang-vi">Khi nào dùng</span></div>
-<span class="lang-en">Use this when $f(x)$ does not fit the undetermined-coefficients templates.</span>
-<span class="lang-vi">Dùng phương pháp này khi $f(x)$ không khớp với các dạng thử hệ số bất định.</span>
+<div class="refs">
+<span class="lang-en">Read: instructor notes, Lagrange/variation of constants; compare OpenStax Vol 2, 4.5.</span>
+<span class="lang-vi">Đọc: ghi chú giảng viên, phương pháp Lagrange/biến thiên hằng số; so sánh OpenStax Tập 2, 4.5.</span>
+</div>
+
+---
+class: compact
+---
+
+# <span class="lang-en">Variation Of Parameters: Second Order</span><span class="lang-vi">Biến thiên hằng số: cấp hai</span>
+
+<div class="grid-2">
+<div class="box">
+<div class="label"><span class="lang-en">Equation</span><span class="lang-vi">Phương trình</span></div>
+
+$$
+Ay''+By'+Cy=f(x),\qquad A\ne0.
+$$
+</div>
+<div class="box blue">
+<div class="label"><span class="lang-en">Homogeneous solution</span><span class="lang-vi">Nghiệm thuần nhất</span></div>
+
+$$
+y_h=C_1y_1+C_2y_2.
+$$
+</div>
+</div>
+
+<div class="thm mt-3 formula-stack">
+<div class="tag"><span class="lang-en">Let the constants move</span><span class="lang-vi">Cho hằng số biến thiên</span></div>
+<span class="lang-en">Repeat the first-order move with two homogeneous constants:</span>
+<span class="lang-vi">Lặp lại ý tưởng cấp một với hai hằng số thuần nhất:</span>
+
+$$
+y_p=C_1(x)y_1(x)+C_2(x)y_2(x).
+$$
+</div>
+
+<div class="box gold mt-3 formula-stack">
+<div class="label"><span class="lang-en">Auxiliary condition</span><span class="lang-vi">Điều kiện phụ</span></div>
+<span class="lang-en">Choose $C_1,C_2$ so that the first derivative stays simple:</span>
+<span class="lang-vi">Chọn $C_1,C_2$ sao cho đạo hàm thứ nhất đơn giản:</span>
+
+$$
+C_1'y_1+C_2'y_2=0.
+$$
 </div>
 
 <div class="refs">
 <span class="lang-en">Read: instructor notes, variation of parameters; Stewart 17.2-17.3 for later practice.</span>
 <span class="lang-vi">Đọc: ghi chú giảng viên, biến thiên hằng số; Stewart 17.2-17.3 cho luyện tập tiếp theo.</span>
+</div>
+
+---
+class: compact solution-slide
+---
+
+# <span class="lang-en">Derivation: Two Conditions</span><span class="lang-vi">Suy diễn: hai điều kiện</span>
+
+<div class="grid-2">
+<div class="box formula-stack">
+<div class="label"><span class="lang-en">Differentiate with the condition</span><span class="lang-vi">Lấy đạo hàm với điều kiện phụ</span></div>
+
+$$
+y_p'=C_1y_1'+C_2y_2'.
+$$
+
+$$
+y_p''=C_1'y_1'+C_1y_1''+C_2'y_2'+C_2y_2''.
+$$
+</div>
+<div class="box blue formula-stack">
+<div class="label"><span class="lang-en">Substitute into $Ay''+By'+Cy$</span><span class="lang-vi">Thay vào $Ay''+By'+Cy$</span></div>
+
+$$
+C_1L[y_1]+C_2L[y_2]+A(C_1'y_1'+C_2'y_2')=f(x).
+$$
+
+<span class="lang-en">Since $L[y_1]=L[y_2]=0$,</span>
+<span class="lang-vi">Vì $L[y_1]=L[y_2]=0$,</span>
+
+$$
+C_1'y_1'+C_2'y_2'=\frac{f(x)}{A}.
+$$
+</div>
+</div>
+
+<div class="thm mt-3 formula-stack">
+<div class="tag"><span class="lang-en">The system for $C_1',C_2'$</span><span class="lang-vi">Hệ cho $C_1',C_2'$</span></div>
+
+$$
+\begin{cases}
+C_1'y_1+C_2'y_2=0,\\
+C_1'y_1'+C_2'y_2'=\dfrac{f(x)}{A}.
+\end{cases}
+$$
+</div>
+
+<div class="refs">
+<span class="lang-en">Read: instructor notes, variation of parameters; Stewart 17.2-17.3 for later practice.</span>
+<span class="lang-vi">Đọc: ghi chú giảng viên, biến thiên hằng số; Stewart 17.2-17.3 cho luyện tập tiếp theo.</span>
+</div>
+
+---
+class: compact solution-slide
+---
+
+# <span class="lang-en">Derivation: Cramer's Rule</span><span class="lang-vi">Suy diễn: quy tắc Cramer</span>
+
+<div class="grid-2">
+<div class="box formula-stack">
+<div class="label"><span class="lang-en">Wronskian</span><span class="lang-vi">Wronski</span></div>
+
+$$
+W=y_1y_2'-y_1'y_2.
+$$
+
+<span class="lang-en">Cramer's rule gives</span>
+<span class="lang-vi">Quy tắc Cramer cho</span>
+
+$$
+C_1'=-\frac{y_2f(x)}{AW},
+\qquad
+C_2'=\frac{y_1f(x)}{AW}.
+$$
+</div>
+<div class="box blue formula-stack">
+<div class="label"><span class="lang-en">Integrate</span><span class="lang-vi">Lấy tích phân</span></div>
+
+$$
+C_1(x)=-\int\frac{y_2f(x)}{AW}\,dx,
+\qquad
+C_2(x)=\int\frac{y_1f(x)}{AW}\,dx.
+$$
+
+<span class="lang-en">Constants of integration are absorbed into $y_h$.</span>
+<span class="lang-vi">Hằng số tích phân được gộp vào $y_h$.</span>
+</div>
+</div>
+
+<div class="thm mt-3 formula-stack">
+<div class="tag"><span class="lang-en">Particular solution</span><span class="lang-vi">Nghiệm riêng</span></div>
+
+$$
+y_p=-y_1\int \frac{y_2f(x)}{AW}\,dx
++y_2\int \frac{y_1f(x)}{AW}\,dx.
+$$
+</div>
+
+<div class="refs">
+<span class="lang-en">Use this when $f(x)$ does not fit the undetermined-coefficients templates.</span>
+<span class="lang-vi">Dùng phương pháp này khi $f(x)$ không khớp với các dạng thử hệ số bất định.</span>
 </div>
 
 ---

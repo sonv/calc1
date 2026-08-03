@@ -62,6 +62,11 @@ Lecture decks are built with Slidev and published as static pages inside the Zol
   <span>Open Slidev deck</span>
 </a>
 
+<a class="slide-link" href="12-systems-of-odes/">
+  <strong>12. Systems of First-Order Linear ODEs</strong>
+  <span>Open Slidev deck</span>
+</a>
+
 ## Acknowledgment
 
 Many materials in the lecture slides are adapted from materials by Dr. Le Xuan Dai.
@@ -122,6 +127,11 @@ Slide bài giảng được xây dựng bằng Slidev và xuất bản thành tr
 
 <a class="slide-link" href="11-second-order-differential-equations/">
   <strong>11. Phương trình vi phân cấp hai</strong>
+  <span>Mở bộ slide Slidev</span>
+</a>
+
+<a class="slide-link" href="12-systems-of-odes/">
+  <strong>12. Hệ ODE tuyến tính cấp một</strong>
   <span>Mở bộ slide Slidev</span>
 </a>
 

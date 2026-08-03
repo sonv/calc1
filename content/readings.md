@@ -40,7 +40,7 @@ Section numbers are keyed to Active Prelude to Calculus, Active Calculus, OpenSt
 | 12 | Homogeneous, linear, and Bernoulli first-order equations | [7.2][ac-7-2] for qualitative context; instructor notes for methods | Vol. 2: [4.5][os2-4-5]; instructor notes for homogeneous and Bernoulli equations | 9.5; instructor notes |
 | 13 | Second-order linear ODEs; constant coefficients | Instructor notes | Instructor notes | 17.1 |
 | 14 | Nonhomogeneous second-order ODEs | Instructor notes | Instructor notes | 17.2-17.3 |
-| 15 | Systems of first-order linear ODEs | Instructor notes | Instructor notes | 9.6 for modeling context; instructor notes for linear systems |
+| 15 | Systems of first-order linear ODEs | [Instructor notes](../sessions/12-systems-of-odes/) | [Instructor notes](../sessions/12-systems-of-odes/) | 9.6 for modeling context; instructor notes for linear systems |
 
 ## Reading Pattern
 
@@ -186,7 +186,7 @@ Số mục được dẫn theo Active Prelude to Calculus, Active Calculus, Open
 | 12 | Phương trình cấp một thuần nhất, tuyến tính và Bernoulli | [7.2][ac-7-2] cho bối cảnh định tính; ghi chú của giảng viên cho phương pháp | Tập 2: [4.5][os2-4-5]; ghi chú của giảng viên cho phương trình thuần nhất và Bernoulli | 9.5; ghi chú của giảng viên |
 | 13 | ODE tuyến tính cấp hai; hệ số hằng | Ghi chú của giảng viên | Ghi chú của giảng viên | 17.1 |
 | 14 | ODE cấp hai không thuần nhất | Ghi chú của giảng viên | Ghi chú của giảng viên | 17.2-17.3 |
-| 15 | Hệ ODE tuyến tính cấp một | Ghi chú của giảng viên | Ghi chú của giảng viên | 9.6 cho bối cảnh mô hình hóa; ghi chú của giảng viên cho hệ tuyến tính |
+| 15 | Hệ ODE tuyến tính cấp một | [Ghi chú của giảng viên](../sessions/12-systems-of-odes/) | [Ghi chú của giảng viên](../sessions/12-systems-of-odes/) | 9.6 cho bối cảnh mô hình hóa; ghi chú của giảng viên cho hệ tuyến tính |
 
 ## Cách đọc
 

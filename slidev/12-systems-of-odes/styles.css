@@ -1,0 +1,135 @@
+.phase-frame {
+  background: white;
+  border: 1px solid var(--calc-line);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(19, 32, 28, 0.075);
+  min-height: 15.5rem;
+  overflow: hidden;
+}
+
+.phase-canvas {
+  display: block;
+  height: 100%;
+  min-height: 15.5rem;
+  width: 100%;
+}
+
+.phase-frame.short,
+.phase-frame.short .phase-canvas {
+  min-height: 11.5rem;
+}
+
+.phase-caption {
+  color: var(--calc-muted);
+  font-size: 0.76rem;
+  line-height: 1.2;
+  padding: 0.35rem 0.55rem 0.55rem;
+}
+
+.system-eq .katex-display {
+  font-size: 0.82em;
+  margin: 0.34rem 0;
+}
+
+.method-strip {
+  display: grid;
+  gap: 0.62rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.method-strip .box {
+  min-height: 7.3rem;
+}
+
+.method-strip strong {
+  color: var(--calc-green);
+  display: block;
+  font-size: 1.02rem;
+  line-height: 1.1;
+  margin-bottom: 0.28rem;
+}
+
+.source-chip {
+  background: rgba(31, 111, 104, 0.08);
+  border: 1px solid rgba(31, 111, 104, 0.18);
+  border-radius: 999px;
+  color: var(--calc-green);
+  display: inline-flex;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0.08rem 0.25rem 0.08rem 0;
+  padding: 0.34rem 0.58rem;
+}
+
+.compact .phase-frame {
+  min-height: 13.5rem;
+}
+
+.compact .phase-canvas {
+  min-height: 13.5rem;
+}
+
+.solution-pair {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 0.92fr 1.08fr;
+}
+
+.solution-pair .katex-display {
+  font-size: 0.76em;
+}
+
+.slidev-layout.system-bank .exercise-card {
+  min-height: 6.45rem;
+}
+
+.slidev-layout.system-bank .exercise-card .katex-display {
+  font-size: 0.68em;
+  margin: 0.22rem 0;
+}
+
+.slidev-layout.system-bank .inline-answer {
+  font-size: 0.7rem;
+}
+
+.tiny-note {
+  color: var(--calc-muted);
+  font-size: 0.75rem;
+  line-height: 1.25;
+}
+
+.sim .phase-canvas {
+  height: 100%;
+  min-height: 100%;
+}
+
+.sim-panel.wide {
+  max-width: 64rem;
+  width: min(64rem, calc(100% - 6rem));
+}
+
+.slidev-layout.phase-overview .grid-3 .box {
+  min-height: 8.7rem;
+}
+
+.slidev-layout.phase-overview .phase-frame.short {
+  min-height: 8.8rem;
+}
+
+.slidev-layout.phase-overview .phase-canvas {
+  min-height: 8.8rem;
+}
+
+.slidev-layout.phase-overview .phase-caption {
+  font-size: 0.66rem;
+}
+
+.slidev-layout.phase-overview .katex-display {
+  font-size: 0.78em;
+}
+
+.slidev-layout.system-final h1 {
+  font-size: 3.05rem;
+}

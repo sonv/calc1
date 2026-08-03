@@ -133,6 +133,144 @@ Choose the power $s$ to avoid duplicating a homogeneous solution:
 - $s=1$ for a simple resonance
 - $s=2$ for a repeated-root resonance in the exponential-polynomial case
 
+## Variation Of Parameters
+
+Variation of parameters is useful when the right side $f(x)$ does not fit the undetermined-coefficients templates.
+
+The idea is easiest to see first for a first-order linear equation
+
+$$
+y'+P(x)y=Q(x).
+$$
+
+Let
+
+$$
+I(x)=\int P(x)\,dx.
+$$
+
+The homogeneous equation has solution
+
+$$
+y_h=Ce^{-I(x)}.
+$$
+
+Variation of parameters says: do not choose the constant immediately. Let it become a function,
+
+$$
+y=C(x)e^{-I(x)}.
+$$
+
+Then
+
+$$
+y'=C'e^{-I}-CPe^{-I},
+$$
+
+so
+
+$$
+y'+Py=C'e^{-I}=Q.
+$$
+
+Thus
+
+$$
+C'=Qe^I,
+\qquad
+C=\int Qe^I\,dx+C_0,
+$$
+
+and therefore
+
+$$
+y=e^{-I(x)}\left[\int Q(x)e^{I(x)}\,dx+C_0\right].
+$$
+
+This is the same formula as the integrating-factor method, but the guiding idea is different: start from the constants in the homogeneous solution and let them move.
+
+For second-order equations, the same idea has two constants to move.
+
+Suppose
+
+$$
+Ay''+By'+Cy=f(x),\qquad A\ne0,
+$$
+
+and suppose $y_1,y_2$ form a fundamental set for the homogeneous equation. Instead of keeping the constants fixed in
+
+$$
+y_h=C_1y_1+C_2y_2,
+$$
+
+we let them become functions:
+
+$$
+y_p=C_1(x)y_1(x)+C_2(x)y_2(x).
+$$
+
+To keep the derivatives manageable, impose the auxiliary condition
+
+$$
+C_1'y_1+C_2'y_2=0.
+$$
+
+Then
+
+$$
+y_p'=C_1y_1'+C_2y_2',
+$$
+
+and
+
+$$
+y_p''=C_1'y_1'+C_1y_1''+C_2'y_2'+C_2y_2''.
+$$
+
+Substitute into the differential equation. Since $y_1,y_2$ solve the homogeneous equation, the terms $C_1L[y_1]$ and $C_2L[y_2]$ disappear. What remains is
+
+$$
+C_1'y_1'+C_2'y_2'=\frac{f(x)}{A}.
+$$
+
+Therefore $C_1',C_2'$ are determined by
+
+$$
+\begin{cases}
+C_1'y_1+C_2'y_2=0,\\
+C_1'y_1'+C_2'y_2'=\dfrac{f(x)}{A}.
+\end{cases}
+$$
+
+Using the Wronskian
+
+$$
+W=y_1y_2'-y_1'y_2,
+$$
+
+Cramer's rule gives
+
+$$
+C_1'=-\frac{y_2f(x)}{AW},
+\qquad
+C_2'=\frac{y_1f(x)}{AW}.
+$$
+
+Integrating,
+
+$$
+C_1(x)=-\int\frac{y_2f(x)}{AW}\,dx,
+\qquad
+C_2(x)=\int\frac{y_1f(x)}{AW}\,dx.
+$$
+
+Constants of integration are absorbed into the homogeneous part. Hence a particular solution is
+
+$$
+y_p=-y_1\int \frac{y_2f(x)}{AW}\,dx
++y_2\int \frac{y_1f(x)}{AW}\,dx.
+$$
+
 ## Worked Example
 
 Solve
@@ -328,6 +466,144 @@ Chọn lũy thừa $s$ để tránh trùng với nghiệm thuần nhất:
 - $s=0$ nếu không có cộng hưởng
 - $s=1$ nếu có cộng hưởng đơn
 - $s=2$ nếu có cộng hưởng nghiệm kép trong trường hợp mũ-nhân-đa thức
+
+## Biến thiên hằng số
+
+Phương pháp biến thiên hằng số hữu ích khi vế phải $f(x)$ không khớp với các dạng thử của phương pháp hệ số bất định.
+
+Ý tưởng này dễ thấy nhất ở phương trình tuyến tính cấp một
+
+$$
+y'+P(x)y=Q(x).
+$$
+
+Đặt
+
+$$
+I(x)=\int P(x)\,dx.
+$$
+
+Phương trình thuần nhất có nghiệm
+
+$$
+y_h=Ce^{-I(x)}.
+$$
+
+Phương pháp biến thiên hằng số nói rằng: đừng chọn hằng số ngay. Cho nó trở thành một hàm,
+
+$$
+y=C(x)e^{-I(x)}.
+$$
+
+Khi đó
+
+$$
+y'=C'e^{-I}-CPe^{-I},
+$$
+
+nên
+
+$$
+y'+Py=C'e^{-I}=Q.
+$$
+
+Do đó
+
+$$
+C'=Qe^I,
+\qquad
+C=\int Qe^I\,dx+C_0,
+$$
+
+và vì vậy
+
+$$
+y=e^{-I(x)}\left[\int Q(x)e^{I(x)}\,dx+C_0\right].
+$$
+
+Đây là cùng công thức với phương pháp thừa số tích phân, nhưng ý tưởng dẫn đường khác hơn: bắt đầu từ các hằng số trong nghiệm thuần nhất rồi cho chúng biến thiên.
+
+Với phương trình cấp hai, cùng ý tưởng đó có hai hằng số cần cho biến thiên.
+
+Giả sử
+
+$$
+Ay''+By'+Cy=f(x),\qquad A\ne0,
+$$
+
+và $y_1,y_2$ là hệ nghiệm cơ bản của phương trình thuần nhất. Thay vì giữ các hằng số cố định trong
+
+$$
+y_h=C_1y_1+C_2y_2,
+$$
+
+ta cho chúng trở thành hàm:
+
+$$
+y_p=C_1(x)y_1(x)+C_2(x)y_2(x).
+$$
+
+Để đạo hàm gọn hơn, đặt điều kiện phụ
+
+$$
+C_1'y_1+C_2'y_2=0.
+$$
+
+Khi đó
+
+$$
+y_p'=C_1y_1'+C_2y_2',
+$$
+
+và
+
+$$
+y_p''=C_1'y_1'+C_1y_1''+C_2'y_2'+C_2y_2''.
+$$
+
+Thay vào phương trình vi phân. Vì $y_1,y_2$ là nghiệm của phương trình thuần nhất, các hạng $C_1L[y_1]$ và $C_2L[y_2]$ triệt tiêu. Phần còn lại là
+
+$$
+C_1'y_1'+C_2'y_2'=\frac{f(x)}{A}.
+$$
+
+Vì vậy $C_1',C_2'$ được xác định bởi hệ
+
+$$
+\begin{cases}
+C_1'y_1+C_2'y_2=0,\\
+C_1'y_1'+C_2'y_2'=\dfrac{f(x)}{A}.
+\end{cases}
+$$
+
+Với Wronski
+
+$$
+W=y_1y_2'-y_1'y_2,
+$$
+
+quy tắc Cramer cho
+
+$$
+C_1'=-\frac{y_2f(x)}{AW},
+\qquad
+C_2'=\frac{y_1f(x)}{AW}.
+$$
+
+Lấy tích phân,
+
+$$
+C_1(x)=-\int\frac{y_2f(x)}{AW}\,dx,
+\qquad
+C_2(x)=\int\frac{y_1f(x)}{AW}\,dx.
+$$
+
+Các hằng số tích phân được gộp vào phần nghiệm thuần nhất. Do đó một nghiệm riêng là
+
+$$
+y_p=-y_1\int \frac{y_2f(x)}{AW}\,dx
++y_2\int \frac{y_1f(x)}{AW}\,dx.
+$$
 
 ## Ví dụ mẫu
 

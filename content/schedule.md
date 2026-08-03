@@ -30,7 +30,7 @@ weight = 10
 | 12 | Homogeneous, linear, and Bernoulli first-order ODEs | Instructor notes | Edwards-Penney and selected OpenStax reading |
 | 13 | Second-order linear ODEs; constant coefficients | Instructor notes | Edwards-Penney; local ODE notes |
 | 14 | Nonhomogeneous second-order ODEs; undetermined coefficients; variation of parameters | Instructor notes | Edwards-Penney; local ODE notes |
-| 15 | Systems of first-order linear ODEs | Instructor notes | Local systems notes; review problems |
+| 15 | Systems of first-order linear ODEs | [Lecture 12 notes](../sessions/12-systems-of-odes/) and [slides](../slides/12-systems-of-odes/) | Local systems notes; review problems |
 {% end %}
 
 {% lang(code="vi") %}
@@ -59,5 +59,5 @@ weight = 10
 | 12 | Phương trình vi phân cấp một thuần nhất, tuyến tính và Bernoulli | Ghi chú của giảng viên | Edwards-Penney và bài đọc OpenStax chọn lọc |
 | 13 | Phương trình vi phân tuyến tính cấp hai; hệ số hằng | Ghi chú của giảng viên | Edwards-Penney; ghi chú địa phương về ODE |
 | 14 | Phương trình vi phân cấp hai không thuần nhất; hệ số bất định; biến thiên tham số | Ghi chú của giảng viên | Edwards-Penney; ghi chú địa phương về ODE |
-| 15 | Hệ phương trình vi phân tuyến tính cấp một | Ghi chú của giảng viên | Ghi chú về hệ tuyến tính; bài tập ôn tập |
+| 15 | Hệ phương trình vi phân tuyến tính cấp một | [Ghi chú Buổi 12](../sessions/12-systems-of-odes/) và [slide](../slides/12-systems-of-odes/) | Ghi chú về hệ tuyến tính; bài tập ôn tập |
 {% end %}
